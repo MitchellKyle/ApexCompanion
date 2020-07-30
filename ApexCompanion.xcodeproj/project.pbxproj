@@ -19,7 +19,6 @@
 		8444437724CD29020090FFFC /* WeaponModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444437624CD29020090FFFC /* WeaponModel.swift */; };
 		8444437B24CD2E500090FFFC /* WeaponListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444437A24CD2E500090FFFC /* WeaponListView.swift */; };
 		8444437D24CD2F820090FFFC /* WeaponDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444437C24CD2F820090FFFC /* WeaponDetail.swift */; };
-		8444437F24CD35930090FFFC /* Extended_Heavy_Mag.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8444437E24CD35930090FFFC /* Extended_Heavy_Mag.svg */; };
 		8444438B24CDFE900090FFFC /* Teko-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8444438624CDFE900090FFFC /* Teko-SemiBold.ttf */; };
 		8444438C24CDFE910090FFFC /* Teko-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8444438724CDFE900090FFFC /* Teko-Bold.ttf */; };
 		8444438D24CDFE910090FFFC /* Teko-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8444438824CDFE900090FFFC /* Teko-Medium.ttf */; };
@@ -55,7 +54,6 @@
 		8444437624CD29020090FFFC /* WeaponModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponModel.swift; sourceTree = "<group>"; };
 		8444437A24CD2E500090FFFC /* WeaponListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponListView.swift; sourceTree = "<group>"; };
 		8444437C24CD2F820090FFFC /* WeaponDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDetail.swift; sourceTree = "<group>"; };
-		8444437E24CD35930090FFFC /* Extended_Heavy_Mag.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Extended_Heavy_Mag.svg; sourceTree = "<group>"; };
 		8444438624CDFE900090FFFC /* Teko-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-SemiBold.ttf"; sourceTree = "<group>"; };
 		8444438724CDFE900090FFFC /* Teko-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Bold.ttf"; sourceTree = "<group>"; };
 		8444438824CDFE900090FFFC /* Teko-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Medium.ttf"; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 		8444436624CD005F0090FFFC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8444437E24CD35930090FFFC /* Extended_Heavy_Mag.svg */,
 				8444436F24CD06200090FFFC /* weapons.json */,
 			);
 			path = Resources;
@@ -273,7 +270,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8444438F24CDFE910090FFFC /* Teko-Regular.ttf in Resources */,
-				8444437F24CD35930090FFFC /* Extended_Heavy_Mag.svg in Resources */,
 				8444438E24CDFE910090FFFC /* Teko-Light.ttf in Resources */,
 				8444435924CC82E70090FFFC /* LaunchScreen.storyboard in Resources */,
 				8444438B24CDFE900090FFFC /* Teko-SemiBold.ttf in Resources */,

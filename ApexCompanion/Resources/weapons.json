@@ -312,13 +312,13 @@
 	{
         "id": 1012,
 		"name": "LONGBOW",
-        "image": "",
-        "imageIcon": "",
+        "image": "longbow_detail",
+        "imageIcon": "longbow_icon",
         "type": "Sniper Rifle",
         "category": "Sniper Rifles",
         "ammoType" : "Sniper",
-        "weaponTypeIcon": "",
-        "ammoTypeIcon": "",
+        "weaponTypeIcon": "triple_take_icon",
+        "ammoTypeIcon": "sniper_ammo",
         "fireMode": {
             "modeOne": "",
             "modeTwo": ""
@@ -341,13 +341,13 @@
 	{
         "id": 1013,
 		"name": "KRABER",
-        "image": "",
-        "imageIcon": "",
+        "image": "kraber_detail",
+        "imageIcon": "kraber_icon",
         "type": "Sniper Rifle",
         "category": "Sniper Rifles",
-        "ammoType" : "Sniper",
-        "weaponTypeIcon": "",
-        "ammoTypeIcon": "",
+        "ammoType" : "Special Sniper",
+        "weaponTypeIcon": "triple_take_icon",
+        "ammoTypeIcon": "special_sniper_ammo",
         "fireMode": {
             "modeOne": "",
             "modeTwo": ""
@@ -367,13 +367,13 @@
 	{
         "id": 1014,
 		"name": "TRIPLE TAKE",
-        "image": "",
-        "imageIcon": "",
+        "image": "triple_take_detail",
+        "imageIcon": "triple_take_icon",
         "type": "Sniper Rifle",
         "category": "Sniper Rifles",
         "ammoType" : "Sniper",
-        "weaponTypeIcon": "",
-        "ammoTypeIcon": "",
+        "weaponTypeIcon": "triple_take_icon",
+        "ammoTypeIcon": "sniper_ammo",
         "fireMode": {
             "modeOne": "",
             "modeTwo": ""
@@ -396,13 +396,13 @@
 	{
         "id": 1015,
 		"name": "CHARGE RIFLE",
-        "image": "",
-        "imageIcon": "",
+        "image": "charge_rifle_detail",
+        "imageIcon": "charge_rifle_icon",
         "type": "Sniper Rifle",
         "category": "Sniper Rifles",
         "ammoType" : "Sniper",
-        "weaponTypeIcon": "",
-        "ammoTypeIcon": "",
+        "weaponTypeIcon": "triple_take_icon",
+        "ammoTypeIcon": "sniper_ammo",
         "fireMode": {
             "modeOne": "",
             "modeTwo": ""
@@ -422,13 +422,13 @@
 	{
         "id": 1016,
 		"name": "SENTINEL",
-        "image": "",
-        "imageIcon": "",
+        "image": "sentinel_detail",
+        "imageIcon": "sentinel_icon",
         "type": "Sniper Rifle",
         "category": "Sniper Rifles",
         "ammoType" : "Sniper",
-        "weaponTypeIcon": "",
-        "ammoTypeIcon": "",
+        "weaponTypeIcon": "triple_take_icon",
+        "ammoTypeIcon": "sniper_ammo",
         "fireMode": {
             "modeOne": "",
             "modeTwo": ""
@@ -451,13 +451,13 @@
 	{
         "id": 1017,
 		"name": "EVA-8 AUTO",
-        "image": "",
-        "imageIcon": "",
+        "image": "eva8_detail",
+        "imageIcon": "eva8_icon",
         "type": "Shotgun",
         "category": "Shotguns",
-        "ammoType" : "Shotgun",
-        "weaponTypeIcon": "",
-        "ammoTypeIcon": "",
+        "ammoType" : "Shotgun Shells",
+        "weaponTypeIcon": "eva8_icon",
+        "ammoTypeIcon": "shotgun_ammo",
         "fireMode": {
             "modeOne": "",
             "modeTwo": ""
@@ -477,13 +477,13 @@
 	{
         "id": 1018,
 		"name": "MASTIFF",
-        "image": "",
-        "imageIcon": "",
+        "image": "mastiff_detail",
+        "imageIcon": "mastiff_icon",
         "type": "Shotgun",
         "category": "Shotguns",
-        "ammoType" : "Shotgun",
-        "weaponTypeIcon": "",
-        "ammoTypeIcon": "",
+        "ammoType" : "Shotgun Shells",
+        "weaponTypeIcon": "mastiff_icon",
+        "ammoTypeIcon": "shotgun_ammo",
         "fireMode": {
             "modeOne": "",
             "modeTwo": ""
@@ -503,13 +503,13 @@
 	{
         "id": 1019,
 		"name": "MOZAMBIQUE",
-        "image": "",
-        "imageIcon": "",
+        "image": "mozambique_detail",
+        "imageIcon": "mozambique_icon",
         "type": "Shotgun",
         "category": "Shotguns",
-        "ammoType" : "Shotgun",
-        "weaponTypeIcon": "",
-        "ammoTypeIcon": "",
+        "ammoType" : "Shotgun Shells",
+        "weaponTypeIcon": "mozambique_icon",
+        "ammoTypeIcon": "shotgun_ammo",
         "fireMode": {
             "modeOne": "",
             "modeTwo": ""
@@ -529,13 +529,13 @@
 	{
         "id": 1020,
 		"name": "PEACEKEEPER",
-        "image": "",
-        "imageIcon": "",
+        "image": "peacekeeper_detail",
+        "imageIcon": "peacekeeper_icon",
         "type": "Shotgun",
         "category": "Shotguns",
-        "ammoType" : "Shotgun",
-        "weaponTypeIcon": "",
-        "ammoTypeIcon": "",
+        "ammoType" : "Special Shotgun",
+        "weaponTypeIcon": "peacekeeper_icon",
+        "ammoTypeIcon": "special_shotgun_ammo",
         "fireMode": {
             "modeOne": "",
             "modeTwo": ""
@@ -555,12 +555,12 @@
 	{
         "id": 1021,
 		"name": "RE-45",
-        "image": "",
-        "imageIcon": "",
+        "image": "re45_detail",
+        "imageIcon": "re45_icon",
         "type": "Pistol",
         "category": "Pistols",
         "ammoType" : "Light",
-        "weaponTypeIcon": "",
+        "weaponTypeIcon": "re45_icon",
         "ammoTypeIcon": "light_ammo",
         "fireMode": {
             "modeOne": "",
@@ -584,12 +584,12 @@
 	{
         "id": 1022,
 		"name": "P2020",
-        "image": "",
-        "imageIcon": "",
+        "image": "p2020_detail",
+        "imageIcon": "p2020_icon",
         "type": "Pistol",
         "category": "Pistols",
         "ammoType" : "Light",
-        "weaponTypeIcon": "",
+        "weaponTypeIcon": "p2020_icon",
         "ammoTypeIcon": "light_ammo",
         "fireMode": {
             "modeOne": "",
@@ -613,12 +613,12 @@
 	{
         "id": 1023,
 		"name": "WINGMAN",
-        "image": "",
-        "imageIcon": "",
+        "image": "wingman_detail",
+        "imageIcon": "wingman_icon",
         "type": "Pistol",
         "category": "Pistols",
         "ammoType" : "Heavy",
-        "weaponTypeIcon": "",
+        "weaponTypeIcon": "wingman_icon",
         "ammoTypeIcon": "heavy_ammo",
         "fireMode": {
             "modeOne": "",
