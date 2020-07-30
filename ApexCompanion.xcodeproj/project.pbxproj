@@ -9,21 +9,71 @@
 /* Begin PBXBuildFile section */
 		8444434D24CC82E60090FFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444434C24CC82E60090FFFC /* AppDelegate.swift */; };
 		8444434F24CC82E60090FFFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444434E24CC82E60090FFFC /* SceneDelegate.swift */; };
-		8444435124CC82E60090FFFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444435024CC82E60090FFFC /* ContentView.swift */; };
+		8444435124CC82E60090FFFC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444435024CC82E60090FFFC /* HomeView.swift */; };
 		8444435324CC82E70090FFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8444435224CC82E70090FFFC /* Assets.xcassets */; };
 		8444435624CC82E70090FFFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8444435524CC82E70090FFFC /* Preview Assets.xcassets */; };
 		8444435924CC82E70090FFFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8444435724CC82E70090FFFC /* LaunchScreen.storyboard */; };
+		8444436A24CD019A0090FFFC /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444436924CD019A0090FFFC /* Weapon.swift */; };
+		8444437024CD06200090FFFC /* weapons.json in Resources */ = {isa = PBXBuildFile; fileRef = 8444436F24CD06200090FFFC /* weapons.json */; };
+		8444437524CD08940090FFFC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444437424CD08940090FFFC /* Constants.swift */; };
+		8444437724CD29020090FFFC /* WeaponModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444437624CD29020090FFFC /* WeaponModel.swift */; };
+		8444437B24CD2E500090FFFC /* WeaponListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444437A24CD2E500090FFFC /* WeaponListView.swift */; };
+		8444437D24CD2F820090FFFC /* WeaponDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444437C24CD2F820090FFFC /* WeaponDetail.swift */; };
+		8444437F24CD35930090FFFC /* Extended_Heavy_Mag.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8444437E24CD35930090FFFC /* Extended_Heavy_Mag.svg */; };
+		8444438B24CDFE900090FFFC /* Teko-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8444438624CDFE900090FFFC /* Teko-SemiBold.ttf */; };
+		8444438C24CDFE910090FFFC /* Teko-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8444438724CDFE900090FFFC /* Teko-Bold.ttf */; };
+		8444438D24CDFE910090FFFC /* Teko-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8444438824CDFE900090FFFC /* Teko-Medium.ttf */; };
+		8444438E24CDFE910090FFFC /* Teko-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8444438924CDFE900090FFFC /* Teko-Light.ttf */; };
+		8444438F24CDFE910090FFFC /* Teko-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8444438A24CDFE900090FFFC /* Teko-Regular.ttf */; };
+		8444439F24CE656F0090FFFC /* WDTypesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444439E24CE656F0090FFFC /* WDTypesView.swift */; };
+		844443A124CE65DA0090FFFC /* WDHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443A024CE65DA0090FFFC /* WDHeaderView.swift */; };
+		844443A324CF63C80090FFFC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443A224CF63C80090FFFC /* Data.swift */; };
+		844443A524CF67C10090FFFC /* WeaponRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443A424CF67C10090FFFC /* WeaponRow.swift */; };
+		844443A724CF71A40090FFFC /* WDDamageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443A624CF71A40090FFFC /* WDDamageView.swift */; };
+		844443AB24CFB3860090FFFC /* WDFireModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443AA24CFB3860090FFFC /* WDFireModeView.swift */; };
+		844443AF24CFB7050090FFFC /* WDRecoilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443AE24CFB7050090FFFC /* WDRecoilView.swift */; };
+		844443B124CFB7900090FFFC /* WDClipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443B024CFB7900090FFFC /* WDClipsView.swift */; };
+		844443B324D07E040090FFFC /* WDDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443B224D07E040090FFFC /* WDDescriptionView.swift */; };
+		844443B524D082A80090FFFC /* WDSubheaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443B424D082A80090FFFC /* WDSubheaderView.swift */; };
+		844443E324D1E7960090FFFC /* WeaponItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443E224D1E7960090FFFC /* WeaponItem.swift */; };
+		844443E524D1F7AB0090FFFC /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443E424D1F7AB0090FFFC /* BackgroundView.swift */; };
+		844443E924D212300090FFFC /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443E824D212300090FFFC /* NavigationConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8444434924CC82E60090FFFC /* ApexCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApexCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8444434C24CC82E60090FFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8444434E24CC82E60090FFFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8444435024CC82E60090FFFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8444435024CC82E60090FFFC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8444435224CC82E70090FFFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8444435524CC82E70090FFFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8444435824CC82E70090FFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8444435A24CC82E70090FFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8444436924CD019A0090FFFC /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
+		8444436F24CD06200090FFFC /* weapons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weapons.json; sourceTree = "<group>"; };
+		8444437424CD08940090FFFC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8444437624CD29020090FFFC /* WeaponModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponModel.swift; sourceTree = "<group>"; };
+		8444437A24CD2E500090FFFC /* WeaponListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponListView.swift; sourceTree = "<group>"; };
+		8444437C24CD2F820090FFFC /* WeaponDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDetail.swift; sourceTree = "<group>"; };
+		8444437E24CD35930090FFFC /* Extended_Heavy_Mag.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Extended_Heavy_Mag.svg; sourceTree = "<group>"; };
+		8444438624CDFE900090FFFC /* Teko-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-SemiBold.ttf"; sourceTree = "<group>"; };
+		8444438724CDFE900090FFFC /* Teko-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Bold.ttf"; sourceTree = "<group>"; };
+		8444438824CDFE900090FFFC /* Teko-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Medium.ttf"; sourceTree = "<group>"; };
+		8444438924CDFE900090FFFC /* Teko-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Light.ttf"; sourceTree = "<group>"; };
+		8444438A24CDFE900090FFFC /* Teko-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Regular.ttf"; sourceTree = "<group>"; };
+		8444439E24CE656F0090FFFC /* WDTypesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDTypesView.swift; sourceTree = "<group>"; };
+		844443A024CE65DA0090FFFC /* WDHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDHeaderView.swift; sourceTree = "<group>"; };
+		844443A224CF63C80090FFFC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		844443A424CF67C10090FFFC /* WeaponRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponRow.swift; sourceTree = "<group>"; };
+		844443A624CF71A40090FFFC /* WDDamageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDDamageView.swift; sourceTree = "<group>"; };
+		844443AA24CFB3860090FFFC /* WDFireModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDFireModeView.swift; sourceTree = "<group>"; };
+		844443AE24CFB7050090FFFC /* WDRecoilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDRecoilView.swift; sourceTree = "<group>"; };
+		844443B024CFB7900090FFFC /* WDClipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDClipsView.swift; sourceTree = "<group>"; };
+		844443B224D07E040090FFFC /* WDDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDDescriptionView.swift; sourceTree = "<group>"; };
+		844443B424D082A80090FFFC /* WDSubheaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDSubheaderView.swift; sourceTree = "<group>"; };
+		844443E224D1E7960090FFFC /* WeaponItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponItem.swift; sourceTree = "<group>"; };
+		844443E424D1F7AB0090FFFC /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		844443E824D212300090FFFC /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +108,12 @@
 			children = (
 				8444434C24CC82E60090FFFC /* AppDelegate.swift */,
 				8444434E24CC82E60090FFFC /* SceneDelegate.swift */,
-				8444435024CC82E60090FFFC /* ContentView.swift */,
+				8444436724CD008C0090FFFC /* Views */,
+				8444439024CE1CCF0090FFFC /* Supporting Views */,
+				8444436824CD00B20090FFFC /* Models */,
+				8444437324CD08700090FFFC /* Helpers */,
+				8444436624CD005F0090FFFC /* Resources */,
+				8444438024CDFB900090FFFC /* Fonts */,
 				8444435224CC82E70090FFFC /* Assets.xcassets */,
 				8444435724CC82E70090FFFC /* LaunchScreen.storyboard */,
 				8444435A24CC82E70090FFFC /* Info.plist */,
@@ -73,6 +128,90 @@
 				8444435524CC82E70090FFFC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8444436624CD005F0090FFFC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8444437E24CD35930090FFFC /* Extended_Heavy_Mag.svg */,
+				8444436F24CD06200090FFFC /* weapons.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8444436724CD008C0090FFFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				844443EA24D216D90090FFFC /* Weapons */,
+				8444435024CC82E60090FFFC /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8444436824CD00B20090FFFC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8444436924CD019A0090FFFC /* Weapon.swift */,
+				8444437624CD29020090FFFC /* WeaponModel.swift */,
+				844443A224CF63C80090FFFC /* Data.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8444437324CD08700090FFFC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8444437424CD08940090FFFC /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8444438024CDFB900090FFFC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8444438724CDFE900090FFFC /* Teko-Bold.ttf */,
+				8444438924CDFE900090FFFC /* Teko-Light.ttf */,
+				8444438824CDFE900090FFFC /* Teko-Medium.ttf */,
+				8444438A24CDFE900090FFFC /* Teko-Regular.ttf */,
+				8444438624CDFE900090FFFC /* Teko-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8444439024CE1CCF0090FFFC /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				8444439124CE59E90090FFFC /* Weapons */,
+				844443E824D212300090FFFC /* NavigationConfigurator.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		8444439124CE59E90090FFFC /* Weapons */ = {
+			isa = PBXGroup;
+			children = (
+				844443E424D1F7AB0090FFFC /* BackgroundView.swift */,
+				844443A024CE65DA0090FFFC /* WDHeaderView.swift */,
+				844443B424D082A80090FFFC /* WDSubheaderView.swift */,
+				8444439E24CE656F0090FFFC /* WDTypesView.swift */,
+				844443AA24CFB3860090FFFC /* WDFireModeView.swift */,
+				844443AE24CFB7050090FFFC /* WDRecoilView.swift */,
+				844443A624CF71A40090FFFC /* WDDamageView.swift */,
+				844443B024CFB7900090FFFC /* WDClipsView.swift */,
+				844443B224D07E040090FFFC /* WDDescriptionView.swift */,
+			);
+			path = Weapons;
+			sourceTree = "<group>";
+		};
+		844443EA24D216D90090FFFC /* Weapons */ = {
+			isa = PBXGroup;
+			children = (
+				8444437A24CD2E500090FFFC /* WeaponListView.swift */,
+				844443A424CF67C10090FFFC /* WeaponRow.swift */,
+				844443E224D1E7960090FFFC /* WeaponItem.swift */,
+				8444437C24CD2F820090FFFC /* WeaponDetail.swift */,
+			);
+			path = Weapons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,9 +272,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8444438F24CDFE910090FFFC /* Teko-Regular.ttf in Resources */,
+				8444437F24CD35930090FFFC /* Extended_Heavy_Mag.svg in Resources */,
+				8444438E24CDFE910090FFFC /* Teko-Light.ttf in Resources */,
 				8444435924CC82E70090FFFC /* LaunchScreen.storyboard in Resources */,
+				8444438B24CDFE900090FFFC /* Teko-SemiBold.ttf in Resources */,
+				8444437024CD06200090FFFC /* weapons.json in Resources */,
+				8444438D24CDFE910090FFFC /* Teko-Medium.ttf in Resources */,
 				8444435624CC82E70090FFFC /* Preview Assets.xcassets in Resources */,
 				8444435324CC82E70090FFFC /* Assets.xcassets in Resources */,
+				8444438C24CDFE910090FFFC /* Teko-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,9 +292,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844443B324D07E040090FFFC /* WDDescriptionView.swift in Sources */,
+				8444437B24CD2E500090FFFC /* WeaponListView.swift in Sources */,
+				844443AF24CFB7050090FFFC /* WDRecoilView.swift in Sources */,
 				8444434D24CC82E60090FFFC /* AppDelegate.swift in Sources */,
+				8444437724CD29020090FFFC /* WeaponModel.swift in Sources */,
+				8444436A24CD019A0090FFFC /* Weapon.swift in Sources */,
 				8444434F24CC82E60090FFFC /* SceneDelegate.swift in Sources */,
-				8444435124CC82E60090FFFC /* ContentView.swift in Sources */,
+				844443AB24CFB3860090FFFC /* WDFireModeView.swift in Sources */,
+				8444435124CC82E60090FFFC /* HomeView.swift in Sources */,
+				844443B524D082A80090FFFC /* WDSubheaderView.swift in Sources */,
+				844443E324D1E7960090FFFC /* WeaponItem.swift in Sources */,
+				844443A124CE65DA0090FFFC /* WDHeaderView.swift in Sources */,
+				844443A324CF63C80090FFFC /* Data.swift in Sources */,
+				844443B124CFB7900090FFFC /* WDClipsView.swift in Sources */,
+				844443E524D1F7AB0090FFFC /* BackgroundView.swift in Sources */,
+				844443A724CF71A40090FFFC /* WDDamageView.swift in Sources */,
+				8444437524CD08940090FFFC /* Constants.swift in Sources */,
+				8444437D24CD2F820090FFFC /* WeaponDetail.swift in Sources */,
+				844443A524CF67C10090FFFC /* WeaponRow.swift in Sources */,
+				844443E924D212300090FFFC /* NavigationConfigurator.swift in Sources */,
+				8444439F24CE656F0090FFFC /* WDTypesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
