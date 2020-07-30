@@ -38,7 +38,7 @@ struct WDTypesView: View {
         }
         .frame(width: 130, height: 130, alignment: .center)
         .padding()
-        .background(Color.white.opacity(0.75))
+        .background(Color.white.opacity(0.9))
         .cornerRadius(20)
     }
 }

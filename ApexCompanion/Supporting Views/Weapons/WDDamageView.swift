@@ -28,7 +28,7 @@ struct WDDamageView: View {
         }
         .frame(width: 70, height: 60, alignment: .center)
         .padding(.all, 12)
-        .background(Color.white.opacity(0.75))
+        .background(Color.white.opacity(0.9))
         .cornerRadius(20)
     }
 }

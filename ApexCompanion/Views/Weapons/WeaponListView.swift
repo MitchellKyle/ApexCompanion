@@ -19,17 +19,14 @@ struct WeaponListView: View {
     
     var body: some View {
             
-        NavigationView {
+        List(weaponCategories.keys.sorted(), id: \String.self) {key in
             
-            List(weaponCategories.keys.sorted(), id: \String.self) {key in
-                
-                    WeaponRow(weaponType: "\(key)", weapons: self.weaponCategories[key]!)
-                }
-            .navigationBarTitle("Weapon Types", displayMode: .inline)
-            .background(NavigationConfigurator { nc in
-                nc.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.black]
-            })
-        }
+                WeaponRow(weaponType: "\(key)", weapons: self.weaponCategories[key]!)
+            }
+        .navigationBarTitle("Weapon Types", displayMode: .inline)
+        .background(NavigationConfigurator { nc in
+            nc.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.black]
+        })
     }
 }
 

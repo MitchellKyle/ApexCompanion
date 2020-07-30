@@ -27,7 +27,7 @@ struct WDRecoilView: View {
         }
         .frame(width: 130, height: 110, alignment: .center)
         .padding()
-        .background(Color.white.opacity(0.75))
+        .background(Color.white.opacity(0.9))
         .cornerRadius(20)
     }
 }

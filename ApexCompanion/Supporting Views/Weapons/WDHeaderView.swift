@@ -22,7 +22,7 @@ struct WDHeaderView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 340, height: 160)
                 .padding(.all, 10)
-                .background(Color.white.opacity(0.75))
+                .background(Color.white.opacity(0.9))
                 .cornerRadius(20)
                 
             HStack {

@@ -139,8 +139,8 @@
 		8444436724CD008C0090FFFC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				844443EA24D216D90090FFFC /* Weapons */,
 				8444435024CC82E60090FFFC /* HomeView.swift */,
+				844443EA24D216D90090FFFC /* Weapons */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,8 +178,9 @@
 		8444439024CE1CCF0090FFFC /* Supporting Views */ = {
 			isa = PBXGroup;
 			children = (
-				8444439124CE59E90090FFFC /* Weapons */,
 				844443E824D212300090FFFC /* NavigationConfigurator.swift */,
+				844443E424D1F7AB0090FFFC /* BackgroundView.swift */,
+				8444439124CE59E90090FFFC /* Weapons */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -187,7 +188,6 @@
 		8444439124CE59E90090FFFC /* Weapons */ = {
 			isa = PBXGroup;
 			children = (
-				844443E424D1F7AB0090FFFC /* BackgroundView.swift */,
 				844443A024CE65DA0090FFFC /* WDHeaderView.swift */,
 				844443B424D082A80090FFFC /* WDSubheaderView.swift */,
 				8444439E24CE656F0090FFFC /* WDTypesView.swift */,

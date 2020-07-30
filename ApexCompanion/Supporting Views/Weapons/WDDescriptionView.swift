@@ -16,7 +16,7 @@ struct WDDescriptionView: View {
         VStack {
             Text(description)
                 .padding(.all)
-                .background(Color.white.opacity(0.75))
+                .background(Color.white.opacity(0.9))
                 .cornerRadius(20)
                 .font(.custom("Teko-Light", size: 25))
         }.padding([.leading, .bottom, .trailing])

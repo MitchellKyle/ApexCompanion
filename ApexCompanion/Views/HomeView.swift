@@ -10,10 +10,39 @@ import SwiftUI
 
 struct HomeView: View {
     
-    
-    
     var body: some View {
-        Text("Hello, World!")
+            
+        NavigationView {
+            VStack {
+                Text("Apex Companion")
+                .font(.custom("Teko-Bold", size: 45))
+                .foregroundColor(.black)
+                Spacer()
+                HStack {
+                    Spacer()
+                    NavigationLink(destination: WeaponListView()) {
+                    Text("Weapons")
+                    }
+                    Spacer()
+                    Text("Legends")
+                    Spacer()
+                }
+                Spacer()
+                HStack {
+                    Spacer()
+                    Text("Maps")
+                    Spacer()
+                    Text("News")
+                    Spacer()
+                }
+                Spacer()
+                HStack {
+                    Text("Tricks")
+                }
+                Spacer()
+            }.background(Image("bg").resizable().edgesIgnoringSafeArea(.all).aspectRatio(contentMode: .fill))
+            
+        }
     }
 }
 

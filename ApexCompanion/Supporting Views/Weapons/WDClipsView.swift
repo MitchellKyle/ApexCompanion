@@ -49,7 +49,7 @@ struct WDClipsView: View {
         }
         .frame(width: 110, height: 150, alignment: .center)
         .padding(.all)
-        .background(Color.white.opacity(0.75))
+        .background(Color.white.opacity(0.9))
         .cornerRadius(20)
     }
 }
