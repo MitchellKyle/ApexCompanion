@@ -16,7 +16,6 @@
 		8444436A24CD019A0090FFFC /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444436924CD019A0090FFFC /* Weapon.swift */; };
 		8444437024CD06200090FFFC /* weapons.json in Resources */ = {isa = PBXBuildFile; fileRef = 8444436F24CD06200090FFFC /* weapons.json */; };
 		8444437524CD08940090FFFC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444437424CD08940090FFFC /* Constants.swift */; };
-		8444437724CD29020090FFFC /* WeaponModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444437624CD29020090FFFC /* WeaponModel.swift */; };
 		8444437B24CD2E500090FFFC /* WeaponListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444437A24CD2E500090FFFC /* WeaponListView.swift */; };
 		8444437D24CD2F820090FFFC /* WeaponDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444437C24CD2F820090FFFC /* WeaponDetail.swift */; };
 		8444438B24CDFE900090FFFC /* Teko-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8444438624CDFE900090FFFC /* Teko-SemiBold.ttf */; };
@@ -37,7 +36,8 @@
 		844443E324D1E7960090FFFC /* WeaponItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443E224D1E7960090FFFC /* WeaponItem.swift */; };
 		844443E524D1F7AB0090FFFC /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443E424D1F7AB0090FFFC /* BackgroundView.swift */; };
 		844443E924D212300090FFFC /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443E824D212300090FFFC /* NavigationConfigurator.swift */; };
-		844443EC24D500BB0090FFFC /* characters.json in Resources */ = {isa = PBXBuildFile; fileRef = 844443EB24D500BB0090FFFC /* characters.json */; };
+		844443EE24D5EFC00090FFFC /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443ED24D5EFC00090FFFC /* Character.swift */; };
+		844443F024D5F1C30090FFFC /* characters.json in Resources */ = {isa = PBXBuildFile; fileRef = 844443EF24D5F1C30090FFFC /* characters.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +52,6 @@
 		8444436924CD019A0090FFFC /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		8444436F24CD06200090FFFC /* weapons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weapons.json; sourceTree = "<group>"; };
 		8444437424CD08940090FFFC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		8444437624CD29020090FFFC /* WeaponModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponModel.swift; sourceTree = "<group>"; };
 		8444437A24CD2E500090FFFC /* WeaponListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponListView.swift; sourceTree = "<group>"; };
 		8444437C24CD2F820090FFFC /* WeaponDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDetail.swift; sourceTree = "<group>"; };
 		8444438624CDFE900090FFFC /* Teko-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -73,7 +72,8 @@
 		844443E224D1E7960090FFFC /* WeaponItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponItem.swift; sourceTree = "<group>"; };
 		844443E424D1F7AB0090FFFC /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		844443E824D212300090FFFC /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
-		844443EB24D500BB0090FFFC /* characters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = characters.json; sourceTree = "<group>"; };
+		844443ED24D5EFC00090FFFC /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		844443EF24D5F1C30090FFFC /* characters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = characters.json; path = ../../../../characters.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +133,7 @@
 		8444436624CD005F0090FFFC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				844443EB24D500BB0090FFFC /* characters.json */,
+				844443EF24D5F1C30090FFFC /* characters.json */,
 				8444436F24CD06200090FFFC /* weapons.json */,
 			);
 			path = Resources;
@@ -152,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				8444436924CD019A0090FFFC /* Weapon.swift */,
-				8444437624CD29020090FFFC /* WeaponModel.swift */,
+				844443ED24D5EFC00090FFFC /* Character.swift */,
 				844443A224CF63C80090FFFC /* Data.swift */,
 			);
 			path = Models;
@@ -275,8 +275,8 @@
 				8444438F24CDFE910090FFFC /* Teko-Regular.ttf in Resources */,
 				8444438E24CDFE910090FFFC /* Teko-Light.ttf in Resources */,
 				8444435924CC82E70090FFFC /* LaunchScreen.storyboard in Resources */,
-				844443EC24D500BB0090FFFC /* characters.json in Resources */,
 				8444438B24CDFE900090FFFC /* Teko-SemiBold.ttf in Resources */,
+				844443F024D5F1C30090FFFC /* characters.json in Resources */,
 				8444437024CD06200090FFFC /* weapons.json in Resources */,
 				8444438D24CDFE910090FFFC /* Teko-Medium.ttf in Resources */,
 				8444435624CC82E70090FFFC /* Preview Assets.xcassets in Resources */,
@@ -296,12 +296,12 @@
 				8444437B24CD2E500090FFFC /* WeaponListView.swift in Sources */,
 				844443AF24CFB7050090FFFC /* WDRecoilView.swift in Sources */,
 				8444434D24CC82E60090FFFC /* AppDelegate.swift in Sources */,
-				8444437724CD29020090FFFC /* WeaponModel.swift in Sources */,
 				8444436A24CD019A0090FFFC /* Weapon.swift in Sources */,
 				8444434F24CC82E60090FFFC /* SceneDelegate.swift in Sources */,
 				844443AB24CFB3860090FFFC /* WDFireModeView.swift in Sources */,
 				8444435124CC82E60090FFFC /* HomeView.swift in Sources */,
 				844443B524D082A80090FFFC /* WDSubheaderView.swift in Sources */,
+				844443EE24D5EFC00090FFFC /* Character.swift in Sources */,
 				844443E324D1E7960090FFFC /* WeaponItem.swift in Sources */,
 				844443A124CE65DA0090FFFC /* WDHeaderView.swift in Sources */,
 				844443A324CF63C80090FFFC /* Data.swift in Sources */,

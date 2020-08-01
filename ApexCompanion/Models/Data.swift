@@ -13,6 +13,7 @@ import UIKit
 import SwiftUI
 
 let weaponData: [Weapon] = load("weapons.json")
+let characterData: [Character] = load("characters.json")
 
 //let weaponsOfType: [Weapon]
 
