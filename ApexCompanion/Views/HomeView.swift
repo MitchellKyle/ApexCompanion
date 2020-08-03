@@ -24,7 +24,9 @@ struct HomeView: View {
                     Text("Weapons")
                     }
                     Spacer()
+                    NavigationLink(destination: CharacterList()) {
                     Text("Legends")
+                    }
                     Spacer()
                 }
                 Spacer()

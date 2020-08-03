@@ -51,6 +51,7 @@ struct PassiveAbility: Codable, Hashable {
     
     var name: String
     var passiveImage: String
+    var cd: String
     var passiveDescription: String
     var info: String
     var tips: String

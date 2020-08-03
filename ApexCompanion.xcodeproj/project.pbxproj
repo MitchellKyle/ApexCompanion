@@ -38,6 +38,11 @@
 		844443E924D212300090FFFC /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443E824D212300090FFFC /* NavigationConfigurator.swift */; };
 		844443EE24D5EFC00090FFFC /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443ED24D5EFC00090FFFC /* Character.swift */; };
 		844443F024D5F1C30090FFFC /* characters.json in Resources */ = {isa = PBXBuildFile; fileRef = 844443EF24D5F1C30090FFFC /* characters.json */; };
+		844443F324D638BB0090FFFC /* CharacterDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443F224D638BB0090FFFC /* CharacterDetail.swift */; };
+		844443F624D789BD0090FFFC /* AbilitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443F524D789BD0090FFFC /* AbilitiesView.swift */; };
+		844443F824D7B36E0090FFFC /* CharacterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443F724D7B36E0090FFFC /* CharacterItem.swift */; };
+		844443FA24D7B6C20090FFFC /* CharacterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443F924D7B6C20090FFFC /* CharacterRow.swift */; };
+		844443FC24D7C08E0090FFFC /* CharacterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844443FB24D7C08E0090FFFC /* CharacterList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +79,11 @@
 		844443E824D212300090FFFC /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
 		844443ED24D5EFC00090FFFC /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		844443EF24D5F1C30090FFFC /* characters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = characters.json; path = ../../../../characters.json; sourceTree = "<group>"; };
+		844443F224D638BB0090FFFC /* CharacterDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetail.swift; sourceTree = "<group>"; };
+		844443F524D789BD0090FFFC /* AbilitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilitiesView.swift; sourceTree = "<group>"; };
+		844443F724D7B36E0090FFFC /* CharacterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterItem.swift; sourceTree = "<group>"; };
+		844443F924D7B6C20090FFFC /* CharacterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRow.swift; sourceTree = "<group>"; };
+		844443FB24D7C08E0090FFFC /* CharacterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				8444435024CC82E60090FFFC /* HomeView.swift */,
+				844443F124D638900090FFFC /* Characters */,
 				844443EA24D216D90090FFFC /* Weapons */,
 			);
 			path = Views;
@@ -183,6 +194,7 @@
 			children = (
 				844443E824D212300090FFFC /* NavigationConfigurator.swift */,
 				844443E424D1F7AB0090FFFC /* BackgroundView.swift */,
+				844443F424D7899B0090FFFC /* Characters */,
 				8444439124CE59E90090FFFC /* Weapons */,
 			);
 			path = "Supporting Views";
@@ -212,6 +224,25 @@
 				8444437C24CD2F820090FFFC /* WeaponDetail.swift */,
 			);
 			path = Weapons;
+			sourceTree = "<group>";
+		};
+		844443F124D638900090FFFC /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				844443FB24D7C08E0090FFFC /* CharacterList.swift */,
+				844443F924D7B6C20090FFFC /* CharacterRow.swift */,
+				844443F724D7B36E0090FFFC /* CharacterItem.swift */,
+				844443F224D638BB0090FFFC /* CharacterDetail.swift */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		844443F424D7899B0090FFFC /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				844443F524D789BD0090FFFC /* AbilitiesView.swift */,
+			);
+			path = Characters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +323,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844443F324D638BB0090FFFC /* CharacterDetail.swift in Sources */,
+				844443FC24D7C08E0090FFFC /* CharacterList.swift in Sources */,
+				844443F624D789BD0090FFFC /* AbilitiesView.swift in Sources */,
 				844443B324D07E040090FFFC /* WDDescriptionView.swift in Sources */,
 				8444437B24CD2E500090FFFC /* WeaponListView.swift in Sources */,
 				844443AF24CFB7050090FFFC /* WDRecoilView.swift in Sources */,
@@ -305,9 +339,11 @@
 				844443E324D1E7960090FFFC /* WeaponItem.swift in Sources */,
 				844443A124CE65DA0090FFFC /* WDHeaderView.swift in Sources */,
 				844443A324CF63C80090FFFC /* Data.swift in Sources */,
+				844443FA24D7B6C20090FFFC /* CharacterRow.swift in Sources */,
 				844443B124CFB7900090FFFC /* WDClipsView.swift in Sources */,
 				844443E524D1F7AB0090FFFC /* BackgroundView.swift in Sources */,
 				844443A724CF71A40090FFFC /* WDDamageView.swift in Sources */,
+				844443F824D7B36E0090FFFC /* CharacterItem.swift in Sources */,
 				8444437524CD08940090FFFC /* Constants.swift in Sources */,
 				8444437D24CD2F820090FFFC /* WeaponDetail.swift in Sources */,
 				844443A524CF67C10090FFFC /* WeaponRow.swift in Sources */,
