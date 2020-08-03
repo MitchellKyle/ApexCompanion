@@ -21,7 +21,7 @@ struct CharacterRow: View {
             HStack {
                 Text(characterType)
                     .font(.custom("Teko-Bold", size: 40))
-                    .foregroundColor(.black)
+                    
                     .padding(.leading, 5)
                 Spacer()
             }
@@ -32,8 +32,8 @@ struct CharacterRow: View {
                     ForEach (self.characters, id: \.name) { character in
                         NavigationLink(destination: CharacterDetail(character: character)) {
                         
-                        CharacterItem(character: character)
-                            .padding(.horizontal, 5)
+                                CharacterItem(character: character).buttonStyle(PlainButtonStyle())
+                            
                         }
                     }
                 }

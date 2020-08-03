@@ -14,25 +14,24 @@ struct WeaponItem: View {
     
     var body: some View {
         VStack {
-            
-            Image(weapon.imageIcon)
-                .resizable()
-                .renderingMode(.original)
-                .padding(.all, 10)
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 300, height: 170)
-                .background(Color.init(red: 247/255, green: 212/255, blue: 128/255))
-                .cornerRadius(20)
-                .shadow(radius: 5)
-            
-            HStack {
+            ZStack {
+                Image(weapon.imageIcon)
+                    .resizable()
+                    .renderingMode(.original)
+                    .offset(y: -10)
+                    .padding(.all, 10)
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 320, height: 170)
+                
                 Text(weapon.name)
+                    .offset(x: -90, y: 80)
                     .font(.custom("Teko-SemiBold", size: 30))
-                    .foregroundColor(.black)
                     .padding(.leading)
-                Spacer()
+                    .foregroundColor(.black)
             }
-        }.padding()
+        }.frame(width: 350, height: 250)
+        .background(Color.init(red: 247/255, green: 212/255, blue: 128/255))
+        .cornerRadius(20)
     }
 }
 

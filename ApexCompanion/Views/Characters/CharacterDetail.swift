@@ -52,6 +52,7 @@ struct CharacterDetail: View {
                                     .font(.custom("Teko-SemiBold", size: 25))
                                     .multilineTextAlignment(.center)
                                     .padding(.leading, 10)
+                                    .foregroundColor(.black)
                                 
                                 Image(character.typeImage)
                             }.frame(width: 200)
@@ -73,6 +74,7 @@ struct CharacterDetail: View {
                     VStack {
                         Text(character.description)
                             .font(.custom("Teko-SemiBold", size: 20))
+                            .foregroundColor(.black)
                     }.padding()
                     .background(Color.white.opacity(0.9))
                     .cornerRadius(20)
@@ -182,7 +184,7 @@ struct CharacterDetail: View {
                     }
                     
                 }.padding(.top)
-            }
+            }.padding(.top, 25)
         }
     }
 }

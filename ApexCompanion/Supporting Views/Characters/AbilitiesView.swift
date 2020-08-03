@@ -29,19 +29,27 @@ struct AbilitiesView: View {
                 Text(abilityName)
                     .font(.custom("Teko-SemiBold", size: 30))
                     .foregroundColor(.black)
+                    .frame(width: 200, height: 100)
+                    .multilineTextAlignment(.center)
+                    .lineLimit(nil)
                 Spacer()
                 // Image
                 Image(abilityImage)
+                    .resizable()
+                    .frame(width: 55, height: 55)
                 Spacer()
             }
             // Description
             Text(abilityDescription)
                 .font(.custom("Teko-SemiBold", size: 20))
                 .multilineTextAlignment(.leading)
+                .foregroundColor(.black)
+                .lineLimit(nil)
             // Cooldown
             Text("Cooldown -> \(abilityCD)")
                 .font(.custom("Teko-SemiBold", size: 20))
                 .padding(.top)
+                .foregroundColor(.black)
 
             // Info/Tips
             HStack {
@@ -72,16 +80,22 @@ struct AbilitiesView: View {
                 }
                 Spacer()
             }.padding(.vertical)
-            VStack {
-                // Info
-                if showInfo {
-                    Text(abilityInfo)
-                        .font(.custom("Teko-SemiBold", size: 20))
-                }
-                // Tips
-                else {
-                    Text(abilityTips)
-                        .font(.custom("Teko-SemiBold", size: 20))
+            ScrollView {
+                VStack {
+                    // Info
+                    if showInfo {
+                        Text(abilityInfo)
+                            .font(.custom("Teko-SemiBold", size: 20))
+                            .foregroundColor(.black)
+                            .lineLimit(nil)
+                    }
+                    // Tips
+                    else {
+                        Text(abilityTips)
+                            .font(.custom("Teko-SemiBold", size: 20))
+                            .foregroundColor(.black)
+                            .lineLimit(nil)
+                    }
                 }
             }
         }.padding()
@@ -92,6 +106,6 @@ struct AbilitiesView: View {
 
 struct AbilitiesView_Previews: PreviewProvider {
     static var previews: some View {
-        AbilitiesView(abilityName: characterData[0].passiveAbility.name, abilityImage: characterData[0].passiveAbility.passiveImage, abilityDescription: characterData[0].passiveAbility.passiveDescription, abilityCD: characterData[0].passiveAbility.cd, abilityInfo: characterData[0].passiveAbility.info, abilityTips: characterData[0].passiveAbility.tips)
+        AbilitiesView(abilityName: characterData[5].passiveAbility.name, abilityImage: characterData[5].passiveAbility.passiveImage, abilityDescription: characterData[5].passiveAbility.passiveDescription, abilityCD: characterData[5].passiveAbility.cd, abilityInfo: characterData[5].passiveAbility.info, abilityTips: characterData[5].passiveAbility.tips)
     }
 }

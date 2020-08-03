@@ -19,6 +19,7 @@ struct WDDescriptionView: View {
                 .background(Color.white.opacity(0.9))
                 .cornerRadius(20)
                 .font(.custom("Teko-Light", size: 25))
+                .foregroundColor(.black)
         }.padding([.leading, .bottom, .trailing])
     }
 }

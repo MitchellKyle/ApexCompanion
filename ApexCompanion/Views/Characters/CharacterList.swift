@@ -20,12 +20,11 @@ struct CharacterList: View {
     var body: some View {
         List(characterCategories.keys.sorted(), id: \String.self) {key in
             
-                CharacterRow(characterType: "\(key)", characters: self.characterCategories[key]!)
+            CharacterRow(characterType: "\(key)", characters: self.characterCategories[key]!).edgesIgnoringSafeArea(.horizontal)
             }
-        .navigationBarTitle("Characters", displayMode: .inline)
-        .background(NavigationConfigurator { nc in
-            nc.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.black]
-        })
+            .edgesIgnoringSafeArea(.horizontal)
+            .navigationBarTitle("Characters", displayMode: .inline)
+            
     }
 }
 

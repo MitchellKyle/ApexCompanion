@@ -21,7 +21,6 @@ struct WeaponRow: View {
             HStack {
                 Text(weaponType)
                     .font(.custom("Teko-Bold", size: 40))
-                    .foregroundColor(.black)
                     .padding(.leading, 5)
                 Spacer()
             }
@@ -33,9 +32,6 @@ struct WeaponRow: View {
                         NavigationLink(destination: WeaponDetail(weapon: weapon)) {
                         
                         WeaponItem(weapon: weapon)
-                            .frame(width: 300)
-                            .padding(.leading, 10)
-                            .padding(.trailing, 10)
                         }
                     }
                 }
