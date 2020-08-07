@@ -64,13 +64,7 @@ struct CharacterDetail: View {
                 
                 // Description
                 VStack {
-                    HStack {
-                        Text("Description")
-                            .font(.custom("Teko-SemiBold", size: 30))
-                            .foregroundColor(.black)
-                            .padding(.leading)
-                        Spacer()
-                    }.padding(.bottom, 10)
+                    SubHeaderView(text: "Description")
                     VStack {
                         Text(character.description)
                             .font(.custom("Teko-SemiBold", size: 20))
@@ -83,13 +77,7 @@ struct CharacterDetail: View {
                 
                 // Tactical Ability
                 VStack (spacing: 10) {
-                    HStack {
-                        Text("Abilities")
-                            .font(.custom("Teko-SemiBold", size: 30))
-                            .foregroundColor(.black)
-                            .padding(.leading)
-                        Spacer()
-                    }
+                    SubHeaderView(text: "Abilities")
                     
                     HStack {
                         Spacer()
@@ -101,13 +89,7 @@ struct CharacterDetail: View {
                             self.showPerk = false
                             
                         }) {
-                            Text("Tactical")
-                                .padding(.horizontal, 10)
-                                .padding(.vertical, 5)
-                                .font(.custom("Teko-SemiBold", size: 25))
-                                .foregroundColor(showTactical ? .white : .black)
-                                .background(showTactical ? Color.black : Color.white.opacity(0.9))
-                                .cornerRadius(10)
+                            AbilityButtonsView(name: "Tactical", condition: showTactical)
                         }
                             
                         Spacer()
@@ -119,13 +101,7 @@ struct CharacterDetail: View {
                             self.showPerk = false
                             
                         }) {
-                            Text("Passive")
-                                .padding(.horizontal, 10)
-                                .padding(.vertical, 5)
-                                .font(.custom("Teko-SemiBold", size: 25))
-                                .foregroundColor(showPassive ? .white : .black)
-                                .background(showPassive ? Color.black : Color.white.opacity(0.9))
-                                .cornerRadius(10)
+                            AbilityButtonsView(name: "Passive", condition: showPassive)
                         }
                         Spacer()
                         // Show Ultimate Button
@@ -136,13 +112,7 @@ struct CharacterDetail: View {
                             self.showPerk = false
                             
                         }) {
-                            Text("Ultimate")
-                                .padding(.horizontal, 10)
-                                .padding(.vertical, 5)
-                                .font(.custom("Teko-SemiBold", size: 25))
-                                .foregroundColor(showUltimate ? .white : .black)
-                                .background(showUltimate ? Color.black : Color.white.opacity(0.9))
-                                .cornerRadius(10)
+                            AbilityButtonsView(name: "Ultimate", condition: showUltimate)
                         }
                         Spacer()
                         // Show Passive Perk Button
@@ -154,13 +124,7 @@ struct CharacterDetail: View {
                                 self.showPerk = true
                                 
                             }) {
-                                Text("Perk")
-                                    .padding(.horizontal, 10)
-                                    .padding(.vertical, 5)
-                                    .font(.custom("Teko-SemiBold", size: 25))
-                                    .foregroundColor(showPerk ? .white : .black)
-                                    .background(showPerk ? Color.black : Color.white.opacity(0.9))
-                                    .cornerRadius(10)
+                                AbilityButtonsView(name: "Perk", condition: showPerk)
                             }
                             Spacer()
                         }
@@ -168,19 +132,43 @@ struct CharacterDetail: View {
                     
                     // Show Tactical Ability
                     if showTactical {
-                        AbilitiesView(abilityName: character.tacticalAbility.name, abilityImage: character.tacticalAbility.tacticalImage, abilityDescription: character.tacticalAbility.tacticalDescription, abilityCD: character.tacticalAbility.cd, abilityInfo: character.tacticalAbility.info, abilityTips: character.tacticalAbility.tips)
+                        AbilitiesView(
+                            abilityName: character.tacticalAbility.name,
+                            abilityImage: character.tacticalAbility.tacticalImage,
+                            abilityDescription: character.tacticalAbility.tacticalDescription,
+                            abilityCD: character.tacticalAbility.cd,
+                            abilityInfo: character.tacticalAbility.info,
+                            abilityTips: character.tacticalAbility.tips)
                     }
                     // Show Passive Ability
                     if showPassive {
-                        AbilitiesView(abilityName: character.passiveAbility.name, abilityImage: character.passiveAbility.passiveImage, abilityDescription: character.passiveAbility.passiveDescription, abilityCD: character.passiveAbility.cd, abilityInfo: character.passiveAbility.info, abilityTips: character.passiveAbility.tips)
+                        AbilitiesView(
+                            abilityName: character.passiveAbility.name,
+                            abilityImage: character.passiveAbility.passiveImage,
+                            abilityDescription: character.passiveAbility.passiveDescription,
+                            abilityCD: character.passiveAbility.cd,
+                            abilityInfo: character.passiveAbility.info,
+                            abilityTips: character.passiveAbility.tips)
                     }
                     // Show Ultimate Ability
                     if showUltimate {
-                        AbilitiesView(abilityName: character.ultimateAbility.name, abilityImage: character.ultimateAbility.ultimateImage, abilityDescription: character.ultimateAbility.ultimateDescription, abilityCD: character.ultimateAbility.cd, abilityInfo: character.ultimateAbility.info, abilityTips: character.ultimateAbility.tips)
+                        AbilitiesView(
+                            abilityName: character.ultimateAbility.name,
+                            abilityImage: character.ultimateAbility.ultimateImage,
+                            abilityDescription: character.ultimateAbility.ultimateDescription,
+                            abilityCD: character.ultimateAbility.cd,
+                            abilityInfo: character.ultimateAbility.info,
+                            abilityTips: character.ultimateAbility.tips)
                     }
                     // Show Perk (If exists)
                     if showPerk {
-                        AbilitiesView(abilityName: character.passivePerk!.name, abilityImage: character.passivePerk!.image, abilityDescription: character.passivePerk!.description, abilityCD: "N/A", abilityInfo: character.passivePerk!.info, abilityTips: "")
+                        AbilitiesView(
+                            abilityName: character.passivePerk!.name,
+                            abilityImage: character.passivePerk!.image,
+                            abilityDescription: character.passivePerk!.description,
+                            abilityCD: "N/A",
+                            abilityInfo: character.passivePerk!.info,
+                            abilityTips: "")
                     }
                     
                 }.padding(.top)

@@ -23,14 +23,7 @@ struct AttachmentsView: View {
         
         VStack {
             // Headline
-            HStack {
-                Text("Attachments")
-                    .font(.custom("Teko-SemiBold", size: 30))
-                    .foregroundColor(.black)
-                    
-                Spacer()
-            }.padding(.leading)
-                .padding(.bottom, -10)
+            SubHeaderView(text: "Attachments")
             
             // Attachment Buttons
             VStack {
@@ -47,12 +40,7 @@ struct AttachmentsView: View {
                             self.showHop = false
                             self.showBolt = false
                         }) {
-                            Image(weapon.clipIcon)
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                                .padding(.all, 5)
-                                .background(showClips ? Color.black : Color.white)
-                                .foregroundColor(showClips ? Color.white : Color.black)
+                            AttachmentButtonsView(image: weapon.attachments!.clips!.clipIconWhite, condition: showClips)
                         }
                         Spacer()
                     }
@@ -67,12 +55,7 @@ struct AttachmentsView: View {
                             self.showHop = false
                             self.showBolt = false
                         }) {
-                            Image(weapon.attachments!.optics!.opticIcon)
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                                .padding(.all, 5)
-                                .background(showOptics ? Color.black : Color.white)
-                                .foregroundColor(showOptics ? Color.white : Color.black)
+                            AttachmentButtonsView(image: weapon.attachments!.optics!.opticIcon, condition: showOptics)
                         }
                         Spacer()
                     }
@@ -87,12 +70,7 @@ struct AttachmentsView: View {
                             self.showHop = false
                             self.showBolt = false
                         }) {
-                            Image(weapon.attachments!.stocks!.stockIcon)
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                                .padding(.all, 5)
-                                .background(showStock ? Color.black : Color.white)
-                                .foregroundColor(showStock ? Color.white : Color.black)
+                            AttachmentButtonsView(image: weapon.attachments!.stocks!.stockIconWhite, condition: showStock)
                         }
                         Spacer()
                     }
@@ -107,12 +85,7 @@ struct AttachmentsView: View {
                             self.showHop = false
                             self.showBolt = false
                         }) {
-                            Image(weapon.attachments!.stabilizer!.stabilizerIcon)
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                                .padding(.all, 5)
-                                .background(showStabilizer ? Color.black : Color.white)
-                                .foregroundColor(showStabilizer ? Color.white : Color.black)
+                            AttachmentButtonsView(image: weapon.attachments!.stabilizer!.stabilizerIconWhite, condition: showStabilizer)
                         }
                         Spacer()
                     }
@@ -127,12 +100,7 @@ struct AttachmentsView: View {
                             self.showHop = true
                             self.showBolt = false
                         }) {
-                            Image(weapon.attachments!.hop!.icon)
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                                .padding(.all, 5)
-                                .background(showHop ? Color.black : Color.white)
-                                .foregroundColor(showHop ? Color.white : Color.black)
+                            AttachmentButtonsView(image: weapon.attachments!.hop!.icon, condition: showHop)
                         }
                         Spacer()
                     }
@@ -147,12 +115,7 @@ struct AttachmentsView: View {
                             self.showHop = false
                             self.showBolt = true
                         }) {
-                            Image(weapon.attachments!.bolt!.icon)
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                                .padding(.all, 5)
-                                .background(showHop ? Color.black : Color.white)
-                                .foregroundColor(showHop ? Color.white : Color.black)
+                            AttachmentButtonsView(image: weapon.attachments!.bolt!.icon, condition: showBolt)
                         }
                         Spacer()
                     }
@@ -161,7 +124,7 @@ struct AttachmentsView: View {
                 VStack {
                     // Clips Detail View
                     if showClips {
-                        ClipsView(description: weapon.attachments!.clips!.description, icon: weapon.attachments!.clips!.clipIconWhite, levelOne: weapon.attachments!.clips!.levelOne, levelTwo: weapon.attachments!.clips!.levelTwo, levelThree: weapon.attachments!.clips!.levelThree)
+                        ClipsView(weapon: weapon)
                     }
                     
                     // Optics Detail View
@@ -171,15 +134,21 @@ struct AttachmentsView: View {
                     
                     // Stocks Detail View
                     if showStock {
-                        StocksView(weapon: weapon)
+                        StocksView(weapon: weapon, isStabilizer: false)
+                    }
+                    
+                    // Stabilizer Detail View
+                    if showStabilizer {
+                        StocksView(weapon: weapon, isStabilizer: true)
                     }
                 }
                 
             } // End of Content VStack
-                .padding(.top)
+            .padding(.top)
             .background(Color.white.opacity(0.9))
             .cornerRadius(20)
-        }.padding(.top) // End of Main VStack
+        } // End of Main VStack
+        .padding(.top)
     }
 }
 

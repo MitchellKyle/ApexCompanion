@@ -14,13 +14,9 @@ struct DamageView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                Text("Damage")
-                    .font(.custom("Teko-SemiBold", size: 30))
-                    .foregroundColor(.black)
-                Spacer()
-            }.padding(.leading)
-                .padding(.bottom)
+            
+            SubHeaderView(text: "Damage")
+            
             VStack {
                 HStack {
                     Spacer()

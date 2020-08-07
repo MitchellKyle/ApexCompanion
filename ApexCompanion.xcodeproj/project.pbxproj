@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		843E00FA24DC8BE8006CDA90 /* DamageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E00F924DC8BE8006CDA90 /* DamageView.swift */; };
+		843E00FC24DD919A006CDA90 /* SingleStockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E00FB24DD919A006CDA90 /* SingleStockView.swift */; };
+		843E00FE24DDC395006CDA90 /* SubHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E00FD24DDC395006CDA90 /* SubHeaderView.swift */; };
+		843E010024DDC6AF006CDA90 /* AttachmentButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E00FF24DDC6AF006CDA90 /* AttachmentButtonsView.swift */; };
+		843E010224DDC908006CDA90 /* SingleClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E010124DDC908006CDA90 /* SingleClipView.swift */; };
+		843E010424DDCAB7006CDA90 /* SingleOpticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E010324DDCAB7006CDA90 /* SingleOpticView.swift */; };
+		843E010624DDE3E1006CDA90 /* AbilityButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E010524DDE3E1006CDA90 /* AbilityButtonsView.swift */; };
 		8444434D24CC82E60090FFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444434C24CC82E60090FFFC /* AppDelegate.swift */; };
 		8444434F24CC82E60090FFFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444434E24CC82E60090FFFC /* SceneDelegate.swift */; };
 		8444435124CC82E60090FFFC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444435024CC82E60090FFFC /* HomeView.swift */; };
@@ -47,6 +53,12 @@
 
 /* Begin PBXFileReference section */
 		843E00F924DC8BE8006CDA90 /* DamageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamageView.swift; sourceTree = "<group>"; };
+		843E00FB24DD919A006CDA90 /* SingleStockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleStockView.swift; sourceTree = "<group>"; };
+		843E00FD24DDC395006CDA90 /* SubHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubHeaderView.swift; sourceTree = "<group>"; };
+		843E00FF24DDC6AF006CDA90 /* AttachmentButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentButtonsView.swift; sourceTree = "<group>"; };
+		843E010124DDC908006CDA90 /* SingleClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleClipView.swift; sourceTree = "<group>"; };
+		843E010324DDCAB7006CDA90 /* SingleOpticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleOpticView.swift; sourceTree = "<group>"; };
+		843E010524DDE3E1006CDA90 /* AbilityButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityButtonsView.swift; sourceTree = "<group>"; };
 		8444434924CC82E60090FFFC /* ApexCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApexCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8444434C24CC82E60090FFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8444434E24CC82E60090FFFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +204,7 @@
 		8444439024CE1CCF0090FFFC /* Supporting Views */ = {
 			isa = PBXGroup;
 			children = (
+				843E00FD24DDC395006CDA90 /* SubHeaderView.swift */,
 				844443E824D212300090FFFC /* NavigationConfigurator.swift */,
 				844443E424D1F7AB0090FFFC /* BackgroundView.swift */,
 				8444440924DB64F00090FFFC /* GifPlayerView.swift */,
@@ -207,10 +220,14 @@
 				8444440B24DC47410090FFFC /* WeaponDescription.swift */,
 				843E00F924DC8BE8006CDA90 /* DamageView.swift */,
 				844443FD24D8F8870090FFFC /* AttachmentsView.swift */,
+				843E00FF24DDC6AF006CDA90 /* AttachmentButtonsView.swift */,
 				8444440524DB538E0090FFFC /* FireModeView.swift */,
 				844443FF24D9F3680090FFFC /* ClipsView.swift */,
+				843E010124DDC908006CDA90 /* SingleClipView.swift */,
 				8444440124D9FD410090FFFC /* OpticsView.swift */,
+				843E010324DDCAB7006CDA90 /* SingleOpticView.swift */,
 				8444440324DA6E3E0090FFFC /* StocksView.swift */,
+				843E00FB24DD919A006CDA90 /* SingleStockView.swift */,
 			);
 			path = Weapons;
 			sourceTree = "<group>";
@@ -241,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				844443F524D789BD0090FFFC /* AbilitiesView.swift */,
+				843E010524DDE3E1006CDA90 /* AbilityButtonsView.swift */,
 			);
 			path = Characters;
 			sourceTree = "<group>";
@@ -327,15 +345,19 @@
 				844443FC24D7C08E0090FFFC /* CharacterList.swift in Sources */,
 				844443F624D789BD0090FFFC /* AbilitiesView.swift in Sources */,
 				8444440624DB538E0090FFFC /* FireModeView.swift in Sources */,
+				843E00FC24DD919A006CDA90 /* SingleStockView.swift in Sources */,
 				843E00FA24DC8BE8006CDA90 /* DamageView.swift in Sources */,
 				8444437B24CD2E500090FFFC /* WeaponListView.swift in Sources */,
 				8444434D24CC82E60090FFFC /* AppDelegate.swift in Sources */,
 				8444436A24CD019A0090FFFC /* Weapon.swift in Sources */,
 				8444434F24CC82E60090FFFC /* SceneDelegate.swift in Sources */,
+				843E010024DDC6AF006CDA90 /* AttachmentButtonsView.swift in Sources */,
+				843E010624DDE3E1006CDA90 /* AbilityButtonsView.swift in Sources */,
 				8444440424DA6E3E0090FFFC /* StocksView.swift in Sources */,
 				8444440A24DB64F00090FFFC /* GifPlayerView.swift in Sources */,
 				8444435124CC82E60090FFFC /* HomeView.swift in Sources */,
 				844443EE24D5EFC00090FFFC /* Character.swift in Sources */,
+				843E010424DDCAB7006CDA90 /* SingleOpticView.swift in Sources */,
 				844443E324D1E7960090FFFC /* WeaponItem.swift in Sources */,
 				844443A324CF63C80090FFFC /* Data.swift in Sources */,
 				844443FA24D7B6C20090FFFC /* CharacterRow.swift in Sources */,
@@ -345,7 +367,9 @@
 				8444440024D9F3680090FFFC /* ClipsView.swift in Sources */,
 				844443F824D7B36E0090FFFC /* CharacterItem.swift in Sources */,
 				8444440C24DC47410090FFFC /* WeaponDescription.swift in Sources */,
+				843E010224DDC908006CDA90 /* SingleClipView.swift in Sources */,
 				8444437524CD08940090FFFC /* Constants.swift in Sources */,
+				843E00FE24DDC395006CDA90 /* SubHeaderView.swift in Sources */,
 				8444437D24CD2F820090FFFC /* WeaponDetail.swift in Sources */,
 				844443A524CF67C10090FFFC /* WeaponRow.swift in Sources */,
 				844443E924D212300090FFFC /* NavigationConfigurator.swift in Sources */,

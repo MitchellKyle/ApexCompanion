@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Constants {
     
@@ -18,25 +19,13 @@ struct Constants {
         static var jsonFile = "weapons.json"
     }
     
+    struct Colors {
+        static var levelOne = UIColor(red: 61/255, green: 65/255, blue: 66/255, alpha: 1.0)
+        static var levelTwo = UIColor(red: 0/255, green: 75/255, blue: 137/255, alpha: 1.0)
+        static var levelThree = UIColor(red: 69/255, green: 26/255, blue: 97/255, alpha: 1.0)
+        static var levelFour = UIColor(red: 206/255, green: 173/255, blue: 33/255, alpha: 1.0)
+    }
+    
 }
 
-struct Colors {
-    struct LevelOne {
-        static var red = Double(61/255)
-        static var green = Double(65/255)
-        static var blue = Double(66/255)
-    }
-    
-    struct LevelTwo {
-        static var red = Double(0/255)
-        static var green = Double(75/255)
-        static var blue = Double(137/255)
-    }
-    
-    struct LevelThree {
-        static var red = Double(69/255)
-        static var green = Double(26/255)
-        static var blue = Double(97/255)
-    }
-}
 

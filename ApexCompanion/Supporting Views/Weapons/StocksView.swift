@@ -11,78 +11,36 @@ import SwiftUI
 struct StocksView: View {
     
     var weapon: Weapon
+    var isStabilizer: Bool
     
     var body: some View {
         ScrollView {
             VStack {
-                Text(weapon.attachments!.stocks!.description)
+                Text(isStabilizer ? weapon.attachments!.stabilizer!.description : weapon.attachments!.stocks!.description)
                     .font(.custom("Teko-SemiBold", size: 20))
                     .foregroundColor(.black)
-                HStack {
-                    Spacer()
-                    VStack {
-                        Image(weapon.attachments!.stocks!.stockIconWhite)
-                            .resizable()
-                            .frame(width: 50, height: 50)
-                            .padding(.all, 5)
-                            .background(Color(red: 61/255, green: 65/255, blue: 66/255))
-                            .cornerRadius(10)
-                        Text(weapon.attachments!.stocks!.commonName)
-                            .font(.custom("Teko-SemiBold", size: 20))
-                            .foregroundColor(.black)
-                            .multilineTextAlignment(.center)
-                    }.frame(width: 85)
-                    Spacer()
-                    Text(weapon.attachments!.stocks!.commonDescription)
-                        .font(.custom("Teko-SemiBold", size: 20))
-                        .foregroundColor(.black)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 250)
-                    Spacer()
-                }
-                HStack {
-                    Spacer()
-                    VStack {
-                        Image(weapon.attachments!.stocks!.stockIconWhite)
-                            .resizable()
-                            .frame(width: 50, height: 50)
-                        .padding(.all, 5)
-                        .background(Color(red: 0/255, green: 75/255, blue: 137/255))
-                        .cornerRadius(10)
-                        Text(weapon.attachments!.stocks!.rareName)
-                            .font(.custom("Teko-SemiBold", size: 20))
-                            .foregroundColor(.black)
-                            .multilineTextAlignment(.center)
-                    }.frame(width: 85)
-                    Spacer()
-                    Text(weapon.attachments!.stocks!.rareDescription)
-                        .font(.custom("Teko-SemiBold", size: 20))
-                        .foregroundColor(.black)
-                        .multilineTextAlignment(.center)
-                    .frame(width: 250)
-                    Spacer()
-                }
-                HStack {
-                    Spacer()
-                    VStack {
-                        Image(weapon.attachments!.stocks!.stockIconWhite)
-                            .resizable()
-                            .frame(width: 50, height: 50)
-                            .padding(.all, 5)
-                            .background(Color(red: 69/255, green: 26/255, blue: 97/255))
-                            .cornerRadius(10)
-                        Text(weapon.attachments!.stocks!.epicName)
-                            .font(.custom("Teko-SemiBold", size: 20))
-                            .foregroundColor(.black)
-                            .multilineTextAlignment(.center)
-                    }.frame(width: 85)
-                    Spacer()
-                    Text(weapon.attachments!.stocks!.epicDescription)
-                        .font(.custom("Teko-SemiBold", size: 20))
-                        .foregroundColor(.black)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 250)
-                    Spacer()
+                // Common Stock/Stabilizer
+                SingleStockView(
+                    image: isStabilizer ? weapon.attachments!.stabilizer!.stabilizerIconWhite : weapon.attachments!.stocks!.stockIconWhite,
+                    name: isStabilizer ? weapon.attachments!.stabilizer!.commonName : weapon.attachments!.stocks!.commonName,
+                    description: isStabilizer ? weapon.attachments!.stabilizer!.commonDescription : weapon.attachments!.stocks!.commonDescription,
+                    levelColor: Constants.Colors.levelOne)
+                SingleStockView(
+                    image: isStabilizer ? weapon.attachments!.stabilizer!.stabilizerIconWhite : weapon.attachments!.stocks!.stockIconWhite,
+                    name: isStabilizer ? weapon.attachments!.stabilizer!.rareName : weapon.attachments!.stocks!.rareName,
+                    description: isStabilizer ? weapon.attachments!.stabilizer!.rareDescription : weapon.attachments!.stocks!.rareDescription,
+                levelColor: Constants.Colors.levelTwo)
+                SingleStockView(
+                    image: isStabilizer ? weapon.attachments!.stabilizer!.stabilizerIconWhite : weapon.attachments!.stocks!.stockIconWhite,
+                    name: isStabilizer ? weapon.attachments!.stabilizer!.epicName : weapon.attachments!.stocks!.epicName,
+                    description: isStabilizer ? weapon.attachments!.stabilizer!.epicDescription : weapon.attachments!.stocks!.epicDescription,
+                levelColor: Constants.Colors.levelThree)
+                if isStabilizer {
+                    SingleStockView(
+                        image: weapon.attachments!.stabilizer!.stabilizerIconWhite,
+                        name: weapon.attachments!.stabilizer!.legendaryName,
+                        description: weapon.attachments!.stabilizer!.legendaryDescription,
+                    levelColor: Constants.Colors.levelFour)
                 }
             }
         }.frame(height: 400)
@@ -91,6 +49,6 @@ struct StocksView: View {
 
 struct StocksView_Previews: PreviewProvider {
     static var previews: some View {
-        StocksView(weapon: weaponData[0])
+        StocksView(weapon: weaponData[1], isStabilizer: true)
     }
 }

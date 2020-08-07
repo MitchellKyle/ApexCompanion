@@ -30,13 +30,9 @@ struct FireModeView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                Text("Fire Mode")
-                    .font(.custom("Teko-SemiBold", size: 30))
-                    .foregroundColor(.black)
-                Spacer()
-            }.padding(.leading)
-                .padding(.bottom)
+            
+            SubHeaderView(text: "Fire Mode")
+            
             VStack {
                 HStack {
                     Text("Recoil ->")
@@ -60,7 +56,7 @@ struct FireModeView: View {
                             .padding(.all, 5)
                             .font(.custom("Teko-SemiBold", size: 25))
                             .foregroundColor(primary ? .white : .black)
-                            .background(primary ? Color.black : Color.white.opacity(0.9))
+                            .background(primary ? Color.black : Color.clear)
                             .cornerRadius(10)
                     }
                     
@@ -77,7 +73,7 @@ struct FireModeView: View {
                                 .padding(.all, 5)
                                 .font(.custom("Teko-SemiBold", size: 25))
                                 .foregroundColor(secondary ? .white : .black)
-                                .background(secondary ? Color.black : Color.white.opacity(0.9))
+                                .background(secondary ? Color.black : Color.clear)
                                 .cornerRadius(10)
                         }
                     }
@@ -85,26 +81,29 @@ struct FireModeView: View {
                 }.padding(.top, 10)
                 VStack {
                     if primary {
-                        HStack {
+                        VStack {
                             Text(weapon.fireMode.modeOne)
                                 .font(.custom("Teko-SemiBold", size: 25))
                                 .foregroundColor(.black)
+                            .frame(width: 250, height: 80)
                             Image(weapon.fireMode.modeOneIcon)
                                 .resizable()
                                 .frame(width: 50, height: 20)
-                        }
+                        }.padding(.top)
                         GIFView(gifName: weapon.fireMode.modeOneGif)
                             .frame(width: 300, height: 200)
                     }
                     if secondary {
-                        HStack {
+                        VStack {
                             Text(weapon.fireMode.modeTwo!)
                                 .font(.custom("Teko-SemiBold", size: 25))
                                 .foregroundColor(.black)
+                                .multilineTextAlignment(.center)
+                                .frame(width: 250, height: 80)
                             Image(weapon.fireMode.modeTwoIcon!)
                                 .resizable()
                                 .frame(width: 50, height: 20)
-                        }
+                        }.padding(.top)
                         GIFView(gifName: weapon.fireMode.modeTwoGif!)
                             .frame(width: 300, height: 200)
                     }
@@ -118,6 +117,6 @@ struct FireModeView: View {
 
 struct FireModeView_Previews: PreviewProvider {
     static var previews: some View {
-        FireModeView(weapon: weaponData[0])
+        FireModeView(weapon: weaponData[1])
     }
 }

@@ -108,6 +108,7 @@ struct Stabilizer: Codable, Hashable {
     
     var stabilizerIcon: String
     var description: String
+    var stabilizerIconWhite: String
     var commonName: String
     var commonDescription: String
     var rareName: String

@@ -10,68 +10,25 @@ import SwiftUI
 
 struct ClipsView: View {
     
-    var description: String
-    var icon: String
-    var levelOne: String
-    var levelTwo: String
-    var levelThree: String
+    var weapon: Weapon
     
     var body: some View {
         ScrollView {
             VStack {
                 VStack {
-                    Text(description)
+                    Text(weapon.attachments!.clips!.description)
                         .font(.custom("Teko-SemiBold", size: 20))
                         .foregroundColor(.black)
                 }
                 HStack {
                     // Level One
-                    VStack {
-                        Image(icon)
-                            .resizable()
-                            .frame(width: 50, height: 50)
-                            .padding(.all, 5)
-                            .background(Color(red: 61/255, green: 65/255, blue: 66/255))
-                            .cornerRadius(10)
-                        Text("Level One")
-                            .font(.custom("Teko-SemiBold", size: 20))
-                            .foregroundColor(.black)
-                        Text(levelOne)
-                            .font(.custom("Teko-SemiBold", size: 25))
-                            .foregroundColor(.black)
-                    }.frame(width: 95)
+                    SingleClipView(weapon: weapon, name: "Level One", clipSize: weapon.attachments!.clips!.levelOne, color: Constants.Colors.levelOne)
                     
                     // Level Two
-                    VStack {
-                        Image(icon)
-                            .resizable()
-                            .frame(width: 50, height: 50)
-                            .padding(.all, 5)
-                            .background(Color(red: 0/255, green: 75/255, blue: 137/255))
-                            .cornerRadius(10)
-                        Text("Level Two")
-                            .font(.custom("Teko-SemiBold", size: 20))
-                            .foregroundColor(.black)
-                        Text(levelTwo)
-                            .font(.custom("Teko-SemiBold", size: 25))
-                            .foregroundColor(.black)
-                    }.frame(width: 95)
+                    SingleClipView(weapon: weapon, name: "Level Two", clipSize: weapon.attachments!.clips!.levelTwo, color: Constants.Colors.levelTwo)
                     
                     // Level Three
-                    VStack {
-                        Image(icon)
-                            .resizable()
-                            .frame(width: 50, height: 50)
-                            .padding(.all, 5)
-                            .background(Color(red: 69/255, green: 26/255, blue: 97/255))
-                            .cornerRadius(10)
-                        Text("Level Three")
-                            .font(.custom("Teko-SemiBold", size: 20))
-                            .foregroundColor(.black)
-                        Text(levelThree)
-                            .font(.custom("Teko-SemiBold", size: 25))
-                            .foregroundColor(.black)
-                    }.frame(width: 95)
+                    SingleClipView(weapon: weapon, name: "Level Three", clipSize: weapon.attachments!.clips!.levelThree, color: Constants.Colors.levelThree)
                 }
             }
         }.frame(height: 400)
@@ -81,6 +38,6 @@ struct ClipsView: View {
 
 struct ClipsView_Previews: PreviewProvider {
     static var previews: some View {
-        ClipsView(description: weaponData[0].attachments!.clips!.description, icon: weaponData[0].attachments!.clips!.clipIconWhite, levelOne: weaponData[0].attachments!.clips!.levelOne, levelTwo: weaponData[0].attachments!.clips!.levelTwo, levelThree: weaponData[0].attachments!.clips!.levelThree)
+        ClipsView(weapon: weaponData[0])
     }
 }

@@ -25,114 +25,37 @@ struct OpticsView: View {
                 HStack {
                     
                     // Standard Holo
-                    VStack {
-                        Image(weapon.attachments!.optics!.standardHolo.image)
-                            .resizable()
-                            .frame(width: 50, height: 50)
-                        Text(weapon.attachments!.optics!.standardHolo.name)
-                            .font(.custom("Teko-SemiBold", size: 20))
-                            .foregroundColor(.black)
-                            .multilineTextAlignment(.center)
-                            .lineLimit(2)
-                        .frame(height: 58)
-                    }.frame(width: 95)
-                    .padding(.all, 10)
+                    SingleOpticView(image: weapon.attachments!.optics!.standardHolo.image, name: weapon.attachments!.optics!.standardHolo.name)
                     
                     // Standard HCOG
-                    VStack {
-                        Image(weapon.attachments!.optics!.standardHcog.image)
-                            .resizable()
-                            .frame(width: 50, height: 50)
-                        Text(weapon.attachments!.optics!.standardHcog.name)
-                            .font(.custom("Teko-SemiBold", size: 20))
-                            .foregroundColor(.black)
-                            .multilineTextAlignment(.center)
-                            .lineLimit(2)
-                        .frame(height: 58)
-                    }.frame(width: 95)
-                    .padding(.all, 10)
+                    SingleOpticView(image: weapon.attachments!.optics!.standardHcog.image, name: weapon.attachments!.optics!.standardHcog.name)
                     
                     // Rare Holo
-                    VStack {
-                        Image(weapon.attachments!.optics!.rareHolo.image)
-                            .resizable()
-                            .frame(width: 50, height: 50)
-                        Text(weapon.attachments!.optics!.rareHolo.name)
-                            .font(.custom("Teko-SemiBold", size: 20))
-                            .foregroundColor(.black)
-                            .multilineTextAlignment(.center)
-                            .lineLimit(2)
-                            .frame(height: 58)
-                    }.frame(width: 95)
-                    .padding(.all, 10)
+                    SingleOpticView(image: weapon.attachments!.optics!.rareHolo.image, name: weapon.attachments!.optics!.rareHolo.name)
                 }
                 
                 // Second Row
                 HStack {
                     
                     // Rare HCOG
-                    VStack {
-                        Image(weapon.attachments!.optics!.rareHcog.image)
-                            .resizable()
-                            .frame(width: 50, height: 50)
-                        Text(weapon.attachments!.optics!.rareHcog.name)
-                            .font(.custom("Teko-SemiBold", size: 20))
-                            .foregroundColor(.black)
-                            .multilineTextAlignment(.center)
-                            .lineLimit(2)
-                            .frame(height: 58)
-                    }.frame(width: 95)
-                    .padding(.all, 10)
+                    SingleOpticView(image: weapon.attachments!.optics!.rareHcog.image, name: weapon.attachments!.optics!.rareHcog.name)
                     
                     // Epic Holo
                     if weapon.attachments!.optics!.epicHolo != nil {
                         
-                        VStack {
-                            Image(weapon.attachments!.optics!.epicHolo!.image)
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                            Text(weapon.attachments!.optics!.epicHolo!.name)
-                                .font(.custom("Teko-SemiBold", size: 20))
-                                .foregroundColor(.black)
-                                .multilineTextAlignment(.center)
-                                .lineLimit(2)
-                                .frame(height: 58)
-                        }.frame(width: 95)
-                        .padding(.all, 10)
+                        SingleOpticView(image: weapon.attachments!.optics!.epicHolo!.image, name: weapon.attachments!.optics!.epicHolo!.name)
                     }
                     
                     // Epic Hcog
                     if weapon.attachments!.optics!.epicHcog != nil {
                         
-                        VStack {
-                            Image(weapon.attachments!.optics!.epicHcog!.image)
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                            Text(weapon.attachments!.optics!.epicHcog!.name)
-                                .font(.custom("Teko-SemiBold", size: 20))
-                                .foregroundColor(.black)
-                                .multilineTextAlignment(.center)
-                                .lineLimit(2)
-                                .frame(height: 58)
-                        }.frame(width: 95)
-                        .padding(.all, 10)
+                        SingleOpticView(image: weapon.attachments!.optics!.epicHcog!.image, name: weapon.attachments!.optics!.epicHcog!.name)
                     }
                     
                     // Digital Threat
                     if weapon.attachments!.optics!.digitalThreat != nil {
                         
-                        VStack {
-                            Image(weapon.attachments!.optics!.digitalThreat!.image)
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                            Text(weapon.attachments!.optics!.digitalThreat!.name)
-                                .font(.custom("Teko-SemiBold", size: 20))
-                                .foregroundColor(.black)
-                                .multilineTextAlignment(.center)
-                                .lineLimit(2)
-                                .frame(height: 58)
-                        }.frame(width: 95)
-                        .padding(.all, 10)
+                        SingleOpticView(image: weapon.attachments!.optics!.digitalThreat!.image, name: weapon.attachments!.optics!.digitalThreat!.name)
                     }
                 }
                 
@@ -141,46 +64,13 @@ struct OpticsView: View {
                     HStack {
                         
                         // Rare Sniper
-                        VStack {
-                            Image(weapon.attachments!.optics!.rareSniper!.image)
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                            Text(weapon.attachments!.optics!.rareSniper!.name)
-                                .font(.custom("Teko-SemiBold", size: 20))
-                                .foregroundColor(.black)
-                                .multilineTextAlignment(.center)
-                                .lineLimit(2)
-                                .frame(height: 58)
-                        }.frame(width: 95)
-                        .padding(.all, 10)
+                        SingleOpticView(image: weapon.attachments!.optics!.rareSniper!.image, name: weapon.attachments!.optics!.rareSniper!.name)
                         
                         // Epic Sniper
-                        VStack {
-                            Image(weapon.attachments!.optics!.epicSniper!.image)
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                            Text(weapon.attachments!.optics!.epicSniper!.name)
-                                .font(.custom("Teko-SemiBold", size: 20))
-                                .foregroundColor(.black)
-                                .multilineTextAlignment(.center)
-                                .lineLimit(2)
-                                .frame(height: 58)
-                        }.frame(width: 95)
-                        .padding(.all, 10)
+                        SingleOpticView(image: weapon.attachments!.optics!.epicSniper!.image, name: weapon.attachments!.optics!.epicSniper!.name)
                         
                         // Legendary Sniper
-                        VStack {
-                            Image(weapon.attachments!.optics!.legendarySniper!.image)
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                            Text(weapon.attachments!.optics!.legendarySniper!.name)
-                                .font(.custom("Teko-SemiBold", size: 20))
-                                .foregroundColor(.black)
-                                .multilineTextAlignment(.center)
-                                .lineLimit(2)
-                                .frame(height: 58)
-                        }.frame(width: 95)
-                        .padding(.all, 10)
+                        SingleOpticView(image: weapon.attachments!.optics!.legendarySniper!.image, name: weapon.attachments!.optics!.legendarySniper!.name)
                     }
                 }
             }

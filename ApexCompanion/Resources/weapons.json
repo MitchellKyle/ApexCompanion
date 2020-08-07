@@ -65,8 +65,10 @@
                 "rareName": "Level Two",
                 "rareDescription": "Quicker handling and moderate aim drift reduction. (Raising/lowering weapon is 25% faster)",
                 "epicName": "Level Three",
-                "epicDescription": "Fast handling and large aim drift reduction. (Raising/lowering weapon is 35% faster)",
-            }
+                "epicDescription": "Fast handling and large aim drift reduction. (Raising/lowering weapon is 35% faster)"
+            },
+            "stabilizers": null
+            
         },
         "damage": {
             "head": {
@@ -78,6 +80,100 @@
             "body": "19",
             "lowerBody": "14"
         },
-        "description" : "2x headshot multiplier. High damage per shot. Good performance at close/medium range. Can be changed to Automatic or Single-Fire fire modes. Best in class hipfire performance and somewhat easy to control recoil. Poor long-range performance. Average projectile speed. Bouncy recoil."
-	}
+        "description" : "The Flatline is a heavy ammo assault rifle featuring two fire modes, fully automatic and single fire. The Flatline has high damage per shot as well as a 2x headshot multiplier. It performs well at close to medium range. It has the best in class hipfire performance and the recoil is somewhat easy to control, although bouncy. It does not perform well at long range and has average projectile speed."
+	},
+    {
+        "id": 1002,
+        "name": "G7 SCOUT",
+        "image": "g7_scout_detail",
+        "imageIcon": "g7_scout_icon",
+        "type": "Assault Rifle",
+        "category": "Assault Rifles",
+        "ammoType" : "Light",
+        "weaponTypeIcon": "g7_scout_icon",
+        "ammoTypeIcon": "light_ammo",
+        "standardClipSize": "10",
+        "clipIcon": "extended_light_mag_icon",
+        "fireMode": {
+            "recoil": "High Vertical",
+            "modeOne": "Single Fire",
+            "modeOneIcon": "single_fire_icon",
+            "modeOneGif": "g7_single",
+            "modeTwo": "Burst Fire -> Requires Double Tap Trigger",
+            "modeTwoIcon": "burst_icon",
+            "modeTwoGif": "g7_burst"
+        },
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "epicHolo": {
+                    "name": "2x-4x Variable AOG",
+                    "image": "epic_holo"
+                },
+                "epicHcog": {
+                    "name": "3x HCOG",
+                    "image": "epic_hcog"
+                }
+            },
+            "clips": {
+                "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
+                "clipIconWhite": "extended_heavy_mag",
+                "levelOne": "15",
+                "levelTwo": "18",
+                "levelThree": "20"
+            },
+            "stocks": {
+                "stockIcon": "standard_stock_icon",
+                "description": "Improves weapon switch speed and aim sway.",
+                "stockIconWhite": "standard_stock_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "Improves handling and reduces aim drift. (Raising/lowering weapon is 15% faster)",
+                "rareName": "Level Two",
+                "rareDescription": "Quicker handling and moderate aim drift reduction. (Raising/lowering weapon is 25% faster)",
+                "epicName": "Level Three",
+                "epicDescription": "Fast handling and large aim drift reduction. (Raising/lowering weapon is 35% faster)"
+            },
+            "stabilizer": {
+                "stabilizerIcon": "stabilizer_icon",
+                "description": "Decreases recoil.",
+                "stabilizerIconWhite": "stabilizer_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "10% Recoil reduction and randomness decreased by 15%",
+                "rareName": "Level Two",
+                "rareDescription": "15% Recoil reduction and randomness decreased by 20%",
+                "epicName": "Level Three",
+                "epicDescription": "20% Recoil reduction and randomness decreased by 30%",
+                "legendaryName": "Level Four",
+                "legendaryDescription": "20% Recoil reduction and randomness decreased by 30%. Also reduces visual muzzle flash."
+            }
+        },
+        "damage": {
+            "head": {
+                "standard": "60",
+                "levelOne": "55",
+                "levelTwo": "48",
+                "levelThree": "45"
+            },
+            "body": "34",
+            "lowerBody": "26"
+        },
+        "description" : "The G7 Scout is a light ammo assault rifle. It has decent medium range potential. When equipped with the Double Tap Trigger, it has high burst damage. It is useful when contesting sniper rifles due to it's higher rate of firing speed. The G7 also boasts a 1.75× headshot multiplier. Glowing iron-sight may obscure vision for some players. Can easily be threatened by SMGs and shotguns at shorter distances. Has a slow bullet travel speed which maskes it more difficult to hit enemies at longer distances."
+    }
 ]

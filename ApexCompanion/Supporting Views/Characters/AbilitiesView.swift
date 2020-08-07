@@ -62,7 +62,7 @@ struct AbilitiesView: View {
                         .font(.custom("Teko-SemiBold", size: 25))
                         .padding(.all, 10)
                         .foregroundColor(showInfo ? .white : .black)
-                        .background(showInfo ?  Color.black.opacity(1.0) : Color.white.opacity(0.0))
+                        .background(showInfo ?  Color.black : Color.clear)
                         .cornerRadius(10)
                 }
                 Spacer()
@@ -75,7 +75,7 @@ struct AbilitiesView: View {
                         .font(.custom("Teko-SemiBold", size: 25))
                         .padding(.all, 10)
                         .foregroundColor(showTips ? .white : .black)
-                        .background(showTips ?  Color.black.opacity(1.0) : Color.white.opacity(0.0))
+                        .background(showTips ?  Color.black : Color.clear)
                         .cornerRadius(10)
                 }
                 Spacer()
