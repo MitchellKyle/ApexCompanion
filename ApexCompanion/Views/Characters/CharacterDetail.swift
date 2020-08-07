@@ -185,6 +185,7 @@ struct CharacterDetail: View {
                     
                 }.padding(.top)
             }.padding(.top, 25)
+                .padding(.bottom)
         }
     }
 }

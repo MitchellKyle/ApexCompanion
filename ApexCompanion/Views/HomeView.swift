@@ -10,6 +10,14 @@ import SwiftUI
 
 struct HomeView: View {
     
+    init() {
+        UINavigationBar.appearance().standardAppearance.shadowColor = .clear
+        UINavigationBar.appearance().backgroundColor = .clear
+        UINavigationBar.appearance().isHidden = false
+        UINavigationBar.appearance().barTintColor = .clear
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+    }
+    
     var body: some View {
             
         NavigationView {

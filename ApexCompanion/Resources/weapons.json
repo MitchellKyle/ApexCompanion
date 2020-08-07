@@ -9,634 +9,75 @@
         "ammoType" : "Heavy",
         "weaponTypeIcon": "flatline_icon",
         "ammoTypeIcon": "heavy_ammo",
+        "standardClipSize": "20",
+        "clipIcon": "extended_heavy_mag_icon",
         "fireMode": {
+            "recoil": "Diagonal Upper Left",
             "modeOne": "Automatic",
-            "modeTwo": "Single Fire"
+            "modeOneIcon": "auto_icon",
+            "modeOneGif": "flatline_auto",
+            "modeTwo": "Single Fire",
+            "modeTwoIcon": "single_fire_icon",
+            "modeTwoGif": "flatline_single"
         },
-        "recoil": "Diagonal Upper Left",
-        "clipIcon": "extended_heavy_mag",
-        "clipSize": {
-            "standard": "20",
-            "levelOne": "25",
-            "levelTwo": "28",
-            "levelThree": "30"
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "epicHolo": {
+                    "name": "2x-4x Variable AOG",
+                    "image": "epic_holo"
+                },
+                "epicHcog": {
+                    "name": "3x HCOG",
+                    "image": "epic_hcog"
+                }
+            },
+            "clips": {
+                "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
+                "clipIconWhite": "extended_heavy_mag",
+                "levelOne": "25",
+                "levelTwo": "28",
+                "levelThree": "30"
+            },
+            "stocks": {
+                "stockIcon": "standard_stock_icon",
+                "description": "Improves weapon switch speed and aim sway.",
+                "stockIconWhite": "standard_stock_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "Improves handling and reduces aim drift. (Raising/lowering weapon is 15% faster)",
+                "rareName": "Level Two",
+                "rareDescription": "Quicker handling and moderate aim drift reduction. (Raising/lowering weapon is 25% faster)",
+                "epicName": "Level Three",
+                "epicDescription": "Fast handling and large aim drift reduction. (Raising/lowering weapon is 35% faster)",
+            }
         },
         "damage": {
-            "head": "38",
+            "head": {
+                "standard": "38",
+                "levelOne": "34",
+                "levelTwo": "30",
+                "levelThree": "28"
+            },
             "body": "19",
             "lowerBody": "14"
         },
         "description" : "2x headshot multiplier. High damage per shot. Good performance at close/medium range. Can be changed to Automatic or Single-Fire fire modes. Best in class hipfire performance and somewhat easy to control recoil. Poor long-range performance. Average projectile speed. Bouncy recoil."
-	},
-	{
-        "id": 1002,
-        "name": "G7 SCOUT",
-        "image": "g7_scout_detail",
-        "imageIcon": "g7_scout_icon",
-        "type": "Assault Rifle",
-        "category": "Assault Rifles",
-        "ammoType" : "Light",
-        "weaponTypeIcon": "g7_scout_icon",
-        "ammoTypeIcon": "light_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "extended_light_mag",
-        "clipSize": {
-            "standard": "10",
-            "levelOne": "15",
-            "levelTwo": "18",
-            "levelThree": "20"
-        },
-        "damage": {
-            "head": "60",
-            "body": "34",
-            "lowerBody": "26"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1003,
-		"name": "HEMLOK",
-        "image": "hemlok_detail",
-        "imageIcon": "hemlok_icon",
-        "type": "Assault Rifle",
-        "category": "Assault Rifles",
-        "ammoType" : "Heavy",
-        "weaponTypeIcon": "hemlok_icon",
-        "ammoTypeIcon": "heavy_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "extended_heavy_mag",
-        "clipSize": {
-            "standard": "18",
-            "levelOne": "24",
-            "levelTwo": "27",
-            "levelThree": "30"
-        },
-        "damage": {
-            "head": "44",
-            "body": "22",
-            "lowerBody": "17"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1004,
-		"name": "R-301",
-        "image": "r301_detail",
-        "imageIcon": "r301_icon",
-        "type": "Assault Rifle",
-        "category": "Assault Rifles",
-        "ammoType" : "Light",
-        "weaponTypeIcon": "r301_icon",
-        "ammoTypeIcon": "light_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "extended_light_mag",
-        "clipSize": {
-            "standard": "18",
-            "levelOne": "20",
-            "levelTwo": "25",
-            "levelThree": "28"
-        },
-        "damage": {
-            "head": "28",
-            "body": "14",
-            "lowerBody": "11"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1005,
-		"name": "HAVOC",
-        "image": "havoc_detail",
-        "imageIcon": "havoc_icon",
-        "type": "Assault Rifle",
-        "category": "Assault Rifles",
-        "ammoType" : "Energy",
-        "weaponTypeIcon": "havoc_icon",
-        "ammoTypeIcon": "energy_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "",
-        "clipSize": {
-            "standard": "28"
-        },
-        "damage": {
-            "head": "36",
-            "body": "18",
-            "lowerBody": "14"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1006,
-		"name": "ALTERNATOR",
-        "image": "alternator_detail",
-        "imageIcon": "alternator_icon",
-        "type": "Sub Machine Gun",
-        "category": "Sub Machine Guns",
-        "ammoType" : "Light",
-        "weaponTypeIcon": "alternator_icon",
-        "ammoTypeIcon": "light_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "extended_light_mag",
-        "clipSize": {
-            "standard": "19",
-            "levelOne": "22",
-            "levelTwo": "25",
-            "levelThree": "27"
-        },
-        "damage": {
-            "head": "23",
-            "body": "15",
-            "lowerBody": "12"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1007,
-		"name": "PROWLER",
-        "image": "prowler_detail",
-        "imageIcon": "prowler_icon",
-        "type": "Sub Machine Gun",
-        "category": "Sub Machine Guns",
-        "ammoType" : "Heavy",
-        "weaponTypeIcon": "prowler_icon",
-        "ammoTypeIcon": "heavy_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "extended_heavy_mag",
-        "clipSize": {
-            "standard": "20",
-            "levelOne": "25",
-            "levelTwo": "30",
-            "levelThree": "35"
-        },
-        "damage": {
-            "head": "23",
-            "body": "15",
-            "lowerBody": "12"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1008,
-		"name": "R-99",
-        "image": "r99_detail",
-        "imageIcon": "r99_icon",
-        "type": "Sub Machine Gun",
-        "category": "Sub Machine Guns",
-        "ammoType" : "Light",
-        "weaponTypeIcon": "r99_icon",
-        "ammoTypeIcon": "light_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "extended_light_mag",
-        "clipSize": {
-            "standard": "20",
-            "levelOne": "22",
-            "levelTwo": "24",
-            "levelThree": "27"
-        },
-        "damage": {
-            "head": "17",
-            "body": "11",
-            "lowerBody": "9"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1009,
-		"name": "DEVOTION",
-        "image": "devotion_detail",
-        "imageIcon": "devotion_icon",
-        "type": "Light Machine Gun",
-        "category": "Light Machine Guns",
-        "ammoType" : "Experimental",
-        "weaponTypeIcon": "devotion_icon",
-        "ammoTypeIcon": "experimental_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "",
-        "clipSize": {
-            "standard": "54"
-        },
-        "damage": {
-            "head": "34",
-            "body": "17",
-            "lowerBody": "13"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1010,
-		"name": "SPITFIRE",
-        "image": "spitfire_detail",
-        "imageIcon": "spitfire_icon",
-        "type": "Light Machine Gun",
-        "category": "Light Machine Guns",
-        "ammoType" : "Heavy",
-        "weaponTypeIcon": "spitfire_icon",
-        "ammoTypeIcon": "heavy_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "extended_heavy_mag",
-        "clipSize": {
-            "standard": "35",
-            "levelOne": "40",
-            "levelTwo": "45",
-            "levelThree": "55"
-        },
-        "damage": {
-            "head": "36",
-            "body": "18",
-            "lowerBody": "14"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1011,
-		"name": "L-STAR",
-        "image": "lstar_detail",
-        "imageIcon": "lstar_icon",
-        "type": "Light Machine Gun",
-        "category": "Light Machine Guns",
-        "ammoType" : "Energy",
-        "weaponTypeIcon": "lstar_icon",
-        "ammoTypeIcon": "energy_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "",
-        "clipSize": {
-            "standard": "Infinite"
-        },
-        "damage": {
-            "head": "36",
-            "body": "18",
-            "lowerBody": "14"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1012,
-		"name": "LONGBOW",
-        "image": "longbow_detail",
-        "imageIcon": "longbow_icon",
-        "type": "Sniper Rifle",
-        "category": "Sniper Rifles",
-        "ammoType" : "Sniper",
-        "weaponTypeIcon": "triple_take_icon",
-        "ammoTypeIcon": "sniper_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "",
-        "clipSize": {
-            "standard": "6",
-            "levelOne": "8",
-            "levelTwo": "10",
-            "levelThree": "12"
-        },
-        "damage": {
-            "head": "110",
-            "body": "55",
-            "lowerBody": "44"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1013,
-		"name": "KRABER",
-        "image": "kraber_detail",
-        "imageIcon": "kraber_icon",
-        "type": "Sniper Rifle",
-        "category": "Sniper Rifles",
-        "ammoType" : "Special Sniper",
-        "weaponTypeIcon": "triple_take_icon",
-        "ammoTypeIcon": "special_sniper_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "",
-        "clipSize": {
-            "standard": "4"
-        },
-        "damage": {
-            "head": "435",
-            "body": "145",
-            "lowerBody": "116"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1014,
-		"name": "TRIPLE TAKE",
-        "image": "triple_take_detail",
-        "imageIcon": "triple_take_icon",
-        "type": "Sniper Rifle",
-        "category": "Sniper Rifles",
-        "ammoType" : "Sniper",
-        "weaponTypeIcon": "triple_take_icon",
-        "ammoTypeIcon": "sniper_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "",
-        "clipSize": {
-            "standard": "5",
-            "levelOne": "6",
-            "levelTwo": "7",
-            "levelThree": "8"
-        },
-        "damage": {
-            "head": "138",
-            "body": "69",
-            "lowerBody": "63"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1015,
-		"name": "CHARGE RIFLE",
-        "image": "charge_rifle_detail",
-        "imageIcon": "charge_rifle_icon",
-        "type": "Sniper Rifle",
-        "category": "Sniper Rifles",
-        "ammoType" : "Sniper",
-        "weaponTypeIcon": "triple_take_icon",
-        "ammoTypeIcon": "sniper_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "",
-        "clipSize": {
-            "standard": "4"
-        },
-        "damage": {
-            "head": "116",
-            "body": "90",
-            "lowerBody": "90"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1016,
-		"name": "SENTINEL",
-        "image": "sentinel_detail",
-        "imageIcon": "sentinel_icon",
-        "type": "Sniper Rifle",
-        "category": "Sniper Rifles",
-        "ammoType" : "Sniper",
-        "weaponTypeIcon": "triple_take_icon",
-        "ammoTypeIcon": "sniper_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "",
-        "clipSize": {
-            "standard": "4",
-            "levelOne": "5",
-            "levelTwo": "6",
-            "levelThree": "7"
-        },
-        "damage": {
-            "head": "140",
-            "body": "70",
-            "lowerBody": "63"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1017,
-		"name": "EVA-8 AUTO",
-        "image": "eva8_detail",
-        "imageIcon": "eva8_icon",
-        "type": "Shotgun",
-        "category": "Shotguns",
-        "ammoType" : "Shotgun Shells",
-        "weaponTypeIcon": "eva8_icon",
-        "ammoTypeIcon": "shotgun_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "",
-        "clipSize": {
-            "standard": "8"
-        },
-        "damage": {
-            "head": "99",
-            "body": "63",
-            "lowerBody": "49"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1018,
-		"name": "MASTIFF",
-        "image": "mastiff_detail",
-        "imageIcon": "mastiff_icon",
-        "type": "Shotgun",
-        "category": "Shotguns",
-        "ammoType" : "Shotgun Shells",
-        "weaponTypeIcon": "mastiff_icon",
-        "ammoTypeIcon": "shotgun_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "",
-        "clipSize": {
-            "standard": "6"
-        },
-        "damage": {
-            "head": "128",
-            "body": "104",
-            "lowerBody": "91"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1019,
-		"name": "MOZAMBIQUE",
-        "image": "mozambique_detail",
-        "imageIcon": "mozambique_icon",
-        "type": "Shotgun",
-        "category": "Shotguns",
-        "ammoType" : "Shotgun Shells",
-        "weaponTypeIcon": "mozambique_icon",
-        "ammoTypeIcon": "shotgun_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "",
-        "clipSize": {
-            "standard": "3"
-        },
-        "damage": {
-            "head": "69",
-            "body": "45",
-            "lowerBody": "42"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1020,
-		"name": "PEACEKEEPER",
-        "image": "peacekeeper_detail",
-        "imageIcon": "peacekeeper_icon",
-        "type": "Shotgun",
-        "category": "Shotguns",
-        "ammoType" : "Special Shotgun",
-        "weaponTypeIcon": "peacekeeper_icon",
-        "ammoTypeIcon": "special_shotgun_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "",
-        "clipSize": {
-            "standard": "5"
-        },
-        "damage": {
-            "head": "143",
-            "body": "110",
-            "lowerBody": "88"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1021,
-		"name": "RE-45",
-        "image": "re45_detail",
-        "imageIcon": "re45_icon",
-        "type": "Pistol",
-        "category": "Pistols",
-        "ammoType" : "Light",
-        "weaponTypeIcon": "re45_icon",
-        "ammoTypeIcon": "light_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "extended_light_mag",
-        "clipSize": {
-            "standard": "16",
-            "levelOne": "19",
-            "levelTwo": "22",
-            "levelThree": "25"
-        },
-        "damage": {
-            "head": "18",
-            "body": "12",
-            "lowerBody": "11"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1022,
-		"name": "P2020",
-        "image": "p2020_detail",
-        "imageIcon": "p2020_icon",
-        "type": "Pistol",
-        "category": "Pistols",
-        "ammoType" : "Light",
-        "weaponTypeIcon": "p2020_icon",
-        "ammoTypeIcon": "light_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "extended_light_mag",
-        "clipSize": {
-            "standard": "10",
-            "levelOne": "13",
-            "levelTwo": "15",
-            "levelThree": "18"
-        },
-        "damage": {
-            "head": "20",
-            "body": "13",
-            "lowerBody": "12"
-        },
-        "description" : ""
-	},
-	{
-        "id": 1023,
-		"name": "WINGMAN",
-        "image": "wingman_detail",
-        "imageIcon": "wingman_icon",
-        "type": "Pistol",
-        "category": "Pistols",
-        "ammoType" : "Heavy",
-        "weaponTypeIcon": "wingman_icon",
-        "ammoTypeIcon": "heavy_ammo",
-        "fireMode": {
-            "modeOne": "",
-            "modeTwo": ""
-        },
-        "recoil": "",
-        "clipIcon": "extended_heavy_mag",
-        "clipSize": {
-            "standard": "5",
-            "levelOne": "6",
-            "levelTwo": "7",
-            "levelThree": "8"
-        },
-        "damage": {
-            "head": "90",
-            "body": "45",
-            "lowerBody": "41"
-        },
-        "description" : ""
 	}
 ]
