@@ -21,29 +21,29 @@ struct DamageView: View {
                 HStack {
                     Spacer()
                     VStack {
+                        Text("Head")
+                        .font(.custom("Teko-SemiBold", size: 20))
+                        .foregroundColor(.black)
                         Text(weapon.damage.head.standard)
                             .font(.custom("Teko-SemiBold", size: 25))
                             .foregroundColor(.black)
-                        Text("Head")
-                            .font(.custom("Teko-SemiBold", size: 20))
-                            .foregroundColor(.black)
                     }
                     Spacer()
                     VStack {
-                        Text(weapon.damage.body)
-                            .font(.custom("Teko-SemiBold", size: 25))
-                            .foregroundColor(.black)
                         Text("Body")
                             .font(.custom("Teko-SemiBold", size: 20))
                             .foregroundColor(.black)
+                        Text(weapon.damage.body)
+                            .font(.custom("Teko-SemiBold", size: 25))
+                            .foregroundColor(.black)
                     }
                     Spacer()
                     VStack {
-                        Text(weapon.damage.lowerBody)
-                            .font(.custom("Teko-SemiBold", size: 25))
-                            .foregroundColor(.black)
                         Text("Legs")
                             .font(.custom("Teko-SemiBold", size: 20))
+                            .foregroundColor(.black)
+                        Text(weapon.damage.lowerBody)
+                            .font(.custom("Teko-SemiBold", size: 25))
                             .foregroundColor(.black)
                     }
                     Spacer()
@@ -109,7 +109,7 @@ struct DamageView: View {
                     }.frame(width: 95)
                     Spacer()
                 }
-            }.padding(.top)
+            }.padding(.vertical)
             .background(Color.white.opacity(0.9))
             .cornerRadius(20)
         }

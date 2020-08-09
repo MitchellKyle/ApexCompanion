@@ -22,8 +22,8 @@ struct SingleOpticView: View {
                 .font(.custom("Teko-SemiBold", size: 20))
                 .foregroundColor(.black)
                 .multilineTextAlignment(.center)
-                .lineLimit(2)
-            .frame(height: 58)
+                .lineLimit(3)
+            .frame(height: 88)
         }.frame(width: 95)
         .padding(.all, 10)
     }
@@ -31,6 +31,6 @@ struct SingleOpticView: View {
 
 struct SingleOpticView_Previews: PreviewProvider {
     static var previews: some View {
-        SingleOpticView(image: weaponData[0].attachments!.optics!.rareHcog.image, name: weaponData[0].attachments!.optics!.rareHcog.name)
+        SingleOpticView(image: weaponData[11].attachments!.optics!.legendarySniper!.image, name: weaponData[11].attachments!.optics!.legendarySniper!.name)
     }
 }

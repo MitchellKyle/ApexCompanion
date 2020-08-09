@@ -12,7 +12,7 @@ struct AttachmentsView: View {
     
     var weapon: Weapon
     
-    @State private var showClips = true
+    @State private var showClips = false
     @State private var showOptics = false
     @State private var showStock = false
     @State private var showStabilizer = false
@@ -24,6 +24,7 @@ struct AttachmentsView: View {
         VStack {
             // Headline
             SubHeaderView(text: "Attachments")
+                .padding(.bottom, -40)
             
             // Attachment Buttons
             VStack {
@@ -123,7 +124,7 @@ struct AttachmentsView: View {
                 
                 VStack {
                     // Clips Detail View
-                    if showClips {
+                    if showClips && weapon.attachments!.clips != nil {
                         ClipsView(weapon: weapon)
                     }
                     
@@ -133,27 +134,37 @@ struct AttachmentsView: View {
                     }
                     
                     // Stocks Detail View
-                    if showStock {
-                        StocksView(weapon: weapon, isStabilizer: false)
+                    if showStock && weapon.attachments!.stocks != nil {
+                        StockStabilizerBoltView(weapon: weapon, isStock: true, isStabilizer: false, isBolt: false)
                     }
                     
                     // Stabilizer Detail View
-                    if showStabilizer {
-                        StocksView(weapon: weapon, isStabilizer: true)
+                    if showStabilizer && weapon.attachments!.stabilizer != nil {
+                        StockStabilizerBoltView(weapon: weapon, isStock: false, isStabilizer: true, isBolt: false)
+                    }
+                    
+                    // Shotgun Bolt Detail View
+                    if showBolt && weapon.attachments!.bolt != nil {
+                        StockStabilizerBoltView(weapon: weapon, isStock: false, isStabilizer: false, isBolt: true)
+                    }
+                    
+                    // Hop-Up Detail View
+                    if showHop && weapon.attachments!.hop != nil {
+                        HopView(weapon: weapon)
                     }
                 }
                 
             } // End of Content VStack
-            .padding(.top)
+            .padding()
             .background(Color.white.opacity(0.9))
             .cornerRadius(20)
         } // End of Main VStack
-        .padding(.top)
+        .padding(.vertical)
     }
 }
 
 struct AttachmentsView_Previews: PreviewProvider {
     static var previews: some View {
-        AttachmentsView(weapon: weaponData[0])
+        AttachmentsView(weapon: weaponData[4])
     }
 }

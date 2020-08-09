@@ -23,6 +23,7 @@ struct SingleClipView: View {
                 .padding(.all, 5)
                 .background(Color(color))
                 .cornerRadius(10)
+                .foregroundColor(Color.white)
             Text(name)
                 .font(.custom("Teko-SemiBold", size: 20))
                 .foregroundColor(.black)

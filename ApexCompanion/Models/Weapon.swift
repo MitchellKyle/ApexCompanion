@@ -130,11 +130,13 @@ struct Hop: Codable, Hashable {
 
 struct Bolt: Codable, Hashable  {
     var icon: String
+    var iconWhite: String
+    var description: String
     var commonName: String
     var commonDescription: String
     var rareName: String
     var rareDescription: String
-    var epicdName: String
+    var epicName: String
     var epicDescription: String
 }
 

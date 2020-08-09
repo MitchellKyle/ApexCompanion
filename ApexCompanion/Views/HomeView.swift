@@ -10,13 +10,13 @@ import SwiftUI
 
 struct HomeView: View {
     
-    init() {
-        UINavigationBar.appearance().standardAppearance.shadowColor = .clear
-        UINavigationBar.appearance().backgroundColor = .clear
-        UINavigationBar.appearance().isHidden = false
-        UINavigationBar.appearance().barTintColor = .clear
-        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
-    }
+//    init() {
+//        UINavigationBar.appearance().standardAppearance.shadowColor = .clear
+//        UINavigationBar.appearance().backgroundColor = .clear
+//        UINavigationBar.appearance().isHidden = false
+//        UINavigationBar.appearance().barTintColor = .white
+//        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+//    }
     
     var body: some View {
             
@@ -40,17 +40,21 @@ struct HomeView: View {
                 Spacer()
                 HStack {
                     Spacer()
+                    Text("Gear")
+                    Spacer()
                     Text("Maps")
+                    Spacer()
+                }
+                Spacer()
+                HStack {
+                    Spacer()
+                    Text("Tricks")
                     Spacer()
                     Text("News")
                     Spacer()
                 }
                 Spacer()
-                HStack {
-                    Text("Tricks")
-                }
-                Spacer()
-            }.background(Image("bg").resizable().edgesIgnoringSafeArea(.all).aspectRatio(contentMode: .fill))
+            }.background(Image("season_6_bg").resizable().edgesIgnoringSafeArea(.all).aspectRatio(contentMode: .fill))
             
         }
     }

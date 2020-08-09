@@ -20,6 +20,7 @@ struct Constants {
     }
     
     struct Colors {
+        static var navBar = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.2)
         static var levelOne = UIColor(red: 61/255, green: 65/255, blue: 66/255, alpha: 1.0)
         static var levelTwo = UIColor(red: 0/255, green: 75/255, blue: 137/255, alpha: 1.0)
         static var levelThree = UIColor(red: 69/255, green: 26/255, blue: 97/255, alpha: 1.0)

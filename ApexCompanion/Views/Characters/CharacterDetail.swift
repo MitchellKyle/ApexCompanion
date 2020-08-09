@@ -19,7 +19,7 @@ struct CharacterDetail: View {
     
     var body: some View {
         ZStack {
-            Image("bg")
+            Image("season_6_bg")
             .resizable()
             .edgesIgnoringSafeArea(.all)
             

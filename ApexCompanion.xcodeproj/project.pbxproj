@@ -14,6 +14,7 @@
 		843E010224DDC908006CDA90 /* SingleClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E010124DDC908006CDA90 /* SingleClipView.swift */; };
 		843E010424DDCAB7006CDA90 /* SingleOpticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E010324DDCAB7006CDA90 /* SingleOpticView.swift */; };
 		843E010624DDE3E1006CDA90 /* AbilityButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E010524DDE3E1006CDA90 /* AbilityButtonsView.swift */; };
+		843E010824DF1559006CDA90 /* HopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E010724DF1559006CDA90 /* HopView.swift */; };
 		8444434D24CC82E60090FFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444434C24CC82E60090FFFC /* AppDelegate.swift */; };
 		8444434F24CC82E60090FFFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444434E24CC82E60090FFFC /* SceneDelegate.swift */; };
 		8444435124CC82E60090FFFC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444435024CC82E60090FFFC /* HomeView.swift */; };
@@ -59,6 +60,7 @@
 		843E010124DDC908006CDA90 /* SingleClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleClipView.swift; sourceTree = "<group>"; };
 		843E010324DDCAB7006CDA90 /* SingleOpticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleOpticView.swift; sourceTree = "<group>"; };
 		843E010524DDE3E1006CDA90 /* AbilityButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityButtonsView.swift; sourceTree = "<group>"; };
+		843E010724DF1559006CDA90 /* HopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopView.swift; sourceTree = "<group>"; };
 		8444434924CC82E60090FFFC /* ApexCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApexCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8444434C24CC82E60090FFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8444434E24CC82E60090FFFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				843E010324DDCAB7006CDA90 /* SingleOpticView.swift */,
 				8444440324DA6E3E0090FFFC /* StocksView.swift */,
 				843E00FB24DD919A006CDA90 /* SingleStockView.swift */,
+				843E010724DF1559006CDA90 /* HopView.swift */,
 			);
 			path = Weapons;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				844443FE24D8F8870090FFFC /* AttachmentsView.swift in Sources */,
 				8444440024D9F3680090FFFC /* ClipsView.swift in Sources */,
 				844443F824D7B36E0090FFFC /* CharacterItem.swift in Sources */,
+				843E010824DF1559006CDA90 /* HopView.swift in Sources */,
 				8444440C24DC47410090FFFC /* WeaponDescription.swift in Sources */,
 				843E010224DDC908006CDA90 /* SingleClipView.swift in Sources */,
 				8444437524CD08940090FFFC /* Constants.swift in Sources */,

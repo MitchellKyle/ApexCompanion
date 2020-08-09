@@ -27,11 +27,13 @@ struct WeaponDescription: View {
                         .frame(height: 75)
                     Image(weapon.weaponTypeIcon)
                         .resizable()
+                        .aspectRatio(contentMode: .fit)
                         .frame(height: 50)
                     Text(weapon.type)
                         .font(.custom("Teko-SemiBold", size: 20))
                         .foregroundColor(.black)
                         .multilineTextAlignment(.center)
+                        .frame(height: 60)
                 }.frame(width: 95)
                 
                 Spacer()
@@ -50,6 +52,7 @@ struct WeaponDescription: View {
                         .font(.custom("Teko-SemiBold", size: 20))
                         .foregroundColor(.black)
                         .multilineTextAlignment(.center)
+                        .frame(height: 60)
                 }.frame(width: 95)
                 
                 Spacer()
@@ -68,6 +71,7 @@ struct WeaponDescription: View {
                         .font(.custom("Teko-SemiBold", size: 20))
                         .foregroundColor(.black)
                         .multilineTextAlignment(.center)
+                        .frame(height: 60)
                 }.frame(width: 95)
                 Spacer()
             }
@@ -79,7 +83,7 @@ struct WeaponDescription: View {
                     .padding(.top, 20)
             }.frame(height: 250)
                 .padding(.horizontal, 10)
-        }.padding(.top, 10)
+        }.padding(.vertical)
         .background(Color.white.opacity(0.9))
         .cornerRadius(20)
     }
@@ -87,6 +91,6 @@ struct WeaponDescription: View {
 
 struct WeaponDescription_Previews: PreviewProvider {
     static var previews: some View {
-        WeaponDescription(weapon: weaponData[0])
+        WeaponDescription(weapon: weaponData[5])
     }
 }

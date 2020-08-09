@@ -12,7 +12,7 @@
         "standardClipSize": "20",
         "clipIcon": "extended_heavy_mag_icon",
         "fireMode": {
-            "recoil": "Diagonal Upper Left",
+            "recoil": "Diagonal upper left recoil",
             "modeOne": "Automatic",
             "modeOneIcon": "auto_icon",
             "modeOneGif": "flatline_auto",
@@ -80,7 +80,7 @@
             "body": "19",
             "lowerBody": "14"
         },
-        "description" : "The Flatline is a heavy ammo assault rifle featuring two fire modes, fully automatic and single fire. The Flatline has high damage per shot as well as a 2x headshot multiplier. It performs well at close to medium range. It has the best in class hipfire performance and the recoil is somewhat easy to control, although bouncy. It does not perform well at long range and has average projectile speed."
+        "description" : "The Flatline is an assualt rifle that uses heavy ammo. It features two fire modes, fully automatic and single fire. The Flatline has high damage per shot as well as a 2x headshot multiplier. It performs well at close to medium range. It has the best in class hipfire performance and the recoil is somewhat easy to control, although bouncy. It does not perform well at long range and has average projectile speed."
 	},
     {
         "id": 1002,
@@ -95,7 +95,7 @@
         "standardClipSize": "10",
         "clipIcon": "extended_light_mag_icon",
         "fireMode": {
-            "recoil": "High Vertical",
+            "recoil": "High vertical recoil",
             "modeOne": "Single Fire",
             "modeOneIcon": "single_fire_icon",
             "modeOneGif": "g7_single",
@@ -162,6 +162,11 @@
                 "epicDescription": "20% Recoil reduction and randomness decreased by 30%",
                 "legendaryName": "Level Four",
                 "legendaryDescription": "20% Recoil reduction and randomness decreased by 30%. Also reduces visual muzzle flash."
+            },
+            "hop": {
+                "name": "Double Tap Trigger",
+                "icon": "double_tap_icon",
+                "description": "The Double Tap Trigger hop-up grants an alternative burst fire mode. As the name suggests, two shots will be fired per trigger pull."
             }
         },
         "damage": {
@@ -174,6 +179,1637 @@
             "body": "34",
             "lowerBody": "26"
         },
-        "description" : "The G7 Scout is a light ammo assault rifle. It has decent medium range potential. When equipped with the Double Tap Trigger, it has high burst damage. It is useful when contesting sniper rifles due to it's higher rate of firing speed. The G7 also boasts a 1.75× headshot multiplier. Glowing iron-sight may obscure vision for some players. Can easily be threatened by SMGs and shotguns at shorter distances. Has a slow bullet travel speed which maskes it more difficult to hit enemies at longer distances."
+        "description" : "The G7 Scout is an assault rifle that uses light ammo. When equipped with the Double Tap Trigger, it has high burst damage. It has decent medium range potential. It is useful when contesting sniper rifles due to it's higher rate of firing speed. The G7 also boasts a 1.75× headshot multiplier. Glowing iron-sight may obscure vision for some players. Can easily be threatened by SMGs and shotguns at shorter distances. Has a slow bullet travel speed which maskes it more difficult to hit enemies at longer distances."
+    },
+    {
+        "id": 1003,
+        "name": "HEMLOK",
+        "image": "hemlok_detail",
+        "imageIcon": "hemlok_icon",
+        "type": "Assault Rifle",
+        "category": "Assault Rifles",
+        "ammoType" : "Heavy",
+        "weaponTypeIcon": "hemlok_icon",
+        "ammoTypeIcon": "heavy_ammo",
+        "standardClipSize": "18",
+        "clipIcon": "extended_heavy_mag_icon",
+        "fireMode": {
+            "recoil": "Vertical and curve to the left recoil",
+            "modeOne": "Burst Fire",
+            "modeOneIcon": "burst_icon",
+            "modeOneGif": "hemlok_burst",
+            "modeTwo": "Single Fire",
+            "modeTwoIcon": "single_fire_icon",
+            "modeTwoGif": "hemlok_single"
+        },
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "epicHolo": {
+                    "name": "2x-4x Variable AOG",
+                    "image": "epic_holo"
+                },
+                "epicHcog": {
+                    "name": "3x HCOG",
+                    "image": "epic_hcog"
+                }
+            },
+            "clips": {
+                "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
+                "clipIconWhite": "extended_heavy_mag",
+                "levelOne": "24",
+                "levelTwo": "27",
+                "levelThree": "30"
+            },
+            "stocks": {
+                "stockIcon": "standard_stock_icon",
+                "description": "Improves weapon switch speed and aim sway.",
+                "stockIconWhite": "standard_stock_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "Improves handling and reduces aim drift. (Raising/lowering weapon is 15% faster)",
+                "rareName": "Level Two",
+                "rareDescription": "Quicker handling and moderate aim drift reduction. (Raising/lowering weapon is 25% faster)",
+                "epicName": "Level Three",
+                "epicDescription": "Fast handling and large aim drift reduction. (Raising/lowering weapon is 35% faster)"
+            },
+            "stabilizer": {
+                "stabilizerIcon": "stabilizer_icon",
+                "description": "Decreases recoil.",
+                "stabilizerIconWhite": "stabilizer_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "10% Recoil reduction and randomness decreased by 15%",
+                "rareName": "Level Two",
+                "rareDescription": "15% Recoil reduction and randomness decreased by 20%",
+                "epicName": "Level Three",
+                "epicDescription": "20% Recoil reduction and randomness decreased by 30%",
+                "legendaryName": "Level Four",
+                "legendaryDescription": "20% Recoil reduction and randomness decreased by 30%. Also reduces visual muzzle flash."
+            }
+        },
+        "damage": {
+            "head": {
+                "standard": "44",
+                "levelOne": "40",
+                "levelTwo": "35",
+                "levelThree": "33"
+            },
+            "body": "22",
+            "lowerBody": "17"
+        },
+        "description" : "The Hemlok is an assault rifle that uses heavy ammo. It features two firing modes, burst by default and can be switched to single fire mode. It boasts a 2× headshot multiplier and high accuracy. It has a  high burst fire rate and has the second fastest single-shot rate of fire in the game (6.4 per second) after the P2020. Good in medium to long range fights. It has poor base ammo capacity. Can perform decently at close range when firing from the hip while in burst fire mode. Otherwise poor close-range performance while in single fire mode. At close distances, is threatened by SMGs and Shotguns."
+    },
+    {
+        "id": 1004,
+        "name": "R-301",
+        "image": "r301_detail",
+        "imageIcon": "r301_icon",
+        "type": "Assault Rifle",
+        "category": "Assault Rifles",
+        "ammoType" : "Light",
+        "weaponTypeIcon": "r301_icon",
+        "ammoTypeIcon": "light_ammo",
+        "standardClipSize": "18",
+        "clipIcon": "extended_light_mag_icon",
+        "fireMode": {
+            "recoil": "Vertical and curve to the right recoil",
+            "modeOne": "Automatic",
+            "modeOneIcon": "auto_icon",
+            "modeOneGif": "r301_auto",
+            "modeTwo": "Single Fire",
+            "modeTwoIcon": "single_fire_icon",
+            "modeTwoGif": "r301_single"
+        },
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "epicHolo": {
+                    "name": "2x-4x Variable AOG",
+                    "image": "epic_holo"
+                },
+                "epicHcog": {
+                    "name": "3x HCOG",
+                    "image": "epic_hcog"
+                }
+            },
+            "clips": {
+                "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
+                "clipIconWhite": "extended_light_mag",
+                "levelOne": "20",
+                "levelTwo": "25",
+                "levelThree": "28"
+            },
+            "stocks": {
+                "stockIcon": "standard_stock_icon",
+                "description": "Improves weapon switch speed and aim sway.",
+                "stockIconWhite": "standard_stock_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "Improves handling and reduces aim drift. (Raising/lowering weapon is 15% faster)",
+                "rareName": "Level Two",
+                "rareDescription": "Quicker handling and moderate aim drift reduction. (Raising/lowering weapon is 25% faster)",
+                "epicName": "Level Three",
+                "epicDescription": "Fast handling and large aim drift reduction. (Raising/lowering weapon is 35% faster)"
+            },
+            "stabilizer": {
+                "stabilizerIcon": "stabilizer_icon",
+                "description": "Decreases recoil.",
+                "stabilizerIconWhite": "stabilizer_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "10% Recoil reduction and randomness decreased by 15%",
+                "rareName": "Level Two",
+                "rareDescription": "15% Recoil reduction and randomness decreased by 20%",
+                "epicName": "Level Three",
+                "epicDescription": "20% Recoil reduction and randomness decreased by 30%",
+                "legendaryName": "Level Four",
+                "legendaryDescription": "20% Recoil reduction and randomness decreased by 30%. Also reduces visual muzzle flash."
+            }
+        },
+        "damage": {
+            "head": {
+                "standard": "28",
+                "levelOne": "25",
+                "levelTwo": "22",
+                "levelThree": "21"
+            },
+            "body": "14",
+            "lowerBody": "11"
+        },
+        "description" : "The R-301 is an assault rifle that uses light ammo. It features two fire modes, fully automatic by default and a single fire option. The R-301 boasts a 2× headshot multiplier and high bullet velocity. it has high accuracy and rate of fire. It performs well at close to medium range and for an assault rifle, also at long range. Great ironsights, and above average hipfire performance. The R-301 does overall have low damage and low base ammo capacity. Also, the vertical and horizontal recoil pattern is somewhat hard to control at a longer range."
+    },
+    {
+        "id": 1005,
+        "name": "HAVOC",
+        "image": "havoc_detail",
+        "imageIcon": "havoc_icon",
+        "type": "Assault Rifle",
+        "category": "Assault Rifles",
+        "ammoType" : "Energy",
+        "weaponTypeIcon": "havoc_icon",
+        "ammoTypeIcon": "energy_ammo",
+        "standardClipSize": "28",
+        "clipIcon": "extended_energy_mag_icon",
+        "fireMode": {
+            "recoil": "High horizontal recoil in the beginning, high vertical recoil from middle to the end",
+            "modeOne": "Automatic",
+            "modeOneIcon": "auto_icon",
+            "modeOneGif": "havoc_auto",
+            "modeTwo": "Single Fire",
+            "modeTwoIcon": "single_fire_icon",
+            "modeTwoGif": "havoc_single"
+        },
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "epicHolo": {
+                    "name": "2x-4x Variable AOG",
+                    "image": "epic_holo"
+                },
+                "epicHcog": {
+                    "name": "3x HCOG",
+                    "image": "epic_hcog"
+                }
+            },
+            "clips": null,
+            "stocks": {
+                "stockIcon": "standard_stock_icon",
+                "description": "Improves weapon switch speed and aim sway.",
+                "stockIconWhite": "standard_stock_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "Improves handling and reduces aim drift. (Raising/lowering weapon is 15% faster)",
+                "rareName": "Level Two",
+                "rareDescription": "Quicker handling and moderate aim drift reduction. (Raising/lowering weapon is 25% faster)",
+                "epicName": "Level Three",
+                "epicDescription": "Fast handling and large aim drift reduction. (Raising/lowering weapon is 35% faster)"
+            },
+            "stabilizer": null,
+            "hop": {
+                "name": "Select Fire",
+                "icon": "select_fire_icon",
+                "description": "The Selectfire Receiver hop-up grants an alternative fire mode: HAVOC gains a single fire hitscan laser."
+            }
+        },
+        "damage": {
+            "head": {
+                "standard": "36",
+                "levelOne": "32",
+                "levelTwo": "29",
+                "levelThree": "27"
+            },
+            "body": "18",
+            "lowerBody": "14"
+        },
+        "description" : "The Have is an assault rifle that uses energy ammo. It is fully automatic by default and when a Selectfire Reciever is added, gains a single fire hitscan mode. The Havoc boasts 2× head-shot multiplier, has high damage per shot for an assault rifle. It has the highest stock ammo capacity out of all assault rifles, but does not support extended magazines. It also has the highest bullet velocity out of all full auto Guns in the game, and has little bullet drop. The Havoc must be charged before shooting. The recoil makes if very hard to control."
+    },
+    {
+        "id": 1006,
+        "name": "ALTERNATOR",
+        "image": "alternator_detail",
+        "imageIcon": "alternator_icon",
+        "type": "Sub Machine Gun",
+        "category": "Sub Machine Guns",
+        "ammoType" : "Light",
+        "weaponTypeIcon": "alternator_icon",
+        "ammoTypeIcon": "light_ammo",
+        "standardClipSize": "19",
+        "clipIcon": "extended_light_mag_icon",
+        "fireMode": {
+            "recoil": "Vertical recoil",
+            "modeOne": "Automatic",
+            "modeOneIcon": "auto_icon",
+            "modeOneGif": "alternator_auto",
+            "modeTwo": null,
+            "modeTwoIcon": null,
+            "modeTwoGif": null
+        },
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "digitalThreat": {
+                    "name": "Digital Threat",
+                    "image": "digital_threat"
+                }
+            },
+            "clips": {
+                "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
+                "clipIconWhite": "extended_light_mag",
+                "levelOne": "22",
+                "levelTwo": "25",
+                "levelThree": "27"
+            },
+            "stocks": {
+                "stockIcon": "standard_stock_icon",
+                "description": "Improves weapon switch speed and aim sway.",
+                "stockIconWhite": "standard_stock_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "Improves handling and reduces aim drift. (Raising/lowering weapon is 15% faster)",
+                "rareName": "Level Two",
+                "rareDescription": "Quicker handling and moderate aim drift reduction. (Raising/lowering weapon is 25% faster)",
+                "epicName": "Level Three",
+                "epicDescription": "Fast handling and large aim drift reduction. (Raising/lowering weapon is 35% faster)"
+            },
+            "stabilizer": {
+                "stabilizerIcon": "stabilizer_icon",
+                "description": "Decreases recoil.",
+                "stabilizerIconWhite": "stabilizer_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "10% Recoil reduction and randomness decreased by 15%",
+                "rareName": "Level Two",
+                "rareDescription": "15% Recoil reduction and randomness decreased by 20%",
+                "epicName": "Level Three",
+                "epicDescription": "20% Recoil reduction and randomness decreased by 30%",
+                "legendaryName": "Level Four",
+                "legendaryDescription": "20% Recoil reduction and randomness decreased by 30%. Also reduces visual muzzle flash."
+            }
+        },
+        "damage": {
+            "head": {
+                "standard": "23",
+                "levelOne": "21",
+                "levelTwo": "18",
+                "levelThree": "17"
+            },
+            "body": "15",
+            "lowerBody": "12"
+        },
+        "description" : "The Alternator is sub machine gun that uses light ammo. It features one firing mode, fully automatic. It has a 1x headshot multiplier. The recoil is vertical and predictable and tapping the firing trigger instead of holding it down has a much better recoil control at greater distances. It is easy to use, but has a slower rate of fire compared to other SMGs."
+    },
+    {
+        "id": 1007,
+        "name": "PROWLER",
+        "image": "prowler_detail",
+        "imageIcon": "prowler_icon",
+        "type": "Sub Machine Gun",
+        "category": "Sub Machine Guns",
+        "ammoType" : "Heavy",
+        "weaponTypeIcon": "prowler_icon",
+        "ammoTypeIcon": "heavy_ammo",
+        "standardClipSize": "20",
+        "clipIcon": "extended_heavy_mag_icon",
+        "fireMode": {
+            "recoil": "Kick with vertical and curve left recoil",
+            "modeOne": "Burst Fire",
+            "modeOneIcon": "burst_icon",
+            "modeOneGif": "prowler_burst",
+            "modeTwo": "Automatic -> Requires Selectfire Receiver",
+            "modeTwoIcon": "auto_icon",
+            "modeTwoGif": "prowler_auto"
+        },
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "digitalThreat": {
+                    "name": "Digital Threat",
+                    "image": "digital_threat"
+                }
+            },
+            "clips": {
+                "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
+                "clipIconWhite": "extended_light_mag",
+                "levelOne": "25",
+                "levelTwo": "30",
+                "levelThree": "35"
+            },
+            "stocks": {
+                "stockIcon": "standard_stock_icon",
+                "description": "Improves weapon switch speed and aim sway.",
+                "stockIconWhite": "standard_stock_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "Improves handling and reduces aim drift. (Raising/lowering weapon is 15% faster)",
+                "rareName": "Level Two",
+                "rareDescription": "Quicker handling and moderate aim drift reduction. (Raising/lowering weapon is 25% faster)",
+                "epicName": "Level Three",
+                "epicDescription": "Fast handling and large aim drift reduction. (Raising/lowering weapon is 35% faster)"
+            },
+            "hop": {
+                "name": "Select Fire",
+                "icon": "select_fire_icon",
+                "description": "The Selectfire Receiver hop-up grants an alternative fire mode: It allows the Prowler to fire full-auto."
+            }
+        },
+        "damage": {
+            "head": {
+                "standard": "23",
+                "levelOne": "21",
+                "levelTwo": "18",
+                "levelThree": "17"
+            },
+            "body": "15",
+            "lowerBody": "12"
+        },
+        "description" : "The Prowler is a sub machine gun that uses heavy ammo. It features a 5-shot burst fire mode by default. When a Selectfire Receiver is added, the Prowler gains a fully automatic fire mode. The prowler is capable of high burst damage and has the highest SMG magazine capacity with a level 3 extended heavy mag. The Prowler does not perform well at long-range, with only a 1× headshot multiplier at 39+ meters."
+    },
+    {
+        "id": 1008,
+        "name": "R-99",
+        "image": "r99_detail",
+        "imageIcon": "r99_icon",
+        "type": "Sub Machine Gun",
+        "category": "Sub Machine Guns",
+        "ammoType" : "Light",
+        "weaponTypeIcon": "r99_icon",
+        "ammoTypeIcon": "light_ammo",
+        "standardClipSize": "20",
+        "clipIcon": "extended_light_mag_icon",
+        "fireMode": {
+            "recoil": "Vertical and curve right recoil",
+            "modeOne": "Automatic",
+            "modeOneIcon": "auto_icon",
+            "modeOneGif": "r99_auto",
+            "modeTwo": null,
+            "modeTwoIcon": null,
+            "modeTwoGif": null
+        },
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "digitalThreat": {
+                    "name": "Digital Threat",
+                    "image": "digital_threat"
+                }
+            },
+            "clips": {
+                "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
+                "clipIconWhite": "extended_light_mag",
+                "levelOne": "25",
+                "levelTwo": "30",
+                "levelThree": "35"
+            },
+            "stocks": {
+                "stockIcon": "standard_stock_icon",
+                "description": "Improves weapon switch speed and aim sway.",
+                "stockIconWhite": "standard_stock_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "Improves handling and reduces aim drift. (Raising/lowering weapon is 15% faster)",
+                "rareName": "Level Two",
+                "rareDescription": "Quicker handling and moderate aim drift reduction. (Raising/lowering weapon is 25% faster)",
+                "epicName": "Level Three",
+                "epicDescription": "Fast handling and large aim drift reduction. (Raising/lowering weapon is 35% faster)"
+            },
+            "stabilizer": {
+                "stabilizerIcon": "stabilizer_icon",
+                "description": "Decreases recoil.",
+                "stabilizerIconWhite": "stabilizer_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "10% Recoil reduction and randomness decreased by 15%",
+                "rareName": "Level Two",
+                "rareDescription": "15% Recoil reduction and randomness decreased by 20%",
+                "epicName": "Level Three",
+                "epicDescription": "20% Recoil reduction and randomness decreased by 30%",
+                "legendaryName": "Level Four",
+                "legendaryDescription": "20% Recoil reduction and randomness decreased by 30%. Also reduces visual muzzle flash."
+            }
+        },
+        "damage": {
+            "head": {
+                "standard": "14",
+                "levelOne": "13",
+                "levelTwo": "12",
+                "levelThree": "12"
+            },
+            "body": "9",
+            "lowerBody": "8"
+        },
+        "description" : "The R-99 is sub machine gun that uses light ammo. It features one fire mode, fully automatic. The R-99 has a Very fast firing rate and the second highest SMG magazine capacity. The R-99 also boasts fast movement while aiming down sights. The R-99 does have the lowest damage-per-shot out of all SMGs and high recoil. The R-99 also does not perform well at at long distances, with a 1× headshot multiplier at 39+ meters."
+    },
+    {
+        "id": 1009,
+        "name": "DEVOTION",
+        "image": "devotion_detail",
+        "imageIcon": "devotion_icon",
+        "type": "Light Machine Gun",
+        "category": "Light Machine Guns",
+        "ammoType" : "Experimental Ammo",
+        "weaponTypeIcon": "devotion_icon",
+        "ammoTypeIcon": "experimental_ammo",
+        "standardClipSize": "54",
+        "clipIcon": "extended_heavy_mag_icon",
+        "fireMode": {
+            "recoil": "Vertical and curve left and right recoil",
+            "modeOne": "Automatic",
+            "modeOneIcon": "auto_icon",
+            "modeOneGif": "devotion_auto",
+            "modeTwo": null,
+            "modeTwoIcon": null,
+            "modeTwoGif": null
+        },
+        "attachments": null,
+        "damage": {
+            "head": {
+                "standard": "34",
+                "levelOne": "31",
+                "levelTwo": "27",
+                "levelThree": "26"
+            },
+            "body": "17",
+            "lowerBody": "13"
+        },
+        "description" : "The Devotion is a rare light machine gun that uses experimental ammo. The Devotion can be found in neutral care packages. It features one firing mode, fully automatic. It is one of the strongest weapons in the game, has a very fast firing speed (after ramping up). It also has a 2× headshot multiplier. It has a high magazine capacity, but uses its own exclusive experimental ammo which does not require inventory space to hold. Only 162 spare rounds are available per Devotion, and more cannot be acquired outside of finding another Devotion and replacing it. The devotion has a rather slow reload speed. It has high recoil and slow ADS speed. It is most effective at close to medium range, and only has a 1× headshot multiplier at 64+ meters."
+    },
+    {
+        "id": 1010,
+        "name": "SPITFIRE",
+        "image": "spitfire_detail",
+        "imageIcon": "spitfire_icon",
+        "type": "Light Machine Gun",
+        "category": "Light Machine Guns",
+        "ammoType" : "Heavy",
+        "weaponTypeIcon": "spitfire_icon",
+        "ammoTypeIcon": "heavy_ammo",
+        "standardClipSize": "35",
+        "clipIcon": "extended_heavy_mag_icon",
+        "fireMode": {
+            "recoil": "Vertical zigzag recoil",
+            "modeOne": "Automatic",
+            "modeOneIcon": "auto_icon",
+            "modeOneGif": "spitfire_auto",
+            "modeTwo": null,
+            "modeTwoIcon": null,
+            "modeTwoGif": null
+        },
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "epicHolo": {
+                    "name": "2x-4x Variable AOG",
+                    "image": "epic_holo"
+                },
+                "epicHcog": {
+                    "name": "3x HCOG",
+                    "image": "epic_hcog"
+                }
+            },
+            "clips": {
+                "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
+                "clipIconWhite": "extended_heavy_mag",
+                "levelOne": "40",
+                "levelTwo": "45",
+                "levelThree": "55"
+            },
+            "stocks": {
+                "stockIcon": "standard_stock_icon",
+                "description": "Improves weapon switch speed and aim sway.",
+                "stockIconWhite": "standard_stock_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "Improves handling and reduces aim drift. (Raising/lowering weapon is 15% faster)",
+                "rareName": "Level Two",
+                "rareDescription": "Quicker handling and moderate aim drift reduction. (Raising/lowering weapon is 25% faster)",
+                "epicName": "Level Three",
+                "epicDescription": "Fast handling and large aim drift reduction. (Raising/lowering weapon is 35% faster)"
+            },
+            "stabilizer": {
+                "stabilizerIcon": "stabilizer_icon",
+                "description": "Decreases recoil.",
+                "stabilizerIconWhite": "stabilizer_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "10% Recoil reduction and randomness decreased by 15%",
+                "rareName": "Level Two",
+                "rareDescription": "15% Recoil reduction and randomness decreased by 20%",
+                "epicName": "Level Three",
+                "epicDescription": "20% Recoil reduction and randomness decreased by 30%",
+                "legendaryName": "Level Four",
+                "legendaryDescription": "20% Recoil reduction and randomness decreased by 30%. Also reduces visual muzzle flash."
+            }
+        },
+        "damage": {
+            "head": {
+                "standard": "36",
+                "levelOne": "32",
+                "levelTwo": "29",
+                "levelThree": "27"
+            },
+            "body": "18",
+            "lowerBody": "14"
+        },
+        "description" : "The Spitfire is a light machine gun that uses heavy ammo. It feartures on firing mode, fully automatic. It boasts a 2× headshot multiplier and high damage per shot in general. It has the highest magazine capacity out of any weapon with a level 3 Extended Heavy Mag. It is effective at longer distances due to low recoil and a 1× headshot multiplier at 64+ meters. The Spitfire has the highest damage potential in one magazine. The rate of fire is somewhat slow, as well as a slow reload speed and very slow ADS walking speed."
+    },
+    {
+        "id": 1011,
+        "name": "L-STAR",
+        "image": "lstar_detail",
+        "imageIcon": "lstar_icon",
+        "type": "Light Machine Gun",
+        "category": "Light Machine Guns",
+        "ammoType" : "Energy",
+        "weaponTypeIcon": "lstar_icon",
+        "ammoTypeIcon": "energy_ammo",
+        "standardClipSize": "Infinite",
+        "clipIcon": "extended_energy_mag_icon",
+        "fireMode": {
+            "recoil": "Vertical recoil",
+            "modeOne": "Automatic",
+            "modeOneIcon": "auto_icon",
+            "modeOneGif": "lstar_auto",
+            "modeTwo": null,
+            "modeTwoIcon": null,
+            "modeTwoGif": null
+        },
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "epicHolo": {
+                    "name": "2x-4x Variable AOG",
+                    "image": "epic_holo"
+                },
+                "epicHcog": {
+                    "name": "3x HCOG",
+                    "image": "epic_hcog"
+                }
+            },
+            "stocks": {
+                "stockIcon": "standard_stock_icon",
+                "description": "Improves weapon switch speed and aim sway.",
+                "stockIconWhite": "standard_stock_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "Improves handling and reduces aim drift. (Raising/lowering weapon is 15% faster)",
+                "rareName": "Level Two",
+                "rareDescription": "Quicker handling and moderate aim drift reduction. (Raising/lowering weapon is 25% faster)",
+                "epicName": "Level Three",
+                "epicDescription": "Fast handling and large aim drift reduction. (Raising/lowering weapon is 35% faster)"
+            }
+        },
+        "damage": {
+            "head": {
+                "standard": "36",
+                "levelOne": "32",
+                "levelTwo": "29",
+                "levelThree": "27"
+            },
+            "body": "18",
+            "lowerBody": "14"
+        },
+        "description" : "The L-Star is a light machine gun that uses energy ammo. It features on firing mode, fully automatic. It boasts a 2× headshot multiplier, a high rate of fire and high damage. If used in short bursts, the L-Star will no overheat, preventing the need to reload. The projectiles fired from the gun are large (but slow) and are barely affected by gravity. But the large projectiles also negatively affect vision while firing. Recoil is easily controlled when firing in short bursts. A unique feature of the L-Star is it can open doors by shooting the handle. When continuously holding the trigger, recoil is much greater and the L-Star will overheat after 3 seconds (causing reload animation). ADS speed is very slow (-60%)."
+    },
+    {
+        "id": 1012,
+        "name": "LONGBOW",
+        "image": "longbow_detail",
+        "imageIcon": "longbow_icon",
+        "type": "Sniper Rifle",
+        "category": "Sniper Rifles",
+        "ammoType" : "Sniper",
+        "weaponTypeIcon": "longbow_icon",
+        "ammoTypeIcon": "sniper_ammo",
+        "standardClipSize": "6",
+        "clipIcon": "extended_sniper_mag_icon",
+        "fireMode": {
+            "recoil": "Strong curve to the left recoil",
+            "modeOne": "Single Fire",
+            "modeOneIcon": "single_icon",
+            "modeOneGif": "longbow_single",
+            "modeTwo": null,
+            "modeTwoIcon": null,
+            "modeTwoGif": null
+        },
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "epicHolo": {
+                    "name": "2x-4x Variable AOG",
+                    "image": "epic_holo"
+                },
+                "epicHcog": {
+                    "name": "3x HCOG",
+                    "image": "epic_hcog"
+                },
+                "rareSniper": {
+                    "name": "6x Sniper",
+                    "image": "rare_sniper"
+                },
+                "epicSniper": {
+                    "name": "4x-8x Variable Sniper",
+                    "image": "epic_sniper"
+                },
+                "legendarySniper": {
+                    "name": "4x-10x Digital Sniper Threat",
+                    "image": "legendary_sniper"
+                }
+            },
+            "clips": {
+                "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
+                "clipIconWhite": "extended_sniper_mag_icon",
+                "levelOne": "8",
+                "levelTwo": "10",
+                "levelThree": "12"
+            },
+            "stocks": {
+                "stockIcon": "sniper_stock_icon",
+                "description": "Improves weapon switch speed and aim sway.",
+                "stockIconWhite": "standard_stock_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "Improves handling and reduces aim drift. (Raising/lowering weapon is 15% faster)",
+                "rareName": "Level Two",
+                "rareDescription": "Quicker handling and moderate aim drift reduction. (Raising/lowering weapon is 25% faster)",
+                "epicName": "Level Three",
+                "epicDescription": "Fast handling and large aim drift reduction. (Raising/lowering weapon is 35% faster)"
+            },
+            "stabilizer": {
+                "stabilizerIcon": "stabilizer_icon",
+                "description": "Decreases recoil.",
+                "stabilizerIconWhite": "stabilizer_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "10% Recoil reduction and randomness decreased by 15%",
+                "rareName": "Level Two",
+                "rareDescription": "15% Recoil reduction and randomness decreased by 20%",
+                "epicName": "Level Three",
+                "epicDescription": "20% Recoil reduction and randomness decreased by 30%",
+                "legendaryName": "Level Four",
+                "legendaryDescription": "20% Recoil reduction and randomness decreased by 30%. Also reduces visual muzzle flash."
+            },
+            "hop": {
+                "name": "Skull Piercer Rifling",
+                "icon": "skull_piercer_icon",
+                "description": "The Skullpiercer Rifling hop-up increases the weapon's headshot multiplier: the Longbow from 2.0x to 2.5x."
+            }
+            
+        },
+        "damage": {
+            "head": {
+                "standard": "110",
+                "levelOne": "99",
+                "levelTwo": "88",
+                "levelThree": "83"
+            },
+            "body": "55",
+            "lowerBody": "44"
+        },
+        "description" : "The Longbow is a sniper rifle that uses sniper ammo. It features a single fire mode of firing. The Longbow has very high damage per shot and has excellent hip-fire accuracy. The bullets penetrate enemies, allowing you to hit multiple targets with one shot. The Longbow also has the highest default capacity out of all snipers and very large capacity with extended mags. It has a low fire rate. It can be difficult to gather all attachments for the Longbow as well."
+    },
+    {
+        "id": 1013,
+        "name": "KRABER",
+        "image": "kraber_detail",
+        "imageIcon": "kraber_icon",
+        "type": "Sniper Rifle",
+        "category": "Sniper Rifles",
+        "ammoType" : "Special Sniper",
+        "weaponTypeIcon": "kraber_icon",
+        "ammoTypeIcon": "special_sniper_ammo",
+        "standardClipSize": "4",
+        "clipIcon": "extended_sniper_mag_icon",
+        "fireMode": {
+            "recoil": "Minor recoil",
+            "modeOne": "Single Fire",
+            "modeOneIcon": "single_icon",
+            "modeOneGif": "kraber_single",
+            "modeTwo": null,
+            "modeTwoIcon": null,
+            "modeTwoGif": null
+        },
+        "attachments": null,
+        "damage": {
+            "head": {
+                "standard": "435",
+                "levelOne": "391",
+                "levelTwo": "348",
+                "levelThree": "326"
+            },
+            "body": "145",
+            "lowerBody": "116"
+        },
+        "description" : "The Kraber is a golden sniper that uses special sniper ammo. It can only be found in neutral care packages. It features a single bolt action fire mode. The Kraber has very high damage and headshots will guarantee a knockdown on a target. Comes fully kitted with a long-range scope and its own exclusive special sniper ammo which does not require inventory space to hold. Bullets penetrate enemies, allowing you to hit multiple targets with one shot. Needs to de-scope and chamber a new round after every shot, along with long reloading animation. Needs incredible accuracy. Only has 8 spare rounds available per Kraber, and more cannot be acquired outside of finding another Kraber and replacing it. Quite high projectile drop at range."
+    },
+    {
+        "id": 1014,
+        "name": "TRIPLE TAKE",
+        "image": "triple_take_detail",
+        "imageIcon": "triple_take_icon",
+        "type": "Sniper Rifle",
+        "category": "Sniper Rifles",
+        "ammoType" : "Sniper",
+        "weaponTypeIcon": "triple_take_icon",
+        "ammoTypeIcon": "sniper_ammo",
+        "standardClipSize": "5",
+        "clipIcon": "extended_sniper_mag_icon",
+        "fireMode": {
+            "recoil": "Vertical and minor curve left recoil",
+            "modeOne": "Single Fire",
+            "modeOneIcon": "single_icon",
+            "modeOneGif": "triple_take_single",
+            "modeTwo": null,
+            "modeTwoIcon": null,
+            "modeTwoGif": null
+        },
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "epicHolo": {
+                    "name": "2x-4x Variable AOG",
+                    "image": "epic_holo"
+                },
+                "epicHcog": {
+                    "name": "3x HCOG",
+                    "image": "epic_hcog"
+                },
+                "rareSniper": {
+                    "name": "6x Sniper",
+                    "image": "rare_sniper"
+                },
+                "epicSniper": {
+                    "name": "4x-8x Variable Sniper",
+                    "image": "epic_sniper"
+                },
+                "legendarySniper": {
+                    "name": "4x-10x Digital Sniper Threat",
+                    "image": "legendary_sniper"
+                }
+            },
+            "clips": {
+                "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
+                "clipIconWhite": "extended_sniper_mag_icon",
+                "levelOne": "6",
+                "levelTwo": "7",
+                "levelThree": "8"
+            },
+            "stocks": {
+                "stockIcon": "sniper_stock_icon",
+                "description": "Improves weapon switch speed and aim sway.",
+                "stockIconWhite": "standard_stock_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "Improves handling and reduces aim drift. (Raising/lowering weapon is 15% faster)",
+                "rareName": "Level Two",
+                "rareDescription": "Quicker handling and moderate aim drift reduction. (Raising/lowering weapon is 25% faster)",
+                "epicName": "Level Three",
+                "epicDescription": "Fast handling and large aim drift reduction. (Raising/lowering weapon is 35% faster)"
+            },
+            "hop": {
+                "name": "Precision Choke",
+                "icon": "choke_icon",
+                "description": "The Precision Choke hop-up greatly reduces the gun's spread by aiming down sights, up to three levels. The weapon loses the charge if the player stops aiming down sights."
+            }
+        },
+        "damage": {
+            "head": {
+                "standard": "138",
+                "levelOne": "123",
+                "levelTwo": "11",
+                "levelThree": "105"
+            },
+            "body": "69",
+            "lowerBody": "63"
+        },
+        "description" : "The Triple Take is a sniper rifle that uses sniper ammo. It features a single action fire mode. Each shot fires a spread of three bullets. Aiming down sights for a period of time will tighten the spread and adding the Precision Choke will tighten the spread even further. Bullets penetrate enemies, allowing you to hit multiple targets with one shot. The horizontal spread makes it easier to hit running targets. Has very little projectile drop at long range. Also works as a substitute shotgun at short range when firing from the hip. Has a shorter range compared to other sniper rifles, even with a Precision Choke. The three shots can be inconsistent and not all hit the target."
+    },
+    {
+        "id": 1015,
+        "name": "CHARGE RIFLE",
+        "image": "charge_rile_detail",
+        "imageIcon": "charge_rifle_icon",
+        "type": "Sniper Rifle",
+        "category": "Sniper Rifles",
+        "ammoType" : "Sniper",
+        "weaponTypeIcon": "charge_rifle_icon",
+        "ammoTypeIcon": "sniper_ammo",
+        "standardClipSize": "4",
+        "clipIcon": "extended_sniper_mag_icon",
+        "fireMode": {
+            "recoil": "Minimal during charge, Vertical recoil when releasing charge",
+            "modeOne": "Single Fire",
+            "modeOneIcon": "single_icon",
+            "modeOneGif": "triple_take_single",
+            "modeTwo": null,
+            "modeTwoIcon": null,
+            "modeTwoGif": null
+        },
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "epicHolo": {
+                    "name": "2x-4x Variable AOG",
+                    "image": "epic_holo"
+                },
+                "epicHcog": {
+                    "name": "3x HCOG",
+                    "image": "epic_hcog"
+                },
+                "rareSniper": {
+                    "name": "6x Sniper",
+                    "image": "rare_sniper"
+                },
+                "epicSniper": {
+                    "name": "4x-8x Variable Sniper",
+                    "image": "epic_sniper"
+                },
+                "legendarySniper": {
+                    "name": "4x-10x Digital Sniper Threat",
+                    "image": "legendary_sniper"
+                }
+            },
+            "stocks": {
+                "stockIcon": "sniper_stock_icon",
+                "description": "Improves weapon switch speed and aim sway.",
+                "stockIconWhite": "standard_stock_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "Improves handling and reduces aim drift. (Raising/lowering weapon is 15% faster)",
+                "rareName": "Level Two",
+                "rareDescription": "Quicker handling and moderate aim drift reduction. (Raising/lowering weapon is 25% faster)",
+                "epicName": "Level Three",
+                "epicDescription": "Fast handling and large aim drift reduction. (Raising/lowering weapon is 35% faster)"
+            }
+        },
+        "damage": {
+            "head": {
+                "standard": "56",
+                "levelOne": "50",
+                "levelTwo": "45",
+                "levelThree": "42"
+            },
+            "body": "45",
+            "lowerBody": "45"
+        },
+        "description" : "The Triple Take is a sniper rifle that uses sniper ammo. It features a single action fire mode. Each shot fires a spread of three bullets. Aiming down sights for a period of time will tighten the spread and adding the Precision Choke will tighten the spread even further. Bullets penetrate enemies, allowing you to hit multiple targets with one shot. The horizontal spread makes it easier to hit running targets. Has very little projectile drop at long range. Also works as a substitute shotgun at short range when firing from the hip. Has a shorter range compared to other sniper rifles, even with a Precision Choke. The three shots can be inconsistent and not all hit the target."
+    },
+    {
+        "id": 1016,
+        "name": "SENTINEL",
+        "image": "sentinel_detail",
+        "imageIcon": "sentinel_icon",
+        "type": "Sniper Rifle",
+        "category": "Sniper Rifles",
+        "ammoType" : "Sniper",
+        "weaponTypeIcon": "sentinel_icon",
+        "ammoTypeIcon": "sniper_ammo",
+        "standardClipSize": "4",
+        "clipIcon": "extended_sniper_mag_icon",
+        "fireMode": {
+            "recoil": "Minor recoil",
+            "modeOne": "Single Fire",
+            "modeOneIcon": "single_icon",
+            "modeOneGif": "sentinel_single",
+            "modeTwo": null,
+            "modeTwoIcon": null,
+            "modeTwoGif": null
+        },
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "epicHolo": {
+                    "name": "2x-4x Variable AOG",
+                    "image": "epic_holo"
+                },
+                "epicHcog": {
+                    "name": "3x HCOG",
+                    "image": "epic_hcog"
+                },
+                "rareSniper": {
+                    "name": "6x Sniper",
+                    "image": "rare_sniper"
+                },
+                "epicSniper": {
+                    "name": "4x-8x Variable Sniper",
+                    "image": "epic_sniper"
+                },
+                "legendarySniper": {
+                    "name": "4x-10x Digital Sniper Threat",
+                    "image": "legendary_sniper"
+                }
+            },
+            "stocks": {
+                "stockIcon": "sniper_stock_icon",
+                "description": "Improves weapon switch speed and aim sway.",
+                "stockIconWhite": "standard_stock_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "Improves handling and reduces aim drift. (Raising/lowering weapon is 15% faster)",
+                "rareName": "Level Two",
+                "rareDescription": "Quicker handling and moderate aim drift reduction. (Raising/lowering weapon is 25% faster)",
+                "epicName": "Level Three",
+                "epicDescription": "Fast handling and large aim drift reduction. (Raising/lowering weapon is 35% faster)"
+            },
+            "clips": {
+                "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
+                "clipIconWhite": "extended_sniper_mag_icon",
+                "levelOne": "5",
+                "levelTwo": "6",
+                "levelThree": "7"
+            }
+        },
+        "damage": {
+            "head": {
+                "standard": "140",
+                "levelOne": "126",
+                "levelTwo": "112",
+                "levelThree": "105"
+            },
+            "body": "70",
+            "lowerBody": "63"
+        },
+        "description" : "The Sentinel is a sniper rifle that uses sniper ammo. It features a single firing mode. The Sentinel has high damage per shot and bullets penetrate enemies, allowing you to hit multiple targets with one shot. Bullets will shred any shield health instantly and has 0% leg damage reduction when charged. Can open doors by shooting the handle. It is bolt-action which punishes you more severely for missing shots compared to other snipers. Terrible hip-fire accuracy. Charged shots (using sheild cells) essentially discard headshots: Hitting a charged headshot on a standard legend without a helmet will still deal 140 damage. Switching weapons takes a long time without a sniper stock."
+    },
+    {
+        "id": 1017,
+        "name": "EVA-8 AUTO",
+        "image": "eva8_detail",
+        "imageIcon": "eva8_icon",
+        "type": "Shotguns",
+        "category": "Shotguns",
+        "ammoType" : "Shotgun",
+        "weaponTypeIcon": "eva8_icon",
+        "ammoTypeIcon": "shotgun_ammo",
+        "standardClipSize": "8",
+        "clipIcon": "shotgun_bolt_icon",
+        "fireMode": {
+            "recoil": "Vertical kick recoil",
+            "modeOne": "Automatic",
+            "modeOneIcon": "auto_icon",
+            "modeOneGif": "eva8_auto",
+            "modeTwo": "Burst Fire",
+            "modeTwoIcon": "burst_icon",
+            "modeTwoGif": "eva8_burst"
+        },
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "digitalThreat": {
+                    "name": "Digital Threat",
+                    "image": "digital_threat_icon"
+                }
+            },
+            "hop": {
+                "name": "Double Tap Trigger",
+                "icon": "double_tap_icon",
+                "description": "The Double Tap Trigger hop-up grants an alternative burst fire mode. As the name suggests, two shots will be fired per trigger pull"
+            },
+            "bolt": {
+                "icon": "shotgun_bolt_icon",
+                "iconWhite": "shotgun_bolt_icon_white",
+                "description": "Increases shotgun fire-rate.",
+                "commonName": "Level One",
+                "commonDescription": "Increases fire rate by 10% on the Mozambique and EVA-8 Auto. Increases fire rate by 7.5% on the Mastiff.",
+                "rareName": "Level Two",
+                "rareDescription": "Increases fire rate by 20% on the Mozambique Shotgun and EVA-8 Auto. Increases fire rate by 13% on the Mastiff",
+                "epicName": "Level Three",
+                "epicDescription": "Increases fire rate by 25% on the Mozambique Shotgun and EVA-8 Auto. Increases fire rate by 16% on the Mastiff"
+            }
+        },
+        "damage": {
+            "head": {
+                "standard": "99",
+                "levelOne": "90",
+                "levelTwo": "81",
+                "levelThree": "72"
+            },
+            "body": "63",
+            "lowerBody": "63"
+        },
+        "description" : "The Eva-8 is an automatic shotgun. It features and automatic fire mode by default. If equipped with a Double Tap Trigger, the fire mode becomes burst fire. Has high damage potential if all pellets connect with a target. Good weapon for tracker style aim (tracking enemy movement). Endgame-viable with an epic shotgun bolt and a double tap trigger. It also has no damage difference for leg damage compared to body. The Eva-8 has a very inconsistent spread pattern and has poor performance without a shotgun bolt. Reduced fire rate when using in burst mode."
+    },
+    {
+        "id": 1018,
+        "name": "MASTIFF",
+        "image": "mastiff_detail",
+        "imageIcon": "mastiff_icon",
+        "type": "Shotguns",
+        "category": "Shotguns",
+        "ammoType" : "Shotgun",
+        "weaponTypeIcon": "mastiff_icon",
+        "ammoTypeIcon": "shotgun_ammo",
+        "standardClipSize": "6",
+        "clipIcon": "shotgun_bolt_icon",
+        "fireMode": {
+            "recoil": "Vertical kick recoil",
+            "modeOne": "Single Fire",
+            "modeOneIcon": "single_icon",
+            "modeOneGif": "mastiff_single",
+            "modeTwo": null,
+            "modeTwoIcon": null,
+            "modeTwoGif": null
+        },
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "digitalThreat": {
+                    "name": "Digital Threat",
+                    "image": "digital_threat_icon"
+                }
+            },
+            "bolt": {
+                "icon": "shotgun_bolt_icon_white",
+                "iconWhite": "shotgun_bolt_icon_white",
+                "description": "Increases shotgun fire-rate.",
+                "commonName": "Level One",
+                "commonDescription": "Increases fire rate by 10% on the Mozambique and EVA-8 Auto. Increases fire rate by 7.5% on the Mastiff.",
+                "rareName": "Level Two",
+                "rareDescription": "Increases fire rate by 20% on the Mozambique Shotgun and EVA-8 Auto. Increases fire rate by 13% on the Mastiff",
+                "epicName": "Level Three",
+                "epicDescription": "Increases fire rate by 25% on the Mozambique Shotgun and EVA-8 Auto. Increases fire rate by 16% on the Mastiff"
+            }
+        },
+        "damage": {
+            "head": {
+                "standard": "128",
+                "levelOne": "112",
+                "levelTwo": "104",
+                "levelThree": "96"
+            },
+            "body": "104",
+            "lowerBody": "104"
+        },
+        "description" : "The Mastiff is a high damage single fire shotgun. It features decent ammo size and quick reload speed. Leg damage deals the same amount as body damage. Aiming down the sights will reduce spread, increasing accuracy. On the other hand, hip-fire increases spread, decreasing accuracy. The Mastiff has a horizontal spread, so aiming at the enemy's chest/shoulder area will deal more damage. The animation between shots can obscure vision."
+    },
+    {
+        "id": 1019,
+        "name": "MOZAMBIQUE",
+        "image": "mozambique_detail",
+        "imageIcon": "mozambique_icon",
+        "type": "Shotguns",
+        "category": "Shotguns",
+        "ammoType" : "Shotgun",
+        "weaponTypeIcon": "mozambique_icon",
+        "ammoTypeIcon": "shotgun_ammo",
+        "standardClipSize": "3",
+        "clipIcon": "shotgun_bolt_icon",
+        "fireMode": {
+            "recoil": "Vertical kick recoil",
+            "modeOne": "Automatic",
+            "modeOneIcon": "auto_icon",
+            "modeOneGif": "mozambique_auto",
+            "modeTwo": null,
+            "modeTwoIcon": null,
+            "modeTwoGif": null
+        },
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "digitalThreat": {
+                    "name": "Digital Threat",
+                    "image": "digital_threat_icon"
+                }
+            },
+            "hop": {
+                "name": "Hammerpoint Rounds",
+                "icon": "hammerpoint_icon",
+                "description": "The Hammerpoint Rounds hop-up greatly increases damage to unshielded targets."
+            },
+            "bolt": {
+                "icon": "shotgun_bolt_icon_white",
+                "iconWhite": "shotgun_bolt_icon_white",
+                "description": "Increases shotgun fire-rate.",
+                "commonName": "Level One",
+                "commonDescription": "Increases fire rate by 10% on the Mozambique and EVA-8 Auto. Increases fire rate by 7.5% on the Mastiff.",
+                "rareName": "Level Two",
+                "rareDescription": "Increases fire rate by 20% on the Mozambique Shotgun and EVA-8 Auto. Increases fire rate by 13% on the Mastiff",
+                "epicName": "Level Three",
+                "epicDescription": "Increases fire rate by 25% on the Mozambique Shotgun and EVA-8 Auto. Increases fire rate by 16% on the Mastiff"
+            }
+        },
+        "damage": {
+            "head": {
+                "standard": "69",
+                "levelOne": "62",
+                "levelTwo": "55",
+                "levelThree": "52"
+            },
+            "body": "45",
+            "lowerBody": "42"
+        },
+        "description" : "The Mozambique is an automatic shotgun with a somewhat fast fire rate. The Mozambique is a small weapon which allows for fast ADS movement speed. When equipped with the Hammerpoint Hop, it deals high unshielded damage. With a three shot clip, it is very punishing for missing shots. Damage Per Magazine is only 135, meaning it takes at least two magazines to knock down an enemy (excluding headshots)."
+    },
+    {
+        "id": 1020,
+        "name": "PEACEKEEPER",
+        "image": "peacekeeper_detail",
+        "imageIcon": "peacekeeper_icon",
+        "type": "Shotguns",
+        "category": "Shotguns",
+        "ammoType" : "Special Shotgun",
+        "weaponTypeIcon": "peacekeeper_icon",
+        "ammoTypeIcon": "special_shotgun_ammo",
+        "standardClipSize": "5",
+        "clipIcon": "shotgun_bolt_icon",
+        "fireMode": {
+            "recoil": "Vertical kick recoil",
+            "modeOne": "Single Fire",
+            "modeOneIcon": "single_icon",
+            "modeOneGif": "peacekeeper_single",
+            "modeTwo": null,
+            "modeTwoIcon": null,
+            "modeTwoGif": null
+        },
+        "attachments": null,
+        "damage": {
+            "head": {
+                "standard": "143",
+                "levelOne": "129",
+                "levelTwo": "114",
+                "levelThree": "107"
+            },
+            "body": "110",
+            "lowerBody": "88"
+        },
+        "description" : "The Peacekeeper is a gold weapon that can only be found in neutral care packages. While aiming down sights will reduces spread of bullets and can be held down to reduce it further, up to three levels. The Peacekeeper has the potential for extremely high damage if all pellets connect with a target. It is the only shotgun that doesn't lose headshot multiplier regardless of range. Firing from the hip has a decently tight spread pattern. Uses exclusive shotgun shells which do not require inventory space to hold. The Peackeeper can nly be found with 20 shells and more cannot be obtained outside of finding another Peacekeeper and replacing it. Downsides are high recoil and long reload times (2.45s manually and 3.35s with empty mag)."
+    },
+    {
+        "id": 1021,
+        "name": "RE-45",
+        "image": "re45_detail",
+        "imageIcon": "re45_icon",
+        "type": "Pistol",
+        "category": "Pistols",
+        "ammoType" : "Light",
+        "weaponTypeIcon": "re45_icon",
+        "ammoTypeIcon": "light_ammo",
+        "standardClipSize": "16",
+        "clipIcon": "extended_light_mag_icon",
+        "fireMode": {
+            "recoil": "Vertical and hard curve right recoil",
+            "modeOne": "Automatic",
+            "modeOneIcon": "auto_icon",
+            "modeOneGif": "re45_auto",
+            "modeTwo": null,
+            "modeTwoIcon": null,
+            "modeTwoGif": null
+        },
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "digitalThreat": {
+                    "name": "Digital Threat",
+                    "image": "digital_threat"
+                }
+            },
+            "clips": {
+                "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
+                "clipIconWhite": "extended_light_mag",
+                "levelOne": "19",
+                "levelTwo": "22",
+                "levelThree": "25"
+            },
+            "stabilizer": {
+                "stabilizerIcon": "stabilizer_icon",
+                "description": "Decreases recoil.",
+                "stabilizerIconWhite": "stabilizer_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "10% Recoil reduction and randomness decreased by 15%",
+                "rareName": "Level Two",
+                "rareDescription": "15% Recoil reduction and randomness decreased by 20%",
+                "epicName": "Level Three",
+                "epicDescription": "20% Recoil reduction and randomness decreased by 30%",
+                "legendaryName": "Level Four",
+                "legendaryDescription": "20% Recoil reduction and randomness decreased by 30%. Also reduces visual muzzle flash."
+            }
+        },
+        "damage": {
+            "head": {
+                "standard": "18",
+                "levelOne": "16",
+                "levelTwo": "14",
+                "levelThree": "14"
+            },
+            "body": "12",
+            "lowerBody": "11"
+        },
+        "description" : "The RE-45 is a fully automatic pistol that uses light ammo. It features a rather tight bullet spread. It is a small weapon which allows for fast movement while aiming. They are very common, so they are easy to find on the map. It has a very high rate of fire, but also a small magazine capacity for a fully automatic weapon."
+    },
+    {
+        "id": 1022,
+        "name": "P2020",
+        "image": "p2020_detail",
+        "imageIcon": "p2020_icon",
+        "type": "Pistol",
+        "category": "Pistols",
+        "ammoType" : "Light",
+        "weaponTypeIcon": "p2020_icon",
+        "ammoTypeIcon": "light_ammo",
+        "standardClipSize": "10",
+        "clipIcon": "extended_light_mag_icon",
+        "fireMode": {
+            "recoil": "Vertical recoil",
+            "modeOne": "Single Fire",
+            "modeOneIcon": "single_icon",
+            "modeOneGif": "p2020_single",
+            "modeTwo": null,
+            "modeTwoIcon": null,
+            "modeTwoGif": null
+        },
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "digitalThreat": {
+                    "name": "Digital Threat",
+                    "image": "digital_threat"
+                }
+            },
+            "clips": {
+                "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
+                "clipIconWhite": "extended_light_mag",
+                "levelOne": "13",
+                "levelTwo": "15",
+                "levelThree": "18"
+            },
+            "hop": {
+                "name": "Hammerpoint Rounds",
+                "icon": "hammerpoint_icon",
+                "description": "The Hammerpoint Rounds hop-up greatly increases damage to unshielded targets."
+            }
+        },
+        "damage": {
+            "head": {
+                "standard": "20",
+                "levelOne": "18",
+                "levelTwo": "16",
+                "levelThree": "15"
+            },
+            "body": "13",
+            "lowerBody": "12"
+        },
+        "description" : "The P2020 is a single fire pistol that uses light ammo. It features a rather tight bullet spread. It is a small weapon which allows for fast movement while aiming. Semi-Auto style allows for quick firing speed, it will fire as fast as you can pull the trigger. It also reloads very fast. It has good Accuracey when hip-firing and while moving. With the Hammerpoint hop up equipped, it deals high unshielded damage. Overall, it has low damage per shot and terrible armor penetration."
+    },
+    {
+        "id": 1023,
+        "name": "WINGMAN",
+        "image": "wingman_detail",
+        "imageIcon": "wingman_icon",
+        "type": "Pistol",
+        "category": "Pistols",
+        "ammoType" : "Heavy",
+        "weaponTypeIcon": "wingman_icon",
+        "ammoTypeIcon": "heavy_ammo",
+        "standardClipSize": "5",
+        "clipIcon": "extended_heavy_mag_icon",
+        "fireMode": {
+            "recoil": "Vertical recoil",
+            "modeOne": "Single Fire",
+            "modeOneIcon": "single_icon",
+            "modeOneGif": "wingman_single",
+            "modeTwo": null,
+            "modeTwoIcon": null,
+            "modeTwoGif": null
+        },
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "digitalThreat": {
+                    "name": "Digital Threat",
+                    "image": "digital_threat"
+                }
+            },
+            "clips": {
+                "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
+                "clipIconWhite": "extended_heavy_mag",
+                "levelOne": "6",
+                "levelTwo": "7",
+                "levelThree": "8"
+            },
+            "hop": {
+                "name": "Skull Piercer Rifling",
+                "icon": "skull_piercer_icon",
+                "description": "The Skullpiercer Rifling hop-up increases the weapon's headshot multiplier:  the Wingman from 2.0x to 2.25x"
+            }
+        },
+        "damage": {
+            "head": {
+                "standard": "90",
+                "levelOne": "81",
+                "levelTwo": "72",
+                "levelThree": "68"
+            },
+            "body": "45",
+            "lowerBody": "41"
+        },
+        "description" : "The Wingman is a single fire pistol that uses heavy ammo. It features very high damage per shot and is the only pistol that doesn't lose headshot multiplier regardless of range. It is a small weapon which allows for fast movement while aiming. The Wingman performs well at all ranges. Can be devastating, three headshots on an enemy without a helmet is enough to knock them down regardless of their body armor level. The Hammerpoint hop only make it more brutal. However, it does have high recoil and a small magazine capacity."
     }
 ]

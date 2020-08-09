@@ -16,7 +16,7 @@ struct WeaponDetail: View {
 
         ZStack {
 
-            Image("bg")
+            Image("season_6_bg")
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
 
@@ -36,18 +36,22 @@ struct WeaponDetail: View {
                         // Weapon Image
                         Image(weapon.image)
                             .resizable()
-                            .frame(width: 300, height: 150)
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: 150)
                             .cornerRadius(20)
                             .padding()
+                            
                         Spacer()
-                    }.background(Color.init(red: 228/255, green: 225/255, blue: 216/255))
+                    }.background(Color.white.opacity(0.9))
                         .cornerRadius(20)
                 }
                 
                 VStack {
                     WeaponDescription(weapon: weapon)
                     DamageView(weapon: weapon)
-                    AttachmentsView(weapon: weapon)
+                    if weapon.attachments != nil {
+                        AttachmentsView(weapon: weapon)
+                    }
                     FireModeView(weapon: weapon)
                 }
             }.padding(.top, 1)
@@ -60,6 +64,6 @@ struct WeaponDetail: View {
 
 struct WeaponDetail_Previews: PreviewProvider {
     static var previews: some View {
-        WeaponDetail(weapon: weaponData[0])
+        WeaponDetail(weapon: weaponData[6])
     }
 }
