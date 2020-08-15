@@ -42,7 +42,9 @@ struct HomeView: View {
                     Spacer()
                     Text("Gear")
                     Spacer()
-                    Text("Maps")
+                    NavigationLink(destination: MapView()) {
+                        Text("Maps")
+                    }
                     Spacer()
                 }
                 Spacer()

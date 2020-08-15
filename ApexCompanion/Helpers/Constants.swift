@@ -27,6 +27,10 @@ struct Constants {
         static var levelFour = UIColor(red: 206/255, green: 173/255, blue: 33/255, alpha: 1.0)
     }
     
+    struct API {
+        static var API_KEY = "EiwtCWdhW2ImpnRbImoj"
+    }
+    
 }
 
 

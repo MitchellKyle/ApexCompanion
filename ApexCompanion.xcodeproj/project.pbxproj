@@ -15,6 +15,10 @@
 		843E010424DDCAB7006CDA90 /* SingleOpticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E010324DDCAB7006CDA90 /* SingleOpticView.swift */; };
 		843E010624DDE3E1006CDA90 /* AbilityButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E010524DDE3E1006CDA90 /* AbilityButtonsView.swift */; };
 		843E010824DF1559006CDA90 /* HopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E010724DF1559006CDA90 /* HopView.swift */; };
+		843E011024E4DAE2006CDA90 /* MapViewSB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E010F24E4DAE2006CDA90 /* MapViewSB.swift */; };
+		843E011224E4E989006CDA90 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843E011124E4E989006CDA90 /* Map.storyboard */; };
+		843E013A24E6177E006CDA90 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E013924E6177E006CDA90 /* MapView.swift */; };
+		843E014024E61B78006CDA90 /* GearDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E013F24E61B78006CDA90 /* GearDetail.swift */; };
 		8444434D24CC82E60090FFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444434C24CC82E60090FFFC /* AppDelegate.swift */; };
 		8444434F24CC82E60090FFFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444434E24CC82E60090FFFC /* SceneDelegate.swift */; };
 		8444435124CC82E60090FFFC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444435024CC82E60090FFFC /* HomeView.swift */; };
@@ -61,6 +65,10 @@
 		843E010324DDCAB7006CDA90 /* SingleOpticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleOpticView.swift; sourceTree = "<group>"; };
 		843E010524DDE3E1006CDA90 /* AbilityButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityButtonsView.swift; sourceTree = "<group>"; };
 		843E010724DF1559006CDA90 /* HopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopView.swift; sourceTree = "<group>"; };
+		843E010F24E4DAE2006CDA90 /* MapViewSB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewSB.swift; sourceTree = "<group>"; };
+		843E011124E4E989006CDA90 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		843E013924E6177E006CDA90 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		843E013F24E61B78006CDA90 /* GearDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearDetail.swift; sourceTree = "<group>"; };
 		8444434924CC82E60090FFFC /* ApexCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApexCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8444434C24CC82E60090FFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8444434E24CC82E60090FFFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +119,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		843E013B24E61B01006CDA90 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				843E010F24E4DAE2006CDA90 /* MapViewSB.swift */,
+				843E011124E4E989006CDA90 /* Map.storyboard */,
+				843E013924E6177E006CDA90 /* MapView.swift */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		843E013C24E61B1C006CDA90 /* Gear */ = {
+			isa = PBXGroup;
+			children = (
+				843E013F24E61B78006CDA90 /* GearDetail.swift */,
+			);
+			path = Gear;
+			sourceTree = "<group>";
+		};
 		8444434024CC82E60090FFFC = {
 			isa = PBXGroup;
 			children = (
@@ -167,8 +193,10 @@
 			isa = PBXGroup;
 			children = (
 				8444435024CC82E60090FFFC /* HomeView.swift */,
-				844443F124D638900090FFFC /* Characters */,
 				844443EA24D216D90090FFFC /* Weapons */,
+				844443F124D638900090FFFC /* Characters */,
+				843E013C24E61B1C006CDA90 /* Gear */,
+				843E013B24E61B01006CDA90 /* Maps */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -331,6 +359,7 @@
 				844443F024D5F1C30090FFFC /* characters.json in Resources */,
 				8444437024CD06200090FFFC /* weapons.json in Resources */,
 				8444438D24CDFE910090FFFC /* Teko-Medium.ttf in Resources */,
+				843E011224E4E989006CDA90 /* Map.storyboard in Resources */,
 				8444435624CC82E70090FFFC /* Preview Assets.xcassets in Resources */,
 				8444435324CC82E70090FFFC /* Assets.xcassets in Resources */,
 				8444438C24CDFE910090FFFC /* Teko-Bold.ttf in Resources */,
@@ -367,10 +396,13 @@
 				8444440224D9FD410090FFFC /* OpticsView.swift in Sources */,
 				844443E524D1F7AB0090FFFC /* BackgroundView.swift in Sources */,
 				844443FE24D8F8870090FFFC /* AttachmentsView.swift in Sources */,
+				843E011024E4DAE2006CDA90 /* MapViewSB.swift in Sources */,
+				843E013A24E6177E006CDA90 /* MapView.swift in Sources */,
 				8444440024D9F3680090FFFC /* ClipsView.swift in Sources */,
 				844443F824D7B36E0090FFFC /* CharacterItem.swift in Sources */,
 				843E010824DF1559006CDA90 /* HopView.swift in Sources */,
 				8444440C24DC47410090FFFC /* WeaponDescription.swift in Sources */,
+				843E014024E61B78006CDA90 /* GearDetail.swift in Sources */,
 				843E010224DDC908006CDA90 /* SingleClipView.swift in Sources */,
 				8444437524CD08940090FFFC /* Constants.swift in Sources */,
 				843E00FE24DDC395006CDA90 /* SubHeaderView.swift in Sources */,
