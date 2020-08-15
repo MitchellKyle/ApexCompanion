@@ -9,13 +9,27 @@
 import SwiftUI
 
 struct GearDetail: View {
+    
+    var gear: Gear
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+
+            Image("season_6_bg")
+                .resizable()
+                .edgesIgnoringSafeArea(.all)
+            
+            ScrollView {
+                
+                HelmetView(gear: gear)
+                
+            }.padding(.bottom, 10)
+        }
     }
 }
 
 struct GearDetail_Previews: PreviewProvider {
     static var previews: some View {
-        GearDetail()
+        GearDetail(gear: gearData[2])
     }
 }

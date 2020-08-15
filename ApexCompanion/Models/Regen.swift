@@ -18,7 +18,7 @@ class Regen: Codable, Identifiable {
     var timeToUse: String
     var description: String
     var info: String
-    var interaction: String
+    var interactions: String
     var tips: String
     
 }

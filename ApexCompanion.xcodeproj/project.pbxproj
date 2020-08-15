@@ -23,6 +23,13 @@
 		843E014524E77342006CDA90 /* Regen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E014424E77342006CDA90 /* Regen.swift */; };
 		843E014824E773EF006CDA90 /* regen.json in Resources */ = {isa = PBXBuildFile; fileRef = 843E014624E773EF006CDA90 /* regen.json */; };
 		843E014924E773EF006CDA90 /* gear.json in Resources */ = {isa = PBXBuildFile; fileRef = 843E014724E773EF006CDA90 /* gear.json */; };
+		843E014B24E77652006CDA90 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E014A24E77652006CDA90 /* HeaderView.swift */; };
+		843E014E24E82747006CDA90 /* SingleGearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E014D24E82747006CDA90 /* SingleGearView.swift */; };
+		843E015024E82E50006CDA90 /* HelmetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E014F24E82E50006CDA90 /* HelmetView.swift */; };
+		843E015224E8391E006CDA90 /* ItemItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E015124E8391E006CDA90 /* ItemItem.swift */; };
+		843E015424E842C3006CDA90 /* GearRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E015324E842C3006CDA90 /* GearRow.swift */; };
+		843E015624E8444A006CDA90 /* RegenDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E015524E8444A006CDA90 /* RegenDetail.swift */; };
+		843E015824E84540006CDA90 /* SingleItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E015724E84540006CDA90 /* SingleItemView.swift */; };
 		8444434D24CC82E60090FFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444434C24CC82E60090FFFC /* AppDelegate.swift */; };
 		8444434F24CC82E60090FFFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444434E24CC82E60090FFFC /* SceneDelegate.swift */; };
 		8444435124CC82E60090FFFC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444435024CC82E60090FFFC /* HomeView.swift */; };
@@ -77,6 +84,13 @@
 		843E014424E77342006CDA90 /* Regen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regen.swift; sourceTree = "<group>"; };
 		843E014624E773EF006CDA90 /* regen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = regen.json; sourceTree = "<group>"; };
 		843E014724E773EF006CDA90 /* gear.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gear.json; sourceTree = "<group>"; };
+		843E014A24E77652006CDA90 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		843E014D24E82747006CDA90 /* SingleGearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleGearView.swift; sourceTree = "<group>"; };
+		843E014F24E82E50006CDA90 /* HelmetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelmetView.swift; sourceTree = "<group>"; };
+		843E015124E8391E006CDA90 /* ItemItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemItem.swift; sourceTree = "<group>"; };
+		843E015324E842C3006CDA90 /* GearRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearRow.swift; sourceTree = "<group>"; };
+		843E015524E8444A006CDA90 /* RegenDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegenDetail.swift; sourceTree = "<group>"; };
+		843E015724E84540006CDA90 /* SingleItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleItemView.swift; sourceTree = "<group>"; };
 		8444434924CC82E60090FFFC /* ApexCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApexCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8444434C24CC82E60090FFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8444434E24CC82E60090FFFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,7 +154,20 @@
 		843E013C24E61B1C006CDA90 /* Gear */ = {
 			isa = PBXGroup;
 			children = (
+				843E015324E842C3006CDA90 /* GearRow.swift */,
+				843E015124E8391E006CDA90 /* ItemItem.swift */,
 				843E013F24E61B78006CDA90 /* GearDetail.swift */,
+				843E015524E8444A006CDA90 /* RegenDetail.swift */,
+			);
+			path = Gear;
+			sourceTree = "<group>";
+		};
+		843E014C24E82662006CDA90 /* Gear */ = {
+			isa = PBXGroup;
+			children = (
+				843E014D24E82747006CDA90 /* SingleGearView.swift */,
+				843E014F24E82E50006CDA90 /* HelmetView.swift */,
+				843E015724E84540006CDA90 /* SingleItemView.swift */,
 			);
 			path = Gear;
 			sourceTree = "<group>";
@@ -246,12 +273,14 @@
 		8444439024CE1CCF0090FFFC /* Supporting Views */ = {
 			isa = PBXGroup;
 			children = (
+				843E014A24E77652006CDA90 /* HeaderView.swift */,
 				843E00FD24DDC395006CDA90 /* SubHeaderView.swift */,
 				844443E824D212300090FFFC /* NavigationConfigurator.swift */,
 				844443E424D1F7AB0090FFFC /* BackgroundView.swift */,
 				8444440924DB64F00090FFFC /* GifPlayerView.swift */,
 				844443F424D7899B0090FFFC /* Characters */,
 				8444439124CE59E90090FFFC /* Weapons */,
+				843E014C24E82662006CDA90 /* Gear */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -390,6 +419,7 @@
 				844443F324D638BB0090FFFC /* CharacterDetail.swift in Sources */,
 				843E014524E77342006CDA90 /* Regen.swift in Sources */,
 				844443FC24D7C08E0090FFFC /* CharacterList.swift in Sources */,
+				843E014E24E82747006CDA90 /* SingleGearView.swift in Sources */,
 				844443F624D789BD0090FFFC /* AbilitiesView.swift in Sources */,
 				8444440624DB538E0090FFFC /* FireModeView.swift in Sources */,
 				843E00FC24DD919A006CDA90 /* SingleStockView.swift in Sources */,
@@ -409,17 +439,23 @@
 				844443E324D1E7960090FFFC /* WeaponItem.swift in Sources */,
 				844443A324CF63C80090FFFC /* Data.swift in Sources */,
 				844443FA24D7B6C20090FFFC /* CharacterRow.swift in Sources */,
+				843E015224E8391E006CDA90 /* ItemItem.swift in Sources */,
 				8444440224D9FD410090FFFC /* OpticsView.swift in Sources */,
+				843E015024E82E50006CDA90 /* HelmetView.swift in Sources */,
 				844443E524D1F7AB0090FFFC /* BackgroundView.swift in Sources */,
 				844443FE24D8F8870090FFFC /* AttachmentsView.swift in Sources */,
+				843E014B24E77652006CDA90 /* HeaderView.swift in Sources */,
 				843E011024E4DAE2006CDA90 /* MapViewSB.swift in Sources */,
 				843E013A24E6177E006CDA90 /* MapView.swift in Sources */,
 				8444440024D9F3680090FFFC /* ClipsView.swift in Sources */,
+				843E015624E8444A006CDA90 /* RegenDetail.swift in Sources */,
 				844443F824D7B36E0090FFFC /* CharacterItem.swift in Sources */,
 				843E010824DF1559006CDA90 /* HopView.swift in Sources */,
+				843E015424E842C3006CDA90 /* GearRow.swift in Sources */,
 				8444440C24DC47410090FFFC /* WeaponDescription.swift in Sources */,
 				843E014024E61B78006CDA90 /* GearDetail.swift in Sources */,
 				843E010224DDC908006CDA90 /* SingleClipView.swift in Sources */,
+				843E015824E84540006CDA90 /* SingleItemView.swift in Sources */,
 				8444437524CD08940090FFFC /* Constants.swift in Sources */,
 				843E00FE24DDC395006CDA90 /* SubHeaderView.swift in Sources */,
 				8444437D24CD2F820090FFFC /* WeaponDetail.swift in Sources */,

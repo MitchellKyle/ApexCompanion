@@ -40,7 +40,9 @@ struct HomeView: View {
                 Spacer()
                 HStack {
                     Spacer()
-                    Text("Gear")
+                    NavigationLink (destination: GearRow()) {
+                        Text("Gear")
+                    }
                     Spacer()
                     NavigationLink(destination: MapView()) {
                         Text("Maps")

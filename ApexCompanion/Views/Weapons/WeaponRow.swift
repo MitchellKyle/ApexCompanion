@@ -31,7 +31,7 @@ struct WeaponRow: View {
                     ForEach (self.weapons, id: \.name) { weapon in
                         NavigationLink(destination: WeaponDetail(weapon: weapon)) {
                         
-                        WeaponItem(weapon: weapon)
+                            WeaponItem(weapon: weapon)
                         }
                     }
                 }

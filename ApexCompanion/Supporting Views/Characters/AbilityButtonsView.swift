@@ -19,7 +19,7 @@ struct AbilityButtonsView: View {
         .padding(.vertical, 5)
         .font(.custom("Teko-SemiBold", size: 25))
         .foregroundColor(condition ? .white : .black)
-        .background(condition ? Color.black : Color.white.opacity(0.9))
+        .background(condition ? Color.black : Color.white)
         .cornerRadius(10)
     }
 }

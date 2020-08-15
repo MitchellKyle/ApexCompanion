@@ -23,14 +23,16 @@ struct WeaponDetail: View {
             ScrollView {
                 
                 VStack(spacing: 0) {
-                    // Character Name
+                    // Weapon Name
                     HStack {
                         Text(weapon.name)
                         .font(.custom("Teko-Bold", size: 45))
                             .foregroundColor(.black)
                         Spacer()
-                    }.frame(height: 40)
-                        .padding(.all)
+                    }
+                    .frame(height: 40)
+                    .padding(.all)
+                    
                     HStack {
                         Spacer()
                         // Weapon Image

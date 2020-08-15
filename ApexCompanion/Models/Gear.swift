@@ -14,6 +14,7 @@ class Gear: Codable, Identifiable {
     var name: String
     var category: String
     var image: String
+    var imageWhite: String
     var description: String
     var levelOne: LevelOne
     var levelTwo: LevelTwo

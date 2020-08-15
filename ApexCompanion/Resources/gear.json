@@ -4,6 +4,7 @@
 		"name": "Helmet",
 		"category": "Gear",
 		"image": "helmet_icon",
+        "imageWhite": "helmet_icon_white",
 		"description": "Minor headshot damage reduction.",
 		"levelOne": {
 			"name": "Level One",
@@ -28,6 +29,7 @@
 		"name": "Body Shield",
 		"category": "Gear",
 		"image": "body_shield_icon",
+        "imageWhite": "body_shield_icon_white",
 		"description": "Prioritize finding one as soon as possible at the start of the game, regardless of its level. On intense firefights, it may be faster to switch to another body shield of the same or lower level instead of using shield cells or shield batteries, as all shields keep their health when dropped and all naturally spawned body shields always start with full health. Completing a finisher refills all shield health.",
 		"levelOne": {
 			"name": "Level One",
@@ -52,6 +54,7 @@
 		"name": "Evo Shield",
 		"category": "Gear",
 		"image": "evo_shield_icon",
+        "imageWhite": "evo_shield_icon_white",
 		"description": "Evo shields gain strength when the wearer inflicts damage. If dropped or if the wearer dies, progress towards the next level is saved for the next wearer. Try to look for a used Evo Shield from other dead players so that you don’t have to deal as much damage for the max level. Completing a Finisher refills all Shield health.",
 		"levelOne": {
 			"name": "Level One",
@@ -76,6 +79,7 @@
 		"name": "Knockdown Shield",
 		"category": "Gear",
 		"image": "knockdown_shield_icon",
+        "imageWhite": "knockdown_shield_icon_white",
 		"description": "Provides directional damage protection while knocked down. Reduces movement speed to 55%.",
 		"levelOne": {
 			"name": "Level One",
@@ -100,6 +104,7 @@
 		"name": "Backpack",
 		"category": "Gear",
 		"image": "backpack_icon",
+        "imageWhite": "backpack_icon_white",
 		"description": "Provides the play with additional storage slots (players are able to carry more items). It should be a priority to acquire a backpack as soon as possible. It gives you additional room to carry ammunition, consumables or attachments. Without a backpack equipped, a player has ten inventory slots.",
 		"levelOne": {
 			"name": "Level One",
