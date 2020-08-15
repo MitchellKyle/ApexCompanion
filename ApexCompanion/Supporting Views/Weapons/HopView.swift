@@ -26,6 +26,7 @@ struct HopView: View {
             Text(weapon.attachments!.hop!.description)
                 .font(.custom("Teko-SemiBold", size: 20))
                 .foregroundColor(.black)
+                .fixedSize(horizontal: false, vertical: true)
         }
     }
 }

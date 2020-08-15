@@ -45,7 +45,7 @@ struct FireModeView: View {
                     Text(weapon.fireMode.recoil)
                         .font(.custom("Teko-SemiBold", size: 20))
                         .foregroundColor(.black)
-                    .frame(height: 80)
+                        .fixedSize(horizontal: false, vertical: true)
                 }.padding(.top, 10)
                 HStack {
                     Spacer()

@@ -2,7 +2,7 @@
 	{
 		"id": 1001,
 		"name": "Shield Cell",
-		"image": "Shield_Cell",
+		"image": "shield_cell_icon",
 		"category": "Regen",
 		"type": "Shield",
 		"timeToUse": "3 seconds",

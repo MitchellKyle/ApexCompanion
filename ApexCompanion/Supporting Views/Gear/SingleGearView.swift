@@ -41,7 +41,7 @@ struct SingleGearView: View {
                     .foregroundColor(.black)
                     .multilineTextAlignment(.leading)
                     .padding(.vertical)
-                    .frame(width: 270, height: 150)
+                    .fixedSize(horizontal: false, vertical: true)
                 Spacer()
             }
             if levelFourInfo != nil {
@@ -49,7 +49,7 @@ struct SingleGearView: View {
                 .font(.custom("Teko-Regular", size: 22))
                 .foregroundColor(.black)
                 .padding(.horizontal)
-                .frame(height: 190)
+                .fixedSize(horizontal: false, vertical: true)
             }
         }
     }

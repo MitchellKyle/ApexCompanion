@@ -32,9 +32,9 @@ struct CharacterRow: View {
                     ForEach (self.characters, id: \.name) { character in
                         NavigationLink(destination: CharacterDetail(character: character)) {
                         
-                                CharacterItem(character: character).buttonStyle(PlainButtonStyle())
-                            
-                        }
+                            CharacterItem(character: character)
+                                
+                        }.buttonStyle(FlatLinkStyle())
                     }
                 }
             }
@@ -45,5 +45,11 @@ struct CharacterRow: View {
 struct CharacterRow_Previews: PreviewProvider {
     static var previews: some View {
         CharacterRow(characterType: "Offensive", characters: characterData)
+    }
+}
+
+struct FlatLinkStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
     }
 }

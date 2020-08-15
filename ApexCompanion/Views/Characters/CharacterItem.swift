@@ -30,9 +30,11 @@ struct CharacterItem: View {
                     .padding()
                     .foregroundColor(.black)
             }
-        }.frame(width: 350, height: 250)
+        }
+        .frame(width: 350, height: 250)
         .background(Color.init(red: 228/255, green: 225/255, blue: 216/255))
         .cornerRadius(20)
+        
     }
 }
 

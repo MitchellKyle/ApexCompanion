@@ -18,15 +18,15 @@ struct ItemItem: View {
             VStack {
                 Image("season_6_bg").renderingMode(.original)
             }
-            .frame(width: 250, height: 180)
+            .frame(width: 300, height: 180)
                 .rotationEffect(.degrees(90))
             .cornerRadius(20)
             
             if gear != nil {
-                SingleItemView(itemImage: gear!.image, itemName: gear!.name)
+                SingleItemView(itemImage: gear!.image, itemName: gear!.name, isRegen: false)
             }
             if regen != nil {
-                SingleItemView(itemImage: regen!.image, itemName: regen!.name)
+                SingleItemView(itemImage: regen!.image, itemName: regen!.name, isRegen: true)
             }
             
         }
@@ -35,6 +35,6 @@ struct ItemItem: View {
 
 struct ItemItem_Previews: PreviewProvider {
     static var previews: some View {
-        ItemItem(gear: gearData[0])
+        ItemItem(regen: regenData[0])
     }
 }

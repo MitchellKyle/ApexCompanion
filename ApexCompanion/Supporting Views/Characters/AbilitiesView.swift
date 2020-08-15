@@ -44,7 +44,7 @@ struct AbilitiesView: View {
                 .font(.custom("Teko-SemiBold", size: 20))
                 .multilineTextAlignment(.leading)
                 .foregroundColor(.black)
-                .lineLimit(nil)
+                .fixedSize(horizontal: false, vertical: true)
             // Cooldown
             Text("Cooldown -> \(abilityCD)")
                 .font(.custom("Teko-SemiBold", size: 20))
@@ -87,14 +87,14 @@ struct AbilitiesView: View {
                         Text(abilityInfo)
                             .font(.custom("Teko-SemiBold", size: 20))
                             .foregroundColor(.black)
-                            .lineLimit(nil)
+                            .fixedSize(horizontal: false, vertical: true)
                     }
                     // Tips
                     else {
                         Text(abilityTips)
                             .font(.custom("Teko-SemiBold", size: 20))
                             .foregroundColor(.black)
-                            .lineLimit(nil)
+                            .fixedSize(horizontal: false, vertical: true)
                     }
                 }
             }

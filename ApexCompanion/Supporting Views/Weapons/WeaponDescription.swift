@@ -81,6 +81,7 @@ struct WeaponDescription: View {
                     .font(.custom("Teko-SemiBold", size: 20))
                     .foregroundColor(.black)
                     .padding(.top, 20)
+                    .fixedSize(horizontal: false, vertical: true)
             }.frame(height: 250)
                 .padding(.horizontal, 10)
         }.padding(.vertical)

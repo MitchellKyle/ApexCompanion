@@ -54,6 +54,7 @@ struct GearRow: View {
                 }
             }
         }
+        .padding(.horizontal)
         .navigationBarHidden(false)
         .navigationBarTitle("Weapon Types", displayMode: .inline)
     }

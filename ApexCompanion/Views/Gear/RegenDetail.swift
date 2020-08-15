@@ -40,7 +40,7 @@ struct RegenDetail: View {
                             Image(regen.image)
                                 .resizable()
                                 .frame(width: 100, height: 100)
-                                .padding(.bottom, -20)
+                                .padding(.bottom, -5)
                             Text("Time to use -> \(regen.timeToUse)")
                                 .font(.custom("Teko-Medium", size: 23))
                                 .foregroundColor(.black)
