@@ -1,0 +1,86 @@
+[
+	{
+		"id": 1001,
+		"name": "Shield Cell",
+		"image": "shield_cell_icon",
+		"category": "Regen",
+		"type": "Shield",
+		"timeToUse": "3 seconds",
+		"description": "Restores 25 shield damage (one bar) done to shields",
+		"info": "Common rarity, spawns in stacks of 2. Up to 4 Shield Cells can be stacked per slot in the inventory.",
+		"interactions": "While inside Gibraltar's Dome of Protection, the time to use becomes 2.55 seconds. With the Level 4 body shield equipped, shield cells give double the amount per use (restores 50 shield damage). Two shield cells can be used to charge a Sentinel.",
+		"tips": "Try to use these in combat whenever you are safely able. They are fast to use and will give you an advantage over an enemy who has not healed."
+	},
+	{
+		"id": 1002,
+		"name": "Syringe",
+		"image": "syringe_icon",
+		"category": "Regen",
+		"type": "Health",
+		"timeToUse": "5 seconds",
+		"description": "Restores 25 health.",
+		"info": "Common rarity, spawns in stacks of 2. Up to 4 Syringes can be stacked per slot in the inventory.",
+		"interactions": "While inside Gibraltar's Dome of Protection, the time to use becomes 4.25 seconds. With the Level 4 body shield equipped, syringes give double the amount per use (restores 50 health).",
+		"tip": "If in an area where danger is around, it may be best to use syringes over a med kit since they take less time to apply."
+	},
+	{
+		"id": 1003,
+		"name": "Shield Battery",
+		"image": "shield_battery_icon",
+		"category": "Regen",
+		"type": "Shield",
+		"timeToUse": "5 seconds",
+		"description": "Completely repairs all shield damage.",
+		"info": "Rare rarity, spawns in stack of 1. Up to 2 shield batteries can be stacked per slot in the inventory.",
+		"interactions": "While inside Gibraltar's Dome of Protection, the time to use becomes 4.25 seconds.",
+		"tip": "Using a shield battery is faster than using two or more shield cells. In the heat of battle it may be more beneficial to use a shield battery. Works well with level 5 evo shields as it can restore the full 125 shield amount."
+	}
+	{
+		"id": 1004,
+		"name": "Med Kit",
+		"image": "med_kit_icon",
+		"category": "Regen",
+		"type": "Health",
+		"timeToUse": "8 seconds",
+		"description": "Fully restores a player's health.",
+		"info": "Rare rarity, spawns in stack of 1. Up to 2 med kits can be stacked per slot in the inventory.",
+		"interactions": "While inside Gibraltar's Dome of Protection, the time to use becomes 6.8 seconds.",
+		"tip": "Using a med kit is faster than using two or more syringes. In the heat of battle, it may be more beneficial to use a Med Kit. As Lifeline, carry either 1 Phoenix kit or 4 syringes instead of med kit, allowing your backpack to be more space efficient."
+	},
+	{
+		"id": 1005,
+		"name": "Phoenix Kit",
+		"image": "phoenix_kit_icon",
+		"category": "Regen",
+		"type": "Health and Shield",
+		"timeToUse": "10 seconds",
+		"description": "Fully restores a player's health and fully repairs all shield damage.",
+		"info": "Epic rarity, spawns in stack of 1. Only 1 Phoenix kit can be stacked per slot in the inventory.",
+		"interactions": "While inside Gibraltar's Dome of Protection, the time to use becomes 8.5 seconds.",
+		"tip": "The Phoenix kit takes a long time to use, make sure you are safe before using this consumable."
+	},
+	{
+		"id": 1006,
+		"name": "Mobile Respawn Beacon",
+		"image": "respawn_beacon_icon",
+		"category": "Special",
+		"type": "Special",
+		"timeToUse": "7 seconds",
+		"description": "Creates a respawn beacon at your position",
+		"info": "Rare rarity. Only 1 mobile respawn beacon can be stacked per slot in the inventory.",
+		"interactions": "Once called in, the beacon takes about 15 seconds to land and an additional 7 seconds to use the beacon. Each mobile respawn beacon can only be used once.",
+		"tip": "The mobile Respawn Beacon makes a lot of noise when deploying and also emit a bright green beam in the sky while deployed. This makes them easily tracked by nearby squads. Crypto is an excellent Legend to use the mobile respawn beacon with because he is able to get his teammates' banners safely from a distance using his Surveillance Drone. As with using a normal Respawn Beacon, Mirage will become invisible while respawning his teammates."
+	},
+	{
+		"id": 1007,
+		"name": "Ultimate Accelerant",
+		"image": "ultimate_accelerant_icon",
+		"category": "Special",
+		"type": "Special",
+		"timeToUse": "7 seconds",
+		"description": "Restores 35% Ultimate energy (with the exception of Loba, restores 20%).",
+		"info": "Rare rarity. Only 1 ultimate accelerant can be stacked per slot in the inventory. However, Wattson can stack 2 Ultimate Accelerants per slot in the inventory due to her passive ability Spark of Genius.",
+		"interactions": "While inside Gibraltar's Dome of Protection, the time to use becomes 5.95 seconds. Wattson's passive ability, Spark of Genius, allows Ultimate Accelerants to fully charge her ultimate in one use.",
+		"tip": "Ultimate Accelerants must be actively used, they are not passive. As Lifeline, use as many Ultimate Accelerants as you can so you can call in Care Packages more often. As Wattson, try to always reserve an inventory slot for Ultimate Accelerants to use your ultimate mid-fights. Mirage and Octane, charge their ultimate abilities quickly, so avoid carrying them when playing these characters."
+	}
+]

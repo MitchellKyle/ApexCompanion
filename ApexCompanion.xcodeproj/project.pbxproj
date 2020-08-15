@@ -19,6 +19,10 @@
 		843E011224E4E989006CDA90 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843E011124E4E989006CDA90 /* Map.storyboard */; };
 		843E013A24E6177E006CDA90 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E013924E6177E006CDA90 /* MapView.swift */; };
 		843E014024E61B78006CDA90 /* GearDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E013F24E61B78006CDA90 /* GearDetail.swift */; };
+		843E014224E77195006CDA90 /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E014124E77195006CDA90 /* Gear.swift */; };
+		843E014524E77342006CDA90 /* Regen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E014424E77342006CDA90 /* Regen.swift */; };
+		843E014824E773EF006CDA90 /* regen.json in Resources */ = {isa = PBXBuildFile; fileRef = 843E014624E773EF006CDA90 /* regen.json */; };
+		843E014924E773EF006CDA90 /* gear.json in Resources */ = {isa = PBXBuildFile; fileRef = 843E014724E773EF006CDA90 /* gear.json */; };
 		8444434D24CC82E60090FFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444434C24CC82E60090FFFC /* AppDelegate.swift */; };
 		8444434F24CC82E60090FFFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444434E24CC82E60090FFFC /* SceneDelegate.swift */; };
 		8444435124CC82E60090FFFC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444435024CC82E60090FFFC /* HomeView.swift */; };
@@ -69,6 +73,10 @@
 		843E011124E4E989006CDA90 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		843E013924E6177E006CDA90 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		843E013F24E61B78006CDA90 /* GearDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearDetail.swift; sourceTree = "<group>"; };
+		843E014124E77195006CDA90 /* Gear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gear.swift; sourceTree = "<group>"; };
+		843E014424E77342006CDA90 /* Regen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regen.swift; sourceTree = "<group>"; };
+		843E014624E773EF006CDA90 /* regen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = regen.json; sourceTree = "<group>"; };
+		843E014724E773EF006CDA90 /* gear.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gear.json; sourceTree = "<group>"; };
 		8444434924CC82E60090FFFC /* ApexCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApexCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8444434C24CC82E60090FFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8444434E24CC82E60090FFFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -185,6 +193,8 @@
 			children = (
 				844443EF24D5F1C30090FFFC /* characters.json */,
 				8444436F24CD06200090FFFC /* weapons.json */,
+				843E014724E773EF006CDA90 /* gear.json */,
+				843E014624E773EF006CDA90 /* regen.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -206,6 +216,8 @@
 			children = (
 				8444436924CD019A0090FFFC /* Weapon.swift */,
 				844443ED24D5EFC00090FFFC /* Character.swift */,
+				843E014124E77195006CDA90 /* Gear.swift */,
+				843E014424E77342006CDA90 /* Regen.swift */,
 				844443A224CF63C80090FFFC /* Data.swift */,
 			);
 			path = Models;
@@ -360,9 +372,11 @@
 				8444437024CD06200090FFFC /* weapons.json in Resources */,
 				8444438D24CDFE910090FFFC /* Teko-Medium.ttf in Resources */,
 				843E011224E4E989006CDA90 /* Map.storyboard in Resources */,
+				843E014924E773EF006CDA90 /* gear.json in Resources */,
 				8444435624CC82E70090FFFC /* Preview Assets.xcassets in Resources */,
 				8444435324CC82E70090FFFC /* Assets.xcassets in Resources */,
 				8444438C24CDFE910090FFFC /* Teko-Bold.ttf in Resources */,
+				843E014824E773EF006CDA90 /* regen.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,12 +388,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				844443F324D638BB0090FFFC /* CharacterDetail.swift in Sources */,
+				843E014524E77342006CDA90 /* Regen.swift in Sources */,
 				844443FC24D7C08E0090FFFC /* CharacterList.swift in Sources */,
 				844443F624D789BD0090FFFC /* AbilitiesView.swift in Sources */,
 				8444440624DB538E0090FFFC /* FireModeView.swift in Sources */,
 				843E00FC24DD919A006CDA90 /* SingleStockView.swift in Sources */,
 				843E00FA24DC8BE8006CDA90 /* DamageView.swift in Sources */,
 				8444437B24CD2E500090FFFC /* WeaponListView.swift in Sources */,
+				843E014224E77195006CDA90 /* Gear.swift in Sources */,
 				8444434D24CC82E60090FFFC /* AppDelegate.swift in Sources */,
 				8444436A24CD019A0090FFFC /* Weapon.swift in Sources */,
 				8444434F24CC82E60090FFFC /* SceneDelegate.swift in Sources */,
