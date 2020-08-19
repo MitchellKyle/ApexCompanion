@@ -16,10 +16,19 @@ class Gear: Codable, Identifiable {
     var image: String
     var imageWhite: String
     var description: String
+    var levelZero: LevelZero?
     var levelOne: LevelOne
     var levelTwo: LevelTwo
     var levelThree: LevelThree
     var levelFour: LevelFour
+    var levelFive: LevelFive?
+    
+}
+
+struct LevelZero: Codable, Hashable {
+    
+    var name: String
+    var description: String
     
 }
 
@@ -48,6 +57,12 @@ struct LevelFour: Codable, Hashable {
     
     var name: String
     var description: String
-    var info: String
+    
+}
+
+struct LevelFive: Codable, Hashable {
+    
+    var name: String
+    var description: String
     
 }

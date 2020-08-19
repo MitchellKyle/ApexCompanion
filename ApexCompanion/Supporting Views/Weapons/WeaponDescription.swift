@@ -75,15 +75,12 @@ struct WeaponDescription: View {
                 }.frame(width: 95)
                 Spacer()
             }
-            
-            ScrollView {
-                Text(weapon.description)
-                    .font(.custom("Teko-SemiBold", size: 20))
-                    .foregroundColor(.black)
-                    .padding(.top, 20)
-                    .fixedSize(horizontal: false, vertical: true)
-            }.frame(height: 250)
-                .padding(.horizontal, 10)
+            Text(weapon.description)
+                .font(.custom("Teko-SemiBold", size: 20))
+                .foregroundColor(.black)
+                .padding(.top, 20)
+                .fixedSize(horizontal: false, vertical: true)
+                .padding(.horizontal)
         }.padding(.vertical)
         .background(Color.white.opacity(0.9))
         .cornerRadius(20)

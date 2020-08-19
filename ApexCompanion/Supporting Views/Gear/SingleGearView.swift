@@ -14,7 +14,6 @@ struct SingleGearView: View {
     var levelName: String
     var levelColor: UIColor
     var levelDescription: String
-    var levelFourInfo: String?
     
     var body: some View {
         VStack {
@@ -41,15 +40,9 @@ struct SingleGearView: View {
                     .foregroundColor(.black)
                     .multilineTextAlignment(.leading)
                     .padding(.vertical)
+                    .frame(width: 280)
                     .fixedSize(horizontal: false, vertical: true)
                 Spacer()
-            }
-            if levelFourInfo != nil {
-                Text(gear.levelFour.info)
-                .font(.custom("Teko-Regular", size: 22))
-                .foregroundColor(.black)
-                .padding(.horizontal)
-                .fixedSize(horizontal: false, vertical: true)
             }
         }
     }
@@ -57,6 +50,6 @@ struct SingleGearView: View {
 
 struct SingleGearView_Previews: PreviewProvider {
     static var previews: some View {
-        SingleGearView(gear: gearData[0], levelName: gearData[4].levelOne.name, levelColor: Constants.Colors.levelOne, levelDescription: gearData[2].levelThree.description, levelFourInfo: gearData[2].levelFour.info)
+        SingleGearView(gear: gearData[0], levelName: gearData[3].levelOne.name, levelColor: Constants.Colors.levelOne, levelDescription: gearData[2].levelThree.description)
     }
 }

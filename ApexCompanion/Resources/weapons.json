@@ -367,7 +367,7 @@
             "body": "14",
             "lowerBody": "11"
         },
-        "description" : "The R-301 is an assault rifle that uses light ammo. It features two fire modes, fully automatic by default and a single fire option. The R-301 boasts a 2× headshot multiplier and high bullet velocity. it has high accuracy and rate of fire. It performs well at close to medium range and for an assault rifle, also at long range. Great ironsights, and above average hipfire performance. The R-301 does overall have low damage and low base ammo capacity. Also, the vertical and horizontal recoil pattern is somewhat hard to control at a longer range."
+        "description" : "The R-301 is an assault rifle that uses light ammo. It features two fire modes, fully automatic by default and a single fire option. The R-301 boasts a 2× headshot multiplier and high bullet velocity. It has high accuracy and a high rate of fire. It performs well at close to medium range and for an assault rifle, also at long range. Great ironsights, and above average hipfire performance. The R-301 does have low damage overall and low base ammo capacity. Also, the vertical and horizontal recoil pattern is somewhat hard to control at a longer range."
     },
     {
         "id": 1005,
@@ -379,7 +379,7 @@
         "ammoType" : "Energy",
         "weaponTypeIcon": "havoc_icon",
         "ammoTypeIcon": "energy_ammo",
-        "standardClipSize": "28",
+        "standardClipSize": "24",
         "clipIcon": "extended_energy_mag_icon",
         "fireMode": {
             "recoil": "High horizontal recoil in the beginning, high vertical recoil from middle to the end",
@@ -419,7 +419,13 @@
                     "image": "epic_hcog"
                 }
             },
-            "clips": null,
+            "clips": {
+                "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
+                "clipIconWhite": "extended_energy_mag_icon",
+                "levelOne": "28",
+                "levelTwo": "32",
+                "levelThree": "36"
+            },
             "stocks": {
                 "stockIcon": "standard_stock_icon",
                 "description": "Improves weapon switch speed and aim sway.",
@@ -433,9 +439,9 @@
             },
             "stabilizer": null,
             "hop": {
-                "name": "Select Fire",
-                "icon": "select_fire_icon",
-                "description": "The Selectfire Receiver hop-up grants an alternative fire mode: HAVOC gains a single fire hitscan laser."
+                "name": "Select Fire / Turbocharger",
+                "icon": "select_turbo_icon",
+                "description": "The Havoc supports both the Selectfire and Turbocharger hop-ups. The Selectfire Receiver hop-up grants an alternative fire mode: HAVOC gains a single fire hitscan laser. The Turbocharger hop-up removes the need for the weapons to charge up; either it removes the delay to fire or it instantly increased a weapon's rate of fire so it reaches the maximum much faster. Only one hop-up can be equipped at a time."
             }
         },
         "damage": {
@@ -448,7 +454,7 @@
             "body": "18",
             "lowerBody": "14"
         },
-        "description" : "The Have is an assault rifle that uses energy ammo. It is fully automatic by default and when a Selectfire Reciever is added, gains a single fire hitscan mode. The Havoc boasts 2× head-shot multiplier, has high damage per shot for an assault rifle. It has the highest stock ammo capacity out of all assault rifles, but does not support extended magazines. It also has the highest bullet velocity out of all full auto Guns in the game, and has little bullet drop. The Havoc must be charged before shooting. The recoil makes if very hard to control."
+        "description" : "The Havoc is an assault rifle that uses energy ammo. It is fully automatic by default and when a Selectfire Reciever is added, it gains a single fire hitscan mode. The Havoc boasts 2× head-shot multiplier, has high damage per shot for an assault rifle. It also has the highest stock ammo capacity out of all assault rifles. It also has the highest bullet velocity out of all full auto Guns in the game, and has little bullet drop. The Havoc must be charged before shooting unless it is equipped with the Turbocharger Hop-up. The recoil makes if very hard to control."
     },
     {
         "id": 1006,
@@ -629,16 +635,50 @@
         "imageIcon": "r99_icon",
         "type": "Sub Machine Gun",
         "category": "Sub Machine Guns",
-        "ammoType" : "Light",
+        "ammoType" : "Special Light",
         "weaponTypeIcon": "r99_icon",
-        "ammoTypeIcon": "light_ammo",
-        "standardClipSize": "20",
+        "ammoTypeIcon": "special_light_ammo_icon",
+        "standardClipSize": "32",
         "clipIcon": "extended_light_mag_icon",
         "fireMode": {
             "recoil": "Vertical and curve right recoil",
             "modeOne": "Automatic",
             "modeOneIcon": "auto_icon",
             "modeOneGif": "r99_auto",
+            "modeTwo": null,
+            "modeTwoIcon": null,
+            "modeTwoGif": null
+        },
+        "attachments": null,
+        "damage": {
+            "head": {
+                "standard": "18",
+                "levelOne": "17",
+                "levelTwo": "16",
+                "levelThree": "15"
+            },
+            "body": "12",
+            "lowerBody": "10"
+        },
+        "description" : "The R-99 is a special Heirloom tier sub machine gun that uses Special Light Ammo. It can only be found in neutral Care Packages, and cannot be fitted with foreign attachments or ammo. It comes pre-equipped with 160 backup ammo, a 1x Digital Threat as a scope, and a level 4 barrel stabilizer. It has a very high rate of fire but has high recoil."
+    },
+    {
+        "id": 1009,
+        "name": "DEVOTION",
+        "image": "devotion_detail",
+        "imageIcon": "devotion_icon",
+        "type": "Light Machine Gun",
+        "category": "Light Machine Guns",
+        "ammoType" : "Energy Ammo",
+        "weaponTypeIcon": "devotion_icon",
+        "ammoTypeIcon": "energy_ammo",
+        "standardClipSize": "36",
+        "clipIcon": "extended_energy_mag_icon",
+        "fireMode": {
+            "recoil": "Vertical and curve left and curve right recoil",
+            "modeOne": "Automatic",
+            "modeOneIcon": "auto_icon",
+            "modeOneGif": "devotion_auto",
             "modeTwo": null,
             "modeTwoIcon": null,
             "modeTwoGif": null
@@ -663,17 +703,21 @@
                     "name": "2x HCOG",
                     "image": "rare_hcog"
                 },
-                "digitalThreat": {
-                    "name": "Digital Threat",
-                    "image": "digital_threat"
+                "epicHolo": {
+                    "name": "2x-4x Variable AOG",
+                    "image": "epic_holo"
+                },
+                "epicHcog": {
+                    "name": "3x HCOG",
+                    "image": "epic_hcog"
                 }
             },
             "clips": {
                 "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
-                "clipIconWhite": "extended_light_mag",
-                "levelOne": "25",
-                "levelTwo": "30",
-                "levelThree": "35"
+                "clipIconWhite": "extended_energy_mag_icon",
+                "levelOne": "40",
+                "levelTwo": "44",
+                "levelThree": "48"
             },
             "stocks": {
                 "stockIcon": "standard_stock_icon",
@@ -698,42 +742,12 @@
                 "epicDescription": "20% Recoil reduction and randomness decreased by 30%",
                 "legendaryName": "Level Four",
                 "legendaryDescription": "20% Recoil reduction and randomness decreased by 30%. Also reduces visual muzzle flash."
+            },"hop": {
+                "name": "Turbocharger",
+                "icon": "turbocharger_icon",
+                "description": "The Turbocharger hop-up removes the need for the weapons to charge up; either it removes the delay to fire or it instantly increased a weapon's rate of fire so it reaches the maximum much faster."
             }
         },
-        "damage": {
-            "head": {
-                "standard": "14",
-                "levelOne": "13",
-                "levelTwo": "12",
-                "levelThree": "12"
-            },
-            "body": "9",
-            "lowerBody": "8"
-        },
-        "description" : "The R-99 is sub machine gun that uses light ammo. It features one fire mode, fully automatic. The R-99 has a Very fast firing rate and the second highest SMG magazine capacity. The R-99 also boasts fast movement while aiming down sights. The R-99 does have the lowest damage-per-shot out of all SMGs and high recoil. The R-99 also does not perform well at at long distances, with a 1× headshot multiplier at 39+ meters."
-    },
-    {
-        "id": 1009,
-        "name": "DEVOTION",
-        "image": "devotion_detail",
-        "imageIcon": "devotion_icon",
-        "type": "Light Machine Gun",
-        "category": "Light Machine Guns",
-        "ammoType" : "Experimental Ammo",
-        "weaponTypeIcon": "devotion_icon",
-        "ammoTypeIcon": "experimental_ammo",
-        "standardClipSize": "54",
-        "clipIcon": "extended_heavy_mag_icon",
-        "fireMode": {
-            "recoil": "Vertical and curve left and right recoil",
-            "modeOne": "Automatic",
-            "modeOneIcon": "auto_icon",
-            "modeOneGif": "devotion_auto",
-            "modeTwo": null,
-            "modeTwoIcon": null,
-            "modeTwoGif": null
-        },
-        "attachments": null,
         "damage": {
             "head": {
                 "standard": "34",
@@ -744,7 +758,7 @@
             "body": "17",
             "lowerBody": "13"
         },
-        "description" : "The Devotion is a rare light machine gun that uses experimental ammo. The Devotion can be found in neutral care packages. It features one firing mode, fully automatic. It is one of the strongest weapons in the game, has a very fast firing speed (after ramping up). It also has a 2× headshot multiplier. It has a high magazine capacity, but uses its own exclusive experimental ammo which does not require inventory space to hold. Only 162 spare rounds are available per Devotion, and more cannot be acquired outside of finding another Devotion and replacing it. The devotion has a rather slow reload speed. It has high recoil and slow ADS speed. It is most effective at close to medium range, and only has a 1× headshot multiplier at 64+ meters."
+        "description" : "The Devotion is a light machine gun that uses energy ammo. It features a fully automatic firing mode. The Devotion is considered one of the strongest weapons in the game, with a very rate of fire (after ramping up). It also has a 2× headshot multiplier. It has a high magazine capacity but has a rather slow reload speed. It has high and hard to control recoil and slow ADS speed. It is most effective at close to medium range, and only has a 1× headshot multiplier at 64+ meters."
     },
     {
         "id": 1010,
@@ -1139,11 +1153,6 @@
                 "rareDescription": "Quicker handling and moderate aim drift reduction. (Raising/lowering weapon is 25% faster)",
                 "epicName": "Level Three",
                 "epicDescription": "Fast handling and large aim drift reduction. (Raising/lowering weapon is 35% faster)"
-            },
-            "hop": {
-                "name": "Precision Choke",
-                "icon": "choke_icon",
-                "description": "The Precision Choke hop-up greatly reduces the gun's spread by aiming down sights, up to three levels. The weapon loses the charge if the player stops aiming down sights."
             }
         },
         "damage": {
@@ -1156,7 +1165,7 @@
             "body": "69",
             "lowerBody": "63"
         },
-        "description" : "The Triple Take is a sniper rifle that uses sniper ammo. It features a single action fire mode. Each shot fires a spread of three bullets. Aiming down sights for a period of time will tighten the spread and adding the Precision Choke will tighten the spread even further. Bullets penetrate enemies, allowing you to hit multiple targets with one shot. The horizontal spread makes it easier to hit running targets. Has very little projectile drop at long range. Also works as a substitute shotgun at short range when firing from the hip. Has a shorter range compared to other sniper rifles, even with a Precision Choke. The three shots can be inconsistent and not all hit the target."
+        "description" : "The Triple Take is a sniper rifle that uses sniper ammo. It features a single action fire mode. Each shot fires a spread of three bullets. With the Precision Choke now built in to the Triple Take, aiming down sights for a period of time will tighten the spread. Bullets penetrate enemies, allowing you to hit multiple targets with one shot. The horizontal spread makes it easier to hit running targets. Has very little projectile drop at long range. Also works as a substitute shotgun at short range when firing from the hip. Has a shorter range compared to other sniper rifles, even with a Precision Choke. The three shots can be inconsistent and not all hit the target."
     },
     {
         "id": 1015,
@@ -1168,7 +1177,7 @@
         "ammoType" : "Sniper",
         "weaponTypeIcon": "charge_rifle_icon",
         "ammoTypeIcon": "sniper_ammo",
-        "standardClipSize": "4",
+        "standardClipSize": "8",
         "clipIcon": "extended_sniper_mag_icon",
         "fireMode": {
             "recoil": "Minimal during charge, Vertical recoil when releasing charge",
@@ -1242,7 +1251,7 @@
             "body": "45",
             "lowerBody": "45"
         },
-        "description" : "The Triple Take is a sniper rifle that uses sniper ammo. It features a single action fire mode. Each shot fires a spread of three bullets. Aiming down sights for a period of time will tighten the spread and adding the Precision Choke will tighten the spread even further. Bullets penetrate enemies, allowing you to hit multiple targets with one shot. The horizontal spread makes it easier to hit running targets. Has very little projectile drop at long range. Also works as a substitute shotgun at short range when firing from the hip. Has a shorter range compared to other sniper rifles, even with a Precision Choke. The three shots can be inconsistent and not all hit the target."
+        "description" : "The Charge Rifle is a sniper rifle that features a unique charge and blase fire mode. The charge beam deals 3 damage per tick, maximum 45 dmg plus the 45 of the final shot. The Charge Rifle has the longest range out of any weapon. Has 100% accuracy in the air while jumping from Jump Pads, Ziplines, or Balloons. Has 0% leg shot damage reduction. The Charge Rifle uses 2 ammo per shot and has a long reload time. The charge up time is quite long and the beam can easily give away position. Has damage fall off at 150-391+ meters."
     },
     {
         "id": 1016,
@@ -1335,7 +1344,7 @@
             "body": "70",
             "lowerBody": "63"
         },
-        "description" : "The Sentinel is a sniper rifle that uses sniper ammo. It features a single firing mode. The Sentinel has high damage per shot and bullets penetrate enemies, allowing you to hit multiple targets with one shot. Bullets will shred any shield health instantly and has 0% leg damage reduction when charged. Can open doors by shooting the handle. It is bolt-action which punishes you more severely for missing shots compared to other snipers. Terrible hip-fire accuracy. Charged shots (using sheild cells) essentially discard headshots: Hitting a charged headshot on a standard legend without a helmet will still deal 140 damage. Switching weapons takes a long time without a sniper stock."
+        "description" : "The Sentinel is a sniper rifle that uses sniper ammo. It has a unique charging feature, using two shield cells (only one if gold shield is equipped) will increase the damage of shots. The Sentinel has high damage per shot and bullets penetrate enemies, allowing you to hit multiple targets with one shot. Bullets will shred any shield health instantly and has 0% leg damage reduction when charged. Can open doors by shooting the handle. It is bolt-action which punishes you more severely for missing shots compared to other snipers. Terrible hip-fire accuracy. Charged shots (using sheild cells) essentially discard headshots: Hitting a charged headshot on a standard legend without a helmet will still deal 140 damage. Switching weapons takes a long time without a sniper stock."
     },
     {
         "id": 1017,
@@ -1492,7 +1501,7 @@
         "ammoType" : "Shotgun",
         "weaponTypeIcon": "mozambique_icon",
         "ammoTypeIcon": "shotgun_ammo",
-        "standardClipSize": "3",
+        "standardClipSize": "4",
         "clipIcon": "shotgun_bolt_icon",
         "fireMode": {
             "recoil": "Vertical kick recoil",
@@ -1680,7 +1689,7 @@
         "ammoType" : "Light",
         "weaponTypeIcon": "p2020_icon",
         "ammoTypeIcon": "light_ammo",
-        "standardClipSize": "10",
+        "standardClipSize": "12",
         "clipIcon": "extended_light_mag_icon",
         "fireMode": {
             "recoil": "Vertical recoil",
@@ -1719,8 +1728,8 @@
             "clips": {
                 "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
                 "clipIconWhite": "extended_light_mag",
-                "levelOne": "13",
-                "levelTwo": "15",
+                "levelOne": "14",
+                "levelTwo": "16",
                 "levelThree": "18"
             },
             "hop": {
@@ -1731,13 +1740,13 @@
         },
         "damage": {
             "head": {
-                "standard": "20",
-                "levelOne": "18",
-                "levelTwo": "16",
-                "levelThree": "15"
+                "standard": "22",
+                "levelOne": "20",
+                "levelTwo": "18",
+                "levelThree": "17"
             },
-            "body": "13",
-            "lowerBody": "12"
+            "body": "15",
+            "lowerBody": "14"
         },
         "description" : "The P2020 is a single fire pistol that uses light ammo. It features a rather tight bullet spread. It is a small weapon which allows for fast movement while aiming. Semi-Auto style allows for quick firing speed, it will fire as fast as you can pull the trigger. It also reloads very fast. It has good Accuracey when hip-firing and while moving. With the Hammerpoint hop up equipped, it deals high unshielded damage. Overall, it has low damage per shot and terrible armor penetration."
     },
@@ -1809,6 +1818,96 @@
             },
             "body": "45",
             "lowerBody": "41"
+        },
+        "description" : "The Wingman is a single fire pistol that uses heavy ammo. It features very high damage per shot and is the only pistol that doesn't lose headshot multiplier regardless of range. It is a small weapon which allows for fast movement while aiming. The Wingman performs well at all ranges. Can be devastating, three headshots on an enemy without a helmet is enough to knock them down regardless of their body armor level. The Hammerpoint hop only make it more brutal. However, it does have high recoil and a small magazine capacity."
+    },
+    {
+        "id": 1024,
+        "name": "Volt SMG",
+        "image": "volt_detail",
+        "imageIcon": "volt_icon",
+        "type": "Sub Machine Gun",
+        "category": "Sub Machine Guns",
+        "ammoType" : "Energy",
+        "weaponTypeIcon": "volt_icon",
+        "ammoTypeIcon": "energy_ammo",
+        "standardClipSize": "19",
+        "clipIcon": "extended_energy_mag_icon",
+        "fireMode": {
+            "recoil": "Vertical recoil",
+            "modeOne": "Automatic",
+            "modeOneIcon": "auto_icon",
+            "modeOneGif": "volt_auto",
+            "modeTwo": null,
+            "modeTwoIcon": null,
+            "modeTwoGif": null
+        },
+        "attachments": {
+            "optics": {
+                "opticIcon": "optics_icon",
+                "description": "Optic attachments, or sights, are attachments that give zoom and more precision to guns. They offer magnification while aiming down sights",
+                "standardHolo": {
+                    "name": "1x Holo",
+                    "image": "standard_holo"
+                },
+                "standardHcog": {
+                    "name": "1x HCOG",
+                    "image": "standard_hcog"
+                },
+                "rareHolo": {
+                    "name": "1x-2x Variable Holo",
+                    "image": "rare_holo"
+                },
+                "rareHcog": {
+                    "name": "2x HCOG",
+                    "image": "rare_hcog"
+                },
+                "digitalThreat": {
+                    "name": "Digital Threat",
+                    "image": "digital_threat"
+                }
+            },
+            "clips": {
+                "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
+                "clipIconWhite": "extended_energy_mag_icon",
+                "levelOne": "21",
+                "levelTwo": "23",
+                "levelThree": "26"
+            },
+            "stocks": {
+                "stockIcon": "standard_stock_icon",
+                "description": "Improves weapon switch speed and aim sway.",
+                "stockIconWhite": "standard_stock_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "Improves handling and reduces aim drift. (Raising/lowering weapon is 15% faster)",
+                "rareName": "Level Two",
+                "rareDescription": "Quicker handling and moderate aim drift reduction. (Raising/lowering weapon is 25% faster)",
+                "epicName": "Level Three",
+                "epicDescription": "Fast handling and large aim drift reduction. (Raising/lowering weapon is 35% faster)"
+            },
+            "stabilizer": {
+                "stabilizerIcon": "stabilizer_icon",
+                "description": "Decreases recoil.",
+                "stabilizerIconWhite": "stabilizer_icon_white",
+                "commonName": "Level One",
+                "commonDescription": "10% Recoil reduction and randomness decreased by 15%",
+                "rareName": "Level Two",
+                "rareDescription": "15% Recoil reduction and randomness decreased by 20%",
+                "epicName": "Level Three",
+                "epicDescription": "20% Recoil reduction and randomness decreased by 30%",
+                "legendaryName": "Level Four",
+                "legendaryDescription": "20% Recoil reduction and randomness decreased by 30%. Also reduces visual muzzle flash."
+            }
+        },
+        "damage": {
+            "head": {
+                "standard": "24",
+                "levelOne": "22",
+                "levelTwo": "21",
+                "levelThree": "20"
+            },
+            "body": "16",
+            "lowerBody": "13"
         },
         "description" : "The Wingman is a single fire pistol that uses heavy ammo. It features very high damage per shot and is the only pistol that doesn't lose headshot multiplier regardless of range. It is a small weapon which allows for fast movement while aiming. The Wingman performs well at all ranges. Can be devastating, three headshots on an enemy without a helmet is enough to knock them down regardless of their body armor level. The Hammerpoint hop only make it more brutal. However, it does have high recoil and a small magazine capacity."
     }

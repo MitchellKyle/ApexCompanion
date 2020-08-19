@@ -1,6 +1,38 @@
 [
+    {
+        "id": 1001,
+        "name": "Armor",
+        "category": "Gear",
+        "image": "evo_shield_icon",
+        "imageWhite": "evo_shield_icon_white",
+        "description": "First of all, every shield in the game is now an Evo Shield (except the Gold Armor). Evo shields gain strength when the wearer inflicts damage. Every player starts the game with a level 0 Evo Shield. When you find a white, blue or purple armor on the ground, it's a pre-leveled Evo Armor. It can be picked up like normal, and continue to be evolved. Red Armor is not in the ground loot and can only be achieved through evolving. Gold Armor is not part of the Evo Armor track, and is only found in rare locations as usual.",
+        "levelZero": {
+            "name": "Level Zero",
+            "description": "Does not absorb damage. Evolves to white Evo Shield after dealing 50 damage."
+        },
+        "levelOne": {
+            "name": "Level One",
+            "description": "Absorbs 25 damage. Evolves to blue Evo Shield after dealing 125 damage to enemies."
+        },
+        "levelTwo": {
+            "name": "Level Two",
+            "description": "Absorbs 50 damage. Evolves to purple Evo Shield after dealing 250 damage to enemies."
+        },
+        "levelThree": {
+            "name": "Level Three",
+            "description": "Absorbs 75 damage. Evolves to red Evo Shield after dealing 500 damage to enemies."
+        },
+        "levelFour": {
+            "name": "Gold Armor",
+            "description": "Absorbs 75 damage. Syringes and shield cells have improved effects. Syringes and shield cells replinish 50 points instead of 25."
+        },
+        "levelFive": {
+            "name": "Level Five",
+            "description": "Absorbs 100 damage. Fully evolved"
+        }
+    },
 	{
-		"id": 1001,
+		"id": 1002,
 		"name": "Helmet",
 		"category": "Gear",
 		"image": "helmet_icon",
@@ -20,62 +52,11 @@
 		},
 		"levelFour": {
 			"name": "Level Four",
-			"description": "Reduces the extra damage from headshots by 50%",
-			"info": "Reduces Tactical & Ultimate recharge time by 20%."
-		}
-	},
-	{
-		"id": 1002,
-		"name": "Body Shield",
-		"category": "Gear",
-		"image": "body_shield_icon",
-        "imageWhite": "body_shield_icon_white",
-		"description": "Prioritize finding one as soon as possible at the start of the game, regardless of its level. On intense firefights, it may be faster to switch to another body shield of the same or lower level instead of using shield cells or shield batteries, as all shields keep their health when dropped and all naturally spawned body shields always start with full health. Completing a finisher refills all shield health.",
-		"levelOne": {
-			"name": "Level One",
-			"description": "Absorbs 50 damage."
-		},
-		"levelTwo": {
-			"name": "Level Two",
-			"description": "Absorbs 75 damage."
-		},
-		"levelThree": {
-			"name": "Level Three",
-			"description": "Absorbs 100 damage."
-		},
-		"levelFour": {
-			"name": "Level Four",
-			"description": "Absorbs 100 damage.",
-			"info": "Syringes and shield cells have improved effects. Syringes and shield cells replinish 50 points instead of 25."
+			"description": "Reduces the extra damage from headshots by 50%. Reduces Tactical & Ultimate recharge time by 20%."
 		}
 	},
 	{
 		"id": 1003,
-		"name": "Evo Shield",
-		"category": "Gear",
-		"image": "evo_shield_icon",
-        "imageWhite": "evo_shield_icon_white",
-		"description": "Evo shields gain strength when the wearer inflicts damage. If dropped or if the wearer dies, progress towards the next level is saved for the next wearer. Try to look for a used Evo Shield from other dead players so that you don’t have to deal as much damage for the max level. Completing a Finisher refills all Shield health.",
-		"levelOne": {
-			"name": "Level One",
-			"description": "Absorbs 25 damage. Evolves to level two after dealing at least 75 damage to enemies."
-		},
-		"levelTwo": {
-			"name": "Level Two",
-			"description": "Absorbs 50 damage. Evolves to level three after dealing at least 150 damage to enemies."
-		},
-		"levelThree": {
-			"name": "Level Three",
-			"description": "Absorbs 100 damage. Evolves to level four after dealing at least 400 damage to enemies."
-		},
-		"levelFour": {
-			"name": "Level Five",
-			"description": "Absorbs 125 damage. Fully evolved",
-			"info": "While shield cells still heal only 25 health with the Evo Shield equipped, shield batteries can heal 125 health, making them even more valuable. Although it may come to preference, sometimes a Legendary Body Shield may still be more valuable than a Level 5 Evo Shield due to it's Imoproved Minor Heal passive."
-		}
-	},
-	{
-		"id": 1004,
 		"name": "Knockdown Shield",
 		"category": "Gear",
 		"image": "knockdown_shield_icon",
@@ -95,12 +76,11 @@
 		},
 		"levelFour": {
 			"name": "Level Five",
-			"description": "Shield absorbs a maximum of 750 damage.",
-			"info": "If a member of a squad has a Legendary knockdown shield equipped, the squad may stay active in the match until that player is killed. Takes 10 seconds for a player to fully revive with a Level Four knockdown shield. Once a revive has successfully been performed, the shield reverts to level four."
+			"description": "Shield absorbs a maximum of 750 damage. Can be used to self revive if knocked down. Takes 10 seconds for a player to fully revive. Once a revive has successfully been performed, the knockdown shield reverts to level four."
 		}
 	},
 	{
-		"id": 1005,
+		"id": 1004,
 		"name": "Backpack",
 		"category": "Gear",
 		"image": "backpack_icon",
@@ -120,8 +100,7 @@
 		},
 		"levelFour": {
 			"name": "Level Five",
-			"description": "player is able to carry 6 more items, for a total of 16.",
-			"info": "If the player is carrying a level four backpack, when the player is revived, shields and health are restored by 50, resulting in 70 health and 50 shield."
+			"description": "player is able to carry 6 more items, for a total of 16. When a revive is performed with a gold back pack equipped, the resulting player is revived with 50 shields and 70 health."
 		}
 	}
 ]

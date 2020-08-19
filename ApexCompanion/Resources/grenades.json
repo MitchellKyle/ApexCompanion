@@ -1,0 +1,32 @@
+[
+	{
+		"id": 1001,
+		"name": "Frag Grenade",
+		"category": "Grenades",
+		"image": "frag_grenade_icon",
+		"ignitionTime": "4 seconds",
+		"description": "Thrown fragmentation grenade. Can bounce and/or roll when it hits something. Takes 4 seconds after thrown to detonate.",
+		"info": "Deals 10 impact damage and up to 100 explosion damage in a 10 meter explosion radius. Can damage and destroy doors.",
+		"tips": "Taking into account the fact Frag Grenades can bounce or roll on the environment before detonating, can allow enemies to be hit from around corners. Frag Grenades can be used to force enemies move out of position. Looking up and throwing a Frag Grenade directly up in the sky will have it fall directly back where you're currently standing in the next 3 seconds and explode on impact. This is great if you're outside a door and someone is about to break it down on the opposite side or do this if you're being chased while running."
+	},
+	{
+		"id": 1002,
+		"name": "Thermite Grenade",
+		"category": "Grenades",
+		"image": "thermite_icon",
+		"ignitionTime": "Instant",
+		"description": "Creates a horizontal wall of flames. Ticks damage per seconds the longer the enemy stands in the affected area.",
+		"info": "The wall is 10 meters long, and forms perpendicular from the direction it was thrown from and spreads horizontally. Deals 4 damage per tick when standing in the flames, and applies an over-time burn effect that lasts for 25 damage. Does not do damage to shields. Can damages and destroys doors.",
+		"tips": "It can be useful to seal off an enclosed area such as a doorway to prevent enemies from pushing a position, as well as a mild way to break the line of sight of an enemy. If an enemy is body blocking a door, you can throw a Thermite at the bottom of the door. It will destroy the door and burn the enemy."
+	},
+	{
+		"id": 1003,
+		"name": "Arc Star",
+		"category": "Grenades",
+		"image": "arc_star_icon",
+		"ignitionTime": "2.8 seconds",
+		"description": "Sticks at the location thrown, then explodes after a short delay. Causes damage, blurred vision and briefly slows the enemy for 5 seconds.",
+		"info": "Deals 30 impact damage and up to 70 explosion damage in a 10 meter explosion radius; slows those affected by the explosion for 5 seconds. The Arc Star deals triple damage against shields. Can be thrown further than the frag or thermite grenades. Can damages and destroys doors.",
+		"tips": "The explosion's \"splash\" damage decreases with distance from the Arc Star itself so plan accordingly."
+	}
+]

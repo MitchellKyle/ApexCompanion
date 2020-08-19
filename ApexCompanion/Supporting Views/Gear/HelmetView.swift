@@ -23,6 +23,11 @@ struct HelmetView: View {
                     .multilineTextAlignment(.center)
                     .padding()
                 
+                // Level Zero
+                if gear.levelZero != nil {
+                    SingleGearView(gear: gear, levelName: gear.levelZero!.name, levelColor: UIColor(red: 0, green: 0, blue: 0, alpha: 1.0), levelDescription: gear.levelZero!.description)
+                }
+                
                 // Level One
                 SingleGearView(gear: gear, levelName: gear.levelOne.name, levelColor: Constants.Colors.levelOne, levelDescription: gear.levelOne.description)
                 
@@ -33,7 +38,12 @@ struct HelmetView: View {
                 SingleGearView(gear: gear, levelName: gear.levelThree.name, levelColor: Constants.Colors.levelThree, levelDescription: gear.levelThree.description)
                 
                 // Level Four
-                SingleGearView(gear: gear, levelName: gear.levelFour.name, levelColor: Constants.Colors.levelFour, levelDescription: gear.levelFour.description, levelFourInfo: gear.levelFour.info)
+                SingleGearView(gear: gear, levelName: gear.levelFour.name, levelColor: Constants.Colors.levelFour, levelDescription: gear.levelFour.description)
+                
+                // Level Five
+                if gear.levelFive != nil {
+                    SingleGearView(gear: gear, levelName: gear.levelFive!.name, levelColor: Constants.Colors.levelFive, levelDescription: gear.levelFive!.description)
+                }
                 
             }
             .padding(.vertical)

@@ -21,45 +21,95 @@ struct HomeView: View {
     var body: some View {
             
         NavigationView {
-            VStack {
-                Text("Apex Companion")
-                .font(.custom("Teko-Bold", size: 45))
-                .foregroundColor(.black)
-                Spacer()
-                HStack {
+            ScrollView {
+                VStack {
+                    Text("Apex Companion")
+                    .font(.custom("Teko-Bold", size: 45))
+                    .foregroundColor(.black)
                     Spacer()
-                    NavigationLink(destination: WeaponListView()) {
-                    Text("Weapons")
+                    HStack {
+                        Spacer()
+                        NavigationLink(destination: WeaponListView()) {
+                            ZStack {
+                                Image("weapons_home")
+                                    .renderingMode(.original)
+                                    .resizable()
+                                    .cornerRadius(20)
+                                    .frame(width: 170, height: 220)
+                                Text("Weapons")
+                                    .font(.custom("Teko-SemiBold", size: 30))
+                                    .foregroundColor(.white)
+                                    .shadow(color: .black, radius: 2, x: 2, y: 2)
+                                    .offset(y: 65)
+                            }
+                        }
+                        
+                        Spacer()
+                        NavigationLink(destination: CharacterList()) {
+                            ZStack {
+                                Image("legends_home")
+                                    .renderingMode(.original)
+                                    .resizable()
+                                    .cornerRadius(20)
+                                    .frame(width: 170, height: 220)
+                                Text("Legends")
+                                    .font(.custom("Teko-SemiBold", size: 30))
+                                    .foregroundColor(.white)
+                                    .shadow(color: .black, radius: 2, x: 2, y: 2)
+                                    .offset(y: 65)
+                            }
+                        }
+                        Spacer()
                     }
                     Spacer()
-                    NavigationLink(destination: CharacterList()) {
-                    Text("Legends")
+                    HStack {
+                        Spacer()
+                        NavigationLink (destination: GearRow()) {
+                            ZStack {
+                                Image("gear_home")
+                                    .renderingMode(.original)
+                                    .resizable()
+                                    .cornerRadius(20)
+                                    .frame(width: 170, height: 220)
+                                Text("Gear")
+                                    .font(.custom("Teko-SemiBold", size: 30))
+                                    .foregroundColor(.white)
+                                    .shadow(color: .black, radius: 2, x: 2, y: 2)
+                                    .offset(y: 65)
+                            }
+                        }
+                        Spacer()
+                        NavigationLink(destination: MapView()) {
+                            ZStack {
+                                Image("maps_home")
+                                    .renderingMode(.original)
+                                    .resizable()
+                                    .cornerRadius(20)
+                                    .frame(width: 170, height: 220)
+                                Text("Maps")
+                                    .font(.custom("Teko-SemiBold", size: 30))
+                                    .foregroundColor(.white)
+                                    .shadow(color: .black, radius: 2, x: 2, y: 2)
+                                    .offset(y: 65)
+                            }
+                        }
+                        Spacer()
+                    }
+                    Spacer()
+                    HStack {
+                        Spacer()
+                        Text("Tricks")
+                        Spacer()
+                        Text("News")
+                        Spacer()
                     }
                     Spacer()
                 }
-                Spacer()
-                HStack {
-                    Spacer()
-                    NavigationLink (destination: GearRow()) {
-                        Text("Gear")
-                    }
-                    Spacer()
-                    NavigationLink(destination: MapView()) {
-                        Text("Maps")
-                    }
-                    Spacer()
-                }
-                Spacer()
-                HStack {
-                    Spacer()
-                    Text("Tricks")
-                    Spacer()
-                    Text("News")
-                    Spacer()
-                }
-                Spacer()
-            }.background(Image("season_6_bg").resizable().edgesIgnoringSafeArea(.all).aspectRatio(contentMode: .fill))
-            
+            }
+            .background(Image("season_6_bg")
+            .resizable()
+            .edgesIgnoringSafeArea(.all)
+            .aspectRatio(contentMode: .fill))
         }
     }
 }

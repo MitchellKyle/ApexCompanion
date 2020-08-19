@@ -80,22 +80,20 @@ struct AbilitiesView: View {
                 }
                 Spacer()
             }.padding(.vertical)
-            ScrollView {
-                VStack {
-                    // Info
-                    if showInfo {
-                        Text(abilityInfo)
-                            .font(.custom("Teko-SemiBold", size: 20))
-                            .foregroundColor(.black)
-                            .fixedSize(horizontal: false, vertical: true)
-                    }
-                    // Tips
-                    else {
-                        Text(abilityTips)
-                            .font(.custom("Teko-SemiBold", size: 20))
-                            .foregroundColor(.black)
-                            .fixedSize(horizontal: false, vertical: true)
-                    }
+            VStack {
+                // Info
+                if showInfo {
+                    Text(abilityInfo)
+                        .font(.custom("Teko-SemiBold", size: 20))
+                        .foregroundColor(.black)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                // Tips
+                else {
+                    Text(abilityTips)
+                        .font(.custom("Teko-SemiBold", size: 20))
+                        .foregroundColor(.black)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
             }
         }.padding()

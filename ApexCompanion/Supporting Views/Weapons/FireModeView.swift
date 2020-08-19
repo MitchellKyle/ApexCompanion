@@ -97,13 +97,13 @@ struct FireModeView: View {
                         GIFView(gifName: weapon.fireMode.modeOneGif)
                             .frame(width: 300, height: 200)
                     }
-                    if secondary {
+                    if secondary && weapon.fireMode.modeTwo != nil {
                         VStack {
                             Text(weapon.fireMode.modeTwo!)
                                 .font(.custom("Teko-SemiBold", size: 25))
                                 .foregroundColor(.black)
                                 .multilineTextAlignment(.center)
-                            frame(height: 80)
+//                                .frame(height: 80)
                             Image(weapon.fireMode.modeTwoIcon!)
                                 .resizable()
                                 .frame(width: 50, height: 20)
@@ -122,6 +122,6 @@ struct FireModeView: View {
 
 struct FireModeView_Previews: PreviewProvider {
     static var previews: some View {
-        FireModeView(weapon: weaponData[6])
+        FireModeView(weapon: weaponData[0])
     }
 }

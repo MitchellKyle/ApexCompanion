@@ -12,6 +12,7 @@ struct ItemItem: View {
     
     var gear: Gear?
     var regen: Regen?
+    var grenade: Grenades?
     
     var body: some View {
         ZStack {
@@ -22,11 +23,14 @@ struct ItemItem: View {
                 .rotationEffect(.degrees(90))
             .cornerRadius(20)
             
-            if gear != nil {
+            if gear != nil && regen == nil && grenade == nil {
                 SingleItemView(itemImage: gear!.image, itemName: gear!.name, isRegen: false)
             }
-            if regen != nil {
+            if regen != nil && gear == nil && grenade == nil {
                 SingleItemView(itemImage: regen!.image, itemName: regen!.name, isRegen: true)
+            }
+            if grenade != nil && regen == nil && gear == nil {
+                SingleItemView(itemImage: grenade!.image, itemName: grenade!.name, isRegen: true)
             }
             
         }
@@ -35,6 +39,6 @@ struct ItemItem: View {
 
 struct ItemItem_Previews: PreviewProvider {
     static var previews: some View {
-        ItemItem(regen: regenData[0])
+        ItemItem(grenade: grenadeData[1])
     }
 }

@@ -44,8 +44,9 @@ struct WeaponDetail: View {
                             .padding()
                             
                         Spacer()
-                    }.background(Color.white.opacity(0.9))
-                        .cornerRadius(20)
+                    }
+                    .background(Color.white.opacity(0.9))
+                    .cornerRadius(20)
                 }
                 
                 VStack {

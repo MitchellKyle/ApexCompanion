@@ -30,6 +30,11 @@
 		843E015424E842C3006CDA90 /* GearRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E015324E842C3006CDA90 /* GearRow.swift */; };
 		843E015624E8444A006CDA90 /* RegenDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E015524E8444A006CDA90 /* RegenDetail.swift */; };
 		843E015824E84540006CDA90 /* SingleItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E015724E84540006CDA90 /* SingleItemView.swift */; };
+		843E015A24E9F847006CDA90 /* MapRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E015924E9F847006CDA90 /* MapRow.swift */; };
+		843E015D24E9F996006CDA90 /* MapItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E015C24E9F996006CDA90 /* MapItem.swift */; };
+		843E015F24ECA32C006CDA90 /* grenades.json in Resources */ = {isa = PBXBuildFile; fileRef = 843E015E24ECA32B006CDA90 /* grenades.json */; };
+		843E016324ED8453006CDA90 /* Grenades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E016224ED8453006CDA90 /* Grenades.swift */; };
+		843E016524ED885D006CDA90 /* GrenadeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E016424ED885D006CDA90 /* GrenadeDetail.swift */; };
 		8444434D24CC82E60090FFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444434C24CC82E60090FFFC /* AppDelegate.swift */; };
 		8444434F24CC82E60090FFFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444434E24CC82E60090FFFC /* SceneDelegate.swift */; };
 		8444435124CC82E60090FFFC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444435024CC82E60090FFFC /* HomeView.swift */; };
@@ -91,6 +96,11 @@
 		843E015324E842C3006CDA90 /* GearRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearRow.swift; sourceTree = "<group>"; };
 		843E015524E8444A006CDA90 /* RegenDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegenDetail.swift; sourceTree = "<group>"; };
 		843E015724E84540006CDA90 /* SingleItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleItemView.swift; sourceTree = "<group>"; };
+		843E015924E9F847006CDA90 /* MapRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRow.swift; sourceTree = "<group>"; };
+		843E015C24E9F996006CDA90 /* MapItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapItem.swift; sourceTree = "<group>"; };
+		843E015E24ECA32B006CDA90 /* grenades.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = grenades.json; sourceTree = "<group>"; };
+		843E016224ED8453006CDA90 /* Grenades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grenades.swift; sourceTree = "<group>"; };
+		843E016424ED885D006CDA90 /* GrenadeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrenadeDetail.swift; sourceTree = "<group>"; };
 		8444434924CC82E60090FFFC /* ApexCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApexCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8444434C24CC82E60090FFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8444434E24CC82E60090FFFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,8 +154,8 @@
 		843E013B24E61B01006CDA90 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				843E010F24E4DAE2006CDA90 /* MapViewSB.swift */,
-				843E011124E4E989006CDA90 /* Map.storyboard */,
+				843E015924E9F847006CDA90 /* MapRow.swift */,
+				843E015C24E9F996006CDA90 /* MapItem.swift */,
 				843E013924E6177E006CDA90 /* MapView.swift */,
 			);
 			path = Maps;
@@ -158,6 +168,7 @@
 				843E015124E8391E006CDA90 /* ItemItem.swift */,
 				843E013F24E61B78006CDA90 /* GearDetail.swift */,
 				843E015524E8444A006CDA90 /* RegenDetail.swift */,
+				843E016424ED885D006CDA90 /* GrenadeDetail.swift */,
 			);
 			path = Gear;
 			sourceTree = "<group>";
@@ -170,6 +181,15 @@
 				843E015724E84540006CDA90 /* SingleItemView.swift */,
 			);
 			path = Gear;
+			sourceTree = "<group>";
+		};
+		843E015B24E9F867006CDA90 /* Unused */ = {
+			isa = PBXGroup;
+			children = (
+				843E010F24E4DAE2006CDA90 /* MapViewSB.swift */,
+				843E011124E4E989006CDA90 /* Map.storyboard */,
+			);
+			path = Unused;
 			sourceTree = "<group>";
 		};
 		8444434024CC82E60090FFFC = {
@@ -203,6 +223,7 @@
 				8444435724CC82E70090FFFC /* LaunchScreen.storyboard */,
 				8444435A24CC82E70090FFFC /* Info.plist */,
 				8444435424CC82E70090FFFC /* Preview Content */,
+				843E015B24E9F867006CDA90 /* Unused */,
 			);
 			path = ApexCompanion;
 			sourceTree = "<group>";
@@ -222,6 +243,7 @@
 				8444436F24CD06200090FFFC /* weapons.json */,
 				843E014724E773EF006CDA90 /* gear.json */,
 				843E014624E773EF006CDA90 /* regen.json */,
+				843E015E24ECA32B006CDA90 /* grenades.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -245,6 +267,7 @@
 				844443ED24D5EFC00090FFFC /* Character.swift */,
 				843E014124E77195006CDA90 /* Gear.swift */,
 				843E014424E77342006CDA90 /* Regen.swift */,
+				843E016224ED8453006CDA90 /* Grenades.swift */,
 				844443A224CF63C80090FFFC /* Data.swift */,
 			);
 			path = Models;
@@ -403,6 +426,7 @@
 				843E011224E4E989006CDA90 /* Map.storyboard in Resources */,
 				843E014924E773EF006CDA90 /* gear.json in Resources */,
 				8444435624CC82E70090FFFC /* Preview Assets.xcassets in Resources */,
+				843E015F24ECA32C006CDA90 /* grenades.json in Resources */,
 				8444435324CC82E70090FFFC /* Assets.xcassets in Resources */,
 				8444438C24CDFE910090FFFC /* Teko-Bold.ttf in Resources */,
 				843E014824E773EF006CDA90 /* regen.json in Resources */,
@@ -420,6 +444,7 @@
 				843E014524E77342006CDA90 /* Regen.swift in Sources */,
 				844443FC24D7C08E0090FFFC /* CharacterList.swift in Sources */,
 				843E014E24E82747006CDA90 /* SingleGearView.swift in Sources */,
+				843E016524ED885D006CDA90 /* GrenadeDetail.swift in Sources */,
 				844443F624D789BD0090FFFC /* AbilitiesView.swift in Sources */,
 				8444440624DB538E0090FFFC /* FireModeView.swift in Sources */,
 				843E00FC24DD919A006CDA90 /* SingleStockView.swift in Sources */,
@@ -450,6 +475,8 @@
 				8444440024D9F3680090FFFC /* ClipsView.swift in Sources */,
 				843E015624E8444A006CDA90 /* RegenDetail.swift in Sources */,
 				844443F824D7B36E0090FFFC /* CharacterItem.swift in Sources */,
+				843E016324ED8453006CDA90 /* Grenades.swift in Sources */,
+				843E015D24E9F996006CDA90 /* MapItem.swift in Sources */,
 				843E010824DF1559006CDA90 /* HopView.swift in Sources */,
 				843E015424E842C3006CDA90 /* GearRow.swift in Sources */,
 				8444440C24DC47410090FFFC /* WeaponDescription.swift in Sources */,
@@ -459,6 +486,7 @@
 				8444437524CD08940090FFFC /* Constants.swift in Sources */,
 				843E00FE24DDC395006CDA90 /* SubHeaderView.swift in Sources */,
 				8444437D24CD2F820090FFFC /* WeaponDetail.swift in Sources */,
+				843E015A24E9F847006CDA90 /* MapRow.swift in Sources */,
 				844443A524CF67C10090FFFC /* WeaponRow.swift in Sources */,
 				844443E924D212300090FFFC /* NavigationConfigurator.swift in Sources */,
 			);

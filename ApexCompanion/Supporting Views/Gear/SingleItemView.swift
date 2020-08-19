@@ -33,7 +33,7 @@ struct SingleItemView: View {
                     .padding(.all, 5)
                     .background(Color.white.opacity(0.5))
                     .cornerRadius(10)
-                    .offset(y: -10)
+                    .offset(y: -20)
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 100, height: 100)
             }
@@ -42,6 +42,7 @@ struct SingleItemView: View {
                 .offset(y: 60)
                 .font(.custom("Teko-SemiBold", size: 30))
                 .foregroundColor(.black)
+                .shadow(color: .white, radius: 1, x: 1, y: 1)
         }
     }
 }

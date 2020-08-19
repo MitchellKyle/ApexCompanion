@@ -30,6 +30,6 @@ struct GearDetail: View {
 
 struct GearDetail_Previews: PreviewProvider {
     static var previews: some View {
-        GearDetail(gear: gearData[2])
+        GearDetail(gear: gearData[1])
     }
 }

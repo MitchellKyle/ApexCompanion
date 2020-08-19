@@ -16,6 +16,7 @@ let weaponData: [Weapon] = load("weapons.json")
 let characterData: [Character] = load("characters.json")
 let gearData: [Gear] = load("gear.json")
 let regenData: [Regen] = load("regen.json")
+let grenadeData: [Grenades] = load("grenades.json")
 
 //let weaponsOfType: [Weapon]
 
