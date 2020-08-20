@@ -1,0 +1,34 @@
+[
+	{
+		"id": 1001,
+		"name": "King's Canyon",
+		"image": "kings_canyon",
+		"balloonLocations": "kings_canyon_balloons",
+		"respawnLocations": "kings_canyon_respawns",
+		"beaconLocations": "kings_canyon_beacons",
+		"lootTier": "kings_canyon_loot_tier",
+		"replicatorLocations": "kings_canyon_replicators",
+		"mapSpecificLocations": "kings_canyon_bunkers",
+		"description": "",
+		"eventLocations": {
+			"areaName": "Map Room",
+			"eventDescription": ""
+		}
+	},
+	{
+		"id": 1002,
+		"name": "World's Edge",
+		"image": "worlds_edge",
+		"balloonLocations": "worlds_edge_balloons",
+		"respawnLocations": "worlds_edge_respawns",
+		"beaconLocations": "worlds_edge_beacons",
+		"lootTier": "worlds_edge_loot_tier",
+		"replicatorLocations": "worlds_edge_replicators",
+		"mapSpecificLocations": "worlds_edge_vaults",
+		"description": "",
+		"eventLocations": {
+			"areaName": "Trials",
+			"eventDescription": ""
+		}
+	}
+]

@@ -79,7 +79,7 @@ struct HomeView: View {
                             }
                         }
                         Spacer()
-                        NavigationLink(destination: MapView()) {
+                        NavigationLink(destination: MapView(mapImageName: "kings_canyon")) {
                             ZStack {
                                 Image("maps_home")
                                     .renderingMode(.original)

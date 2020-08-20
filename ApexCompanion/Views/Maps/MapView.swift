@@ -10,6 +10,8 @@ import SwiftUI
 
 struct MapView: View {
     
+    var mapImageName: String
+    
     @State var scale: CGFloat = 1.0
     @State var isTapped: Bool = false
     @State var pointTapped: CGPoint = CGPoint.zero
@@ -18,7 +20,7 @@ struct MapView: View {
     
     var body: some View {
         GeometryReader {reader in
-            Image("kings_canyon").resizable().scaledToFit().animation(.default).offset(x: self.draggedSize.width, y: 0).scaleEffect(self.scale).scaleEffect(self.isTapped ? 2 : 1, anchor: UnitPoint(x: self.pointTapped.x / reader.frame(in: .global).maxX, y: self.pointTapped.y / reader.frame(in: .global).maxY)).gesture(TapGesture(count: 2).onEnded({
+            Image(self.mapImageName).resizable().scaledToFit().animation(.default).offset(x: self.draggedSize.width, y: 0).scaleEffect(self.scale).scaleEffect(self.isTapped ? 2 : 1, anchor: UnitPoint(x: self.pointTapped.x / reader.frame(in: .global).maxX, y: self.pointTapped.y / reader.frame(in: .global).maxY)).gesture(TapGesture(count: 2).onEnded({
             self.isTapped = !self.isTapped
         }).simultaneously(with: DragGesture(minimumDistance: 0, coordinateSpace: .global).onChanged({ (value) in
             self.pointTapped = value.startLocation
@@ -45,6 +47,6 @@ struct MapView: View {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
+        MapView(mapImageName: mapData[0].image)
     }
 }
