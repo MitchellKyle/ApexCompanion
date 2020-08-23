@@ -12,31 +12,20 @@ struct SingleItemView: View {
     
     var itemImage: String
     var itemName: String
-    var isRegen: Bool
     
     var body: some View {
         ZStack {
-            if !isRegen {
-               Image(itemImage)
+           
+            Image(itemImage)
                 .resizable()
                 .renderingMode(.original)
-                .offset(y: -10)
-                .padding(.all, 10)
+                .padding(.all, 5)
+                .background(Color.white.opacity(0.5))
+                .cornerRadius(10)
+                .offset(y: -20)
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 120, height: 100)
-            }
+                .frame(width: 100, height: 100)
             
-            if isRegen {
-                Image(itemImage)
-                    .resizable()
-                    .renderingMode(.original)
-                    .padding(.all, 5)
-                    .background(Color.white.opacity(0.5))
-                    .cornerRadius(10)
-                    .offset(y: -20)
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 100, height: 100)
-            }
             
             Text(itemName)
                 .offset(y: 60)
@@ -49,6 +38,6 @@ struct SingleItemView: View {
 
 struct SingleItemView_Previews: PreviewProvider {
     static var previews: some View {
-        SingleItemView(itemImage: regenData[0].image, itemName: gearData[0].name, isRegen: true)
+        SingleItemView(itemImage: regenData[0].image, itemName: gearData[0].name)
     }
 }

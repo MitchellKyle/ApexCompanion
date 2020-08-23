@@ -10,15 +10,27 @@ import SwiftUI
 
 struct MapRow: View {
     
-    
+    var maps: [Map] = mapData
     
     var body: some View {
-        Text("hi")
+
+        ScrollView(showsIndicators: false) {
+
+            VStack {
+                ForEach (self.maps, id: \.name) { map in
+                    NavigationLink(destination: MapDetailView(map: map, mapImage: map.image)) {
+
+                        MapItem(map: map)
+                    }
+                }
+            }
+        }
+        .navigationBarTitle("Maps", displayMode: .inline)
     }
 }
 
 struct MapRow_Previews: PreviewProvider {
     static var previews: some View {
-        MapRow()
+        MapRow(maps: mapData)
     }
 }

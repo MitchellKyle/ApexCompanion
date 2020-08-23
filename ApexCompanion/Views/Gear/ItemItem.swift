@@ -24,13 +24,13 @@ struct ItemItem: View {
             .cornerRadius(20)
             
             if gear != nil && regen == nil && grenade == nil {
-                SingleItemView(itemImage: gear!.image, itemName: gear!.name, isRegen: false)
+                SingleItemView(itemImage: gear!.image, itemName: gear!.name)
             }
             if regen != nil && gear == nil && grenade == nil {
-                SingleItemView(itemImage: regen!.image, itemName: regen!.name, isRegen: true)
+                SingleItemView(itemImage: regen!.image, itemName: regen!.name)
             }
             if grenade != nil && regen == nil && gear == nil {
-                SingleItemView(itemImage: grenade!.image, itemName: grenade!.name, isRegen: true)
+                SingleItemView(itemImage: grenade!.image, itemName: grenade!.name)
             }
             
         }

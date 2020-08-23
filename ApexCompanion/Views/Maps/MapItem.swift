@@ -9,13 +9,18 @@
 import SwiftUI
 
 struct MapItem: View {
+    
+    var map: Map
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(map.name)
+        }
     }
 }
 
 struct MapItem_Previews: PreviewProvider {
     static var previews: some View {
-        MapItem()
+        MapItem(map: mapData[0])
     }
 }

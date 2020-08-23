@@ -11,12 +11,8 @@ import UIKit
 
 struct Constants {
     
-    struct WeaponTypes {
-        static var types = ["Assault Rifles", "Sub Machine Guns", "Light Machine Guns", "Sniper Rifles", "Shotguns", "Pistols"]
-    }
-    
-    struct Data {
-        static var jsonFile = "weapons.json"
+    struct URLs {
+        static var newsURL = "https://www.ea.com/games/apex-legends/news#game-updates"
     }
     
     struct Colors {

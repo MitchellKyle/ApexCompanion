@@ -51,7 +51,7 @@
             },
             "clips": {
                 "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
-                "clipIconWhite": "extended_heavy_mag",
+                "clipIconWhite": "extended_heavy_mag_icon_white",
                 "levelOne": "25",
                 "levelTwo": "28",
                 "levelThree": "30"
@@ -134,7 +134,7 @@
             },
             "clips": {
                 "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
-                "clipIconWhite": "extended_heavy_mag",
+                "clipIconWhite": "extended_light_mag_icon_white",
                 "levelOne": "15",
                 "levelTwo": "18",
                 "levelThree": "20"
@@ -233,7 +233,7 @@
             },
             "clips": {
                 "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
-                "clipIconWhite": "extended_heavy_mag",
+                "clipIconWhite": "extended_heavy_mag_icon_white",
                 "levelOne": "24",
                 "levelTwo": "27",
                 "levelThree": "30"
@@ -327,7 +327,7 @@
             },
             "clips": {
                 "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
-                "clipIconWhite": "extended_light_mag",
+                "clipIconWhite": "extended_light_mag_icon_white",
                 "levelOne": "20",
                 "levelTwo": "25",
                 "levelThree": "28"
@@ -421,7 +421,7 @@
             },
             "clips": {
                 "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
-                "clipIconWhite": "extended_energy_mag_icon",
+                "clipIconWhite": "extended_energy_mag_icon_white",
                 "levelOne": "28",
                 "levelTwo": "32",
                 "levelThree": "36"
@@ -504,7 +504,7 @@
             },
             "clips": {
                 "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
-                "clipIconWhite": "extended_light_mag",
+                "clipIconWhite": "extended_light_mag_icon_white",
                 "levelOne": "22",
                 "levelTwo": "25",
                 "levelThree": "27"
@@ -594,7 +594,7 @@
             },
             "clips": {
                 "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
-                "clipIconWhite": "extended_light_mag",
+                "clipIconWhite": "extended_heavy_mag_icon_white",
                 "levelOne": "25",
                 "levelTwo": "30",
                 "levelThree": "35"
@@ -714,7 +714,7 @@
             },
             "clips": {
                 "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
-                "clipIconWhite": "extended_energy_mag_icon",
+                "clipIconWhite": "extended_energy_mag_icon_white",
                 "levelOne": "40",
                 "levelTwo": "44",
                 "levelThree": "48"
@@ -750,13 +750,13 @@
         },
         "damage": {
             "head": {
-                "standard": "34",
-                "levelOne": "31",
-                "levelTwo": "27",
-                "levelThree": "26"
+                "standard": "33",
+                "levelOne": "29",
+                "levelTwo": "25",
+                "levelThree": "24"
             },
-            "body": "17",
-            "lowerBody": "13"
+            "body": "16",
+            "lowerBody": "12"
         },
         "description" : "The Devotion is a light machine gun that uses energy ammo. It features a fully automatic firing mode. The Devotion is considered one of the strongest weapons in the game, with a very rate of fire (after ramping up). It also has a 2× headshot multiplier. It has a high magazine capacity but has a rather slow reload speed. It has high and hard to control recoil and slow ADS speed. It is most effective at close to medium range, and only has a 1× headshot multiplier at 64+ meters."
     },
@@ -812,7 +812,7 @@
             },
             "clips": {
                 "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
-                "clipIconWhite": "extended_heavy_mag",
+                "clipIconWhite": "extended_heavy_mag_icon_white",
                 "levelOne": "40",
                 "levelTwo": "45",
                 "levelThree": "55"
@@ -992,7 +992,7 @@
             },
             "clips": {
                 "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
-                "clipIconWhite": "extended_sniper_mag_icon",
+                "clipIconWhite": "extended_sniper_mag_icon_white",
                 "levelOne": "8",
                 "levelTwo": "10",
                 "levelThree": "12"
@@ -1138,7 +1138,7 @@
             },
             "clips": {
                 "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
-                "clipIconWhite": "extended_sniper_mag_icon",
+                "clipIconWhite": "extended_sniper_mag_icon_white",
                 "levelOne": "6",
                 "levelTwo": "7",
                 "levelThree": "8"
@@ -1328,7 +1328,7 @@
             },
             "clips": {
                 "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
-                "clipIconWhite": "extended_sniper_mag_icon",
+                "clipIconWhite": "extended_sniper_mag_icon_white",
                 "levelOne": "5",
                 "levelTwo": "6",
                 "levelThree": "7"
@@ -1648,7 +1648,7 @@
             },
             "clips": {
                 "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
-                "clipIconWhite": "extended_light_mag",
+                "clipIconWhite": "extended_light_mag_icon_white",
                 "levelOne": "19",
                 "levelTwo": "22",
                 "levelThree": "25"
@@ -1727,7 +1727,7 @@
             },
             "clips": {
                 "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
-                "clipIconWhite": "extended_light_mag",
+                "clipIconWhite": "extended_light_mag_icon_white",
                 "levelOne": "14",
                 "levelTwo": "16",
                 "levelThree": "18"
@@ -1798,7 +1798,7 @@
             },
             "clips": {
                 "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
-                "clipIconWhite": "extended_heavy_mag",
+                "clipIconWhite": "extended_heavy_mag_icon_white",
                 "levelOne": "6",
                 "levelTwo": "7",
                 "levelThree": "8"
@@ -1869,7 +1869,7 @@
             },
             "clips": {
                 "description": "Extended magazines increase the amount of ammo per magazine for their respective Ammo type. The increase to the magazine size will vary with each weapon and rarity of the magazine attached. Epic (level three) being the highest capacity and common (level one) being the lowest.",
-                "clipIconWhite": "extended_energy_mag_icon",
+                "clipIconWhite": "extended_energy_mag_icon_white",
                 "levelOne": "21",
                 "levelTwo": "23",
                 "levelThree": "26"

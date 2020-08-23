@@ -10,14 +10,6 @@ import SwiftUI
 
 struct HomeView: View {
     
-//    init() {
-//        UINavigationBar.appearance().standardAppearance.shadowColor = .clear
-//        UINavigationBar.appearance().backgroundColor = .clear
-//        UINavigationBar.appearance().isHidden = false
-//        UINavigationBar.appearance().barTintColor = .white
-//        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
-//    }
-    
     var body: some View {
             
         NavigationView {
@@ -25,7 +17,8 @@ struct HomeView: View {
                 VStack {
                     Text("Apex Companion")
                     .font(.custom("Teko-Bold", size: 45))
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
+                    .shadow(color: .black, radius: 2, x: 2, y: 2)
                     Spacer()
                     HStack {
                         Spacer()
@@ -79,7 +72,7 @@ struct HomeView: View {
                             }
                         }
                         Spacer()
-                        NavigationLink(destination: MapView(mapImageName: "kings_canyon")) {
+                        NavigationLink(destination: MapRow()) {
                             ZStack {
                                 Image("maps_home")
                                     .renderingMode(.original)
@@ -100,16 +93,29 @@ struct HomeView: View {
                         Spacer()
                         Text("Tricks")
                         Spacer()
-                        Text("News")
+                        NavigationLink(destination: NewsWebView()) {
+                            ZStack {
+                                Image("news_home")
+                                    .renderingMode(.original)
+                                    .resizable()
+                                    .cornerRadius(20)
+                                    .frame(width: 170, height: 220)
+                                Text("News")
+                                    .font(.custom("Teko-SemiBold", size: 30))
+                                    .foregroundColor(.white)
+                                    .shadow(color: .black, radius: 2, x: 2, y: 2)
+                                    .offset(y: 65)
+                            }
+                        }
                         Spacer()
                     }
                     Spacer()
                 }
             }
-            .background(Image("season_6_bg")
-            .resizable()
+            .background(Color.black.opacity(0.7))
+//            .resizable()
             .edgesIgnoringSafeArea(.all)
-            .aspectRatio(contentMode: .fill))
+//            .aspectRatio(contentMode: .fill))
         }
     }
 }
