@@ -1362,10 +1362,10 @@
             "recoil": "Vertical kick recoil",
             "modeOne": "Automatic",
             "modeOneIcon": "auto_icon",
-            "modeOneGif": "eva8_auto",
+            "modeOneGif": "eva8_fire_rate",
             "modeTwo": "Burst Fire",
             "modeTwoIcon": "burst_icon",
-            "modeTwoGif": "eva8_burst"
+            "modeTwoGif": "eva8_spread"
         },
         "attachments": {
             "optics": {
@@ -1437,10 +1437,10 @@
             "recoil": "Vertical kick recoil",
             "modeOne": "Single Fire",
             "modeOneIcon": "single_icon",
-            "modeOneGif": "mastiff_single",
-            "modeTwo": null,
-            "modeTwoIcon": null,
-            "modeTwoGif": null
+            "modeOneGif": "mastiff_fire_rate",
+            "modeTwo": "Something",
+            "modeTwoIcon": "Something",
+            "modeTwoGif": "mastiff_spread"
         },
         "attachments": {
             "optics": {
@@ -1507,10 +1507,10 @@
             "recoil": "Vertical kick recoil",
             "modeOne": "Automatic",
             "modeOneIcon": "auto_icon",
-            "modeOneGif": "mozambique_auto",
-            "modeTwo": null,
-            "modeTwoIcon": null,
-            "modeTwoGif": null
+            "modeOneGif": "mozambique_fire_rate",
+            "modeTwo": "something",
+            "modeTwoIcon": "something",
+            "modeTwoGif": "mozambique_spread"
         },
         "attachments": {
             "optics": {
@@ -1582,10 +1582,10 @@
             "recoil": "Vertical kick recoil",
             "modeOne": "Single Fire",
             "modeOneIcon": "single_icon",
-            "modeOneGif": "peacekeeper_single",
-            "modeTwo": null,
-            "modeTwoIcon": null,
-            "modeTwoGif": null
+            "modeOneGif": "peacekeeper_fire_rate",
+            "modeTwo": "something",
+            "modeTwoIcon": "something",
+            "modeTwoGif": "peacekeeper_spread"
         },
         "attachments": null,
         "damage": {

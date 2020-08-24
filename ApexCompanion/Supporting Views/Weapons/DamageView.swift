@@ -52,6 +52,7 @@ struct DamageView: View {
                     .font(.custom("Teko-SemiBold", size: 20))
                     .foregroundColor(.black)
                     .multilineTextAlignment(.center)
+                    .fixedSize(horizontal: false, vertical: true)
                     .padding(.horizontal, 10)
                     .padding(.vertical)
                     

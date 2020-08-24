@@ -55,14 +55,26 @@ struct FireModeView: View {
                         self.secondary = false
                         
                     }) {
-                        Text("Default Mode")
-                            .multilineTextAlignment(.center)
-                            .frame(width: 150)
-                            .padding(.all, 5)
-                            .font(.custom("Teko-SemiBold", size: 25))
-                            .foregroundColor(primary ? .white : .black)
-                            .background(primary ? Color.black : Color.clear)
-                            .cornerRadius(10)
+                        if weapon.type != "Shotguns" {
+                            Text("Default Mode")
+                                .multilineTextAlignment(.center)
+                                .frame(width: 150)
+                                .padding(.all, 5)
+                                .font(.custom("Teko-SemiBold", size: 25))
+                                .foregroundColor(primary ? .white : .black)
+                                .background(primary ? Color.black : Color.clear)
+                                .cornerRadius(10)
+                        } else {
+                            Text("Fire Rate")
+                                .multilineTextAlignment(.center)
+                                .frame(width: 150)
+                                .padding(.all, 5)
+                                .font(.custom("Teko-SemiBold", size: 25))
+                                .foregroundColor(primary ? .white : .black)
+                                .background(primary ? Color.black : Color.clear)
+                                .cornerRadius(10)
+                        }
+                        
                     }
                     
                     if weapon.fireMode.modeTwo != nil {
@@ -72,42 +84,60 @@ struct FireModeView: View {
                             self.secondary = true
                             
                         }) {
-                            Text("Secondary Mode")
-                                .multilineTextAlignment(.center)
-                                .frame(width: 150)
-                                .padding(.all, 5)
-                                .font(.custom("Teko-SemiBold", size: 25))
-                                .foregroundColor(secondary ? .white : .black)
-                                .background(secondary ? Color.black : Color.clear)
-                                .cornerRadius(10)
+                            if weapon.type != "Shotguns" {
+                                Text("Secondary Mode")
+                                    .multilineTextAlignment(.center)
+                                    .frame(width: 150)
+                                    .padding(.all, 5)
+                                    .font(.custom("Teko-SemiBold", size: 25))
+                                    .foregroundColor(secondary ? .white : .black)
+                                    .background(secondary ? Color.black : Color.clear)
+                                    .cornerRadius(10)
+                            } else {
+                                Text("Spread")
+                                    .multilineTextAlignment(.center)
+                                    .frame(width: 150)
+                                    .padding(.all, 5)
+                                    .font(.custom("Teko-SemiBold", size: 25))
+                                    .foregroundColor(secondary ? .white : .black)
+                                    .background(secondary ? Color.black : Color.clear)
+                                    .cornerRadius(10)
+                            }
+                            
                         }
                     }
                     Spacer()
                 }.padding(.top, 10)
                 VStack {
                     if primary {
-                        VStack {
-                            Text(weapon.fireMode.modeOne)
-                                .font(.custom("Teko-SemiBold", size: 25))
-                                .foregroundColor(.black)
-                            Image(weapon.fireMode.modeOneIcon)
-                                .resizable()
-                                .frame(width: 50, height: 20)
-                        }.padding(.top, 10)
+                        if weapon.type != "Shotguns" {
+                            VStack {
+                                Text(weapon.fireMode.modeOne)
+                                    .font(.custom("Teko-SemiBold", size: 25))
+                                    .foregroundColor(.black)
+                                Image(weapon.fireMode.modeOneIcon)
+                                    .resizable()
+                                    .frame(width: 50, height: 20)
+                            }.padding(.top, 10)
+                        }
+                        
                         GIFView(gifName: weapon.fireMode.modeOneGif)
                             .frame(width: 300, height: 200)
                     }
                     if secondary && weapon.fireMode.modeTwo != nil {
-                        VStack {
-                            Text(weapon.fireMode.modeTwo!)
-                                .font(.custom("Teko-SemiBold", size: 25))
-                                .foregroundColor(.black)
-                                .multilineTextAlignment(.center)
-//                                .frame(height: 80)
-                            Image(weapon.fireMode.modeTwoIcon!)
-                                .resizable()
-                                .frame(width: 50, height: 20)
-                        }.padding(.top, 10)
+                        if weapon.type != "Shotguns" {
+                            VStack {
+                                Text(weapon.fireMode.modeTwo!)
+                                    .font(.custom("Teko-SemiBold", size: 25))
+                                    .foregroundColor(.black)
+                                    .multilineTextAlignment(.center)
+//                                  .frame(height: 80)
+                                Image(weapon.fireMode.modeTwoIcon!)
+                                    .resizable()
+                                    .frame(width: 50, height: 20)
+                            }.padding(.top, 10)
+                        }
+                        
                         GIFView(gifName: weapon.fireMode.modeTwoGif!)
                             .frame(width: 300, height: 200)
                     }
@@ -122,6 +152,6 @@ struct FireModeView: View {
 
 struct FireModeView_Previews: PreviewProvider {
     static var previews: some View {
-        FireModeView(weapon: weaponData[0])
+        FireModeView(weapon: weaponData[16])
     }
 }

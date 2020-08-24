@@ -14,7 +14,13 @@ struct MapItem: View {
     
     var body: some View {
         VStack {
-            Text(map.name)
+            Image(map.image)
+                .renderingMode(.original)
+                .resizable()
+                .frame(width: 300, height: 300, alignment: .center)
+                .padding()
+                .background(Color.black.opacity(0.2))
+                .cornerRadius(20)
         }
     }
 }

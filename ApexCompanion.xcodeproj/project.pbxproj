@@ -30,7 +30,7 @@
 		843E015424E842C3006CDA90 /* GearRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E015324E842C3006CDA90 /* GearRow.swift */; };
 		843E015624E8444A006CDA90 /* RegenDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E015524E8444A006CDA90 /* RegenDetail.swift */; };
 		843E015824E84540006CDA90 /* SingleItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E015724E84540006CDA90 /* SingleItemView.swift */; };
-		843E015A24E9F847006CDA90 /* MapRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E015924E9F847006CDA90 /* MapRow.swift */; };
+		843E015A24E9F847006CDA90 /* MapList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E015924E9F847006CDA90 /* MapList.swift */; };
 		843E015D24E9F996006CDA90 /* MapItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E015C24E9F996006CDA90 /* MapItem.swift */; };
 		843E015F24ECA32C006CDA90 /* grenades.json in Resources */ = {isa = PBXBuildFile; fileRef = 843E015E24ECA32B006CDA90 /* grenades.json */; };
 		843E016324ED8453006CDA90 /* Grenades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E016224ED8453006CDA90 /* Grenades.swift */; };
@@ -40,6 +40,8 @@
 		843E016D24EE01FD006CDA90 /* MapDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E016C24EE01FD006CDA90 /* MapDetailView.swift */; };
 		843E017424F0B0CA006CDA90 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E017324F0B0CA006CDA90 /* WebView.swift */; };
 		843E017824F0B3B6006CDA90 /* NewsWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E017724F0B3B6006CDA90 /* NewsWebView.swift */; };
+		843E017B24F432FC006CDA90 /* TipsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E017A24F432FC006CDA90 /* TipsDetail.swift */; };
+		843E017D24F43812006CDA90 /* MapRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E017C24F43812006CDA90 /* MapRow.swift */; };
 		8444434D24CC82E60090FFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444434C24CC82E60090FFFC /* AppDelegate.swift */; };
 		8444434F24CC82E60090FFFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444434E24CC82E60090FFFC /* SceneDelegate.swift */; };
 		8444435124CC82E60090FFFC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444435024CC82E60090FFFC /* HomeView.swift */; };
@@ -101,7 +103,7 @@
 		843E015324E842C3006CDA90 /* GearRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearRow.swift; sourceTree = "<group>"; };
 		843E015524E8444A006CDA90 /* RegenDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegenDetail.swift; sourceTree = "<group>"; };
 		843E015724E84540006CDA90 /* SingleItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleItemView.swift; sourceTree = "<group>"; };
-		843E015924E9F847006CDA90 /* MapRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRow.swift; sourceTree = "<group>"; };
+		843E015924E9F847006CDA90 /* MapList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapList.swift; sourceTree = "<group>"; };
 		843E015C24E9F996006CDA90 /* MapItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapItem.swift; sourceTree = "<group>"; };
 		843E015E24ECA32B006CDA90 /* grenades.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = grenades.json; sourceTree = "<group>"; };
 		843E016224ED8453006CDA90 /* Grenades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grenades.swift; sourceTree = "<group>"; };
@@ -111,6 +113,8 @@
 		843E016C24EE01FD006CDA90 /* MapDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailView.swift; sourceTree = "<group>"; };
 		843E017324F0B0CA006CDA90 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		843E017724F0B3B6006CDA90 /* NewsWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsWebView.swift; sourceTree = "<group>"; };
+		843E017A24F432FC006CDA90 /* TipsDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsDetail.swift; sourceTree = "<group>"; };
+		843E017C24F43812006CDA90 /* MapRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRow.swift; sourceTree = "<group>"; };
 		8444434924CC82E60090FFFC /* ApexCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApexCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8444434C24CC82E60090FFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8444434E24CC82E60090FFFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,7 +168,8 @@
 		843E013B24E61B01006CDA90 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				843E015924E9F847006CDA90 /* MapRow.swift */,
+				843E015924E9F847006CDA90 /* MapList.swift */,
+				843E017C24F43812006CDA90 /* MapRow.swift */,
 				843E015C24E9F996006CDA90 /* MapItem.swift */,
 				843E013924E6177E006CDA90 /* MapView.swift */,
 				843E016C24EE01FD006CDA90 /* MapDetailView.swift */,
@@ -210,6 +215,14 @@
 				843E017724F0B3B6006CDA90 /* NewsWebView.swift */,
 			);
 			path = News;
+			sourceTree = "<group>";
+		};
+		843E017924F432D1006CDA90 /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				843E017A24F432FC006CDA90 /* TipsDetail.swift */,
+			);
+			path = Tips;
 			sourceTree = "<group>";
 		};
 		8444434024CC82E60090FFFC = {
@@ -278,6 +291,7 @@
 				843E013C24E61B1C006CDA90 /* Gear */,
 				843E013B24E61B01006CDA90 /* Maps */,
 				843E017224F0B040006CDA90 /* News */,
+				843E017924F432D1006CDA90 /* Tips */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -466,6 +480,7 @@
 			files = (
 				844443F324D638BB0090FFFC /* CharacterDetail.swift in Sources */,
 				843E014524E77342006CDA90 /* Regen.swift in Sources */,
+				843E017D24F43812006CDA90 /* MapRow.swift in Sources */,
 				844443FC24D7C08E0090FFFC /* CharacterList.swift in Sources */,
 				843E014E24E82747006CDA90 /* SingleGearView.swift in Sources */,
 				843E016524ED885D006CDA90 /* GrenadeDetail.swift in Sources */,
@@ -512,9 +527,10 @@
 				843E010224DDC908006CDA90 /* SingleClipView.swift in Sources */,
 				843E015824E84540006CDA90 /* SingleItemView.swift in Sources */,
 				8444437524CD08940090FFFC /* Constants.swift in Sources */,
+				843E017B24F432FC006CDA90 /* TipsDetail.swift in Sources */,
 				843E00FE24DDC395006CDA90 /* SubHeaderView.swift in Sources */,
 				8444437D24CD2F820090FFFC /* WeaponDetail.swift in Sources */,
-				843E015A24E9F847006CDA90 /* MapRow.swift in Sources */,
+				843E015A24E9F847006CDA90 /* MapList.swift in Sources */,
 				844443A524CF67C10090FFFC /* WeaponRow.swift in Sources */,
 				844443E924D212300090FFFC /* NavigationConfigurator.swift in Sources */,
 			);
