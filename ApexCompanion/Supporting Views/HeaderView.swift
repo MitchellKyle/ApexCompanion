@@ -16,7 +16,8 @@ struct HeaderView: View {
         HStack {
             Text(title)
             .font(.custom("Teko-Bold", size: 45))
-                .foregroundColor(.black)
+                .foregroundColor(.white)
+                .shadow(color: .black, radius: 2, x: 2, y: 2)
             Spacer()
         }
         .frame(height: 40)

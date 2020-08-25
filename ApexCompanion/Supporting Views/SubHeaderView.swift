@@ -16,7 +16,9 @@ struct SubHeaderView: View {
         HStack {
             Text(text)
                 .font(.custom("Teko-SemiBold", size: 30))
-                .foregroundColor(.black)
+                .foregroundColor(.white)
+                .shadow(color: .black, radius: 1, x: 1, y: 1)
+                .shadow(color: .black, radius: 1, x: -1, y: -1)
             Spacer()
         }
         .padding(.leading)
