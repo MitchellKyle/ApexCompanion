@@ -38,13 +38,12 @@
 		843E016924EDFD9B006CDA90 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E016824EDFD9B006CDA90 /* Map.swift */; };
 		843E016B24EE0151006CDA90 /* maps.json in Resources */ = {isa = PBXBuildFile; fileRef = 843E016A24EE0151006CDA90 /* maps.json */; };
 		843E016D24EE01FD006CDA90 /* MapDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E016C24EE01FD006CDA90 /* MapDetailView.swift */; };
-		843E017424F0B0CA006CDA90 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E017324F0B0CA006CDA90 /* WebView.swift */; };
-		843E017824F0B3B6006CDA90 /* NewsWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E017724F0B3B6006CDA90 /* NewsWebView.swift */; };
 		843E017B24F432FC006CDA90 /* TipsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E017A24F432FC006CDA90 /* TipsDetail.swift */; };
 		843E017D24F43812006CDA90 /* MapRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E017C24F43812006CDA90 /* MapRow.swift */; };
 		843E019024F80838006CDA90 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E018F24F80838006CDA90 /* News.swift */; };
 		843E019224F80A7E006CDA90 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E019124F80A7E006CDA90 /* NewsItem.swift */; };
 		843E019424F80B20006CDA90 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E019324F80B20006CDA90 /* ImageLoader.swift */; };
+		843E019624F80C05006CDA90 /* NewsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E019524F80C05006CDA90 /* NewsList.swift */; };
 		8444434D24CC82E60090FFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444434C24CC82E60090FFFC /* AppDelegate.swift */; };
 		8444434F24CC82E60090FFFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444434E24CC82E60090FFFC /* SceneDelegate.swift */; };
 		8444435124CC82E60090FFFC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444435024CC82E60090FFFC /* HomeView.swift */; };
@@ -114,13 +113,12 @@
 		843E016824EDFD9B006CDA90 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		843E016A24EE0151006CDA90 /* maps.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = maps.json; sourceTree = "<group>"; };
 		843E016C24EE01FD006CDA90 /* MapDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailView.swift; sourceTree = "<group>"; };
-		843E017324F0B0CA006CDA90 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		843E017724F0B3B6006CDA90 /* NewsWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsWebView.swift; sourceTree = "<group>"; };
 		843E017A24F432FC006CDA90 /* TipsDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsDetail.swift; sourceTree = "<group>"; };
 		843E017C24F43812006CDA90 /* MapRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRow.swift; sourceTree = "<group>"; };
 		843E018F24F80838006CDA90 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		843E019124F80A7E006CDA90 /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
 		843E019324F80B20006CDA90 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		843E019524F80C05006CDA90 /* NewsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsList.swift; sourceTree = "<group>"; };
 		8444434924CC82E60090FFFC /* ApexCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApexCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8444434C24CC82E60090FFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8444434E24CC82E60090FFFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -217,8 +215,7 @@
 		843E017224F0B040006CDA90 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				843E017324F0B0CA006CDA90 /* WebView.swift */,
-				843E017724F0B3B6006CDA90 /* NewsWebView.swift */,
+				843E019524F80C05006CDA90 /* NewsList.swift */,
 				843E019124F80A7E006CDA90 /* NewsItem.swift */,
 			);
 			path = News;
@@ -493,6 +490,7 @@
 				844443FC24D7C08E0090FFFC /* CharacterList.swift in Sources */,
 				843E014E24E82747006CDA90 /* SingleGearView.swift in Sources */,
 				843E016524ED885D006CDA90 /* GrenadeDetail.swift in Sources */,
+				843E019624F80C05006CDA90 /* NewsList.swift in Sources */,
 				844443F624D789BD0090FFFC /* AbilitiesView.swift in Sources */,
 				8444440624DB538E0090FFFC /* FireModeView.swift in Sources */,
 				843E00FC24DD919A006CDA90 /* SingleStockView.swift in Sources */,
@@ -532,9 +530,7 @@
 				843E010824DF1559006CDA90 /* HopView.swift in Sources */,
 				843E015424E842C3006CDA90 /* GearRow.swift in Sources */,
 				843E016D24EE01FD006CDA90 /* MapDetailView.swift in Sources */,
-				843E017424F0B0CA006CDA90 /* WebView.swift in Sources */,
 				8444440C24DC47410090FFFC /* WeaponDescription.swift in Sources */,
-				843E017824F0B3B6006CDA90 /* NewsWebView.swift in Sources */,
 				843E014024E61B78006CDA90 /* GearDetail.swift in Sources */,
 				843E010224DDC908006CDA90 /* SingleClipView.swift in Sources */,
 				843E015824E84540006CDA90 /* SingleItemView.swift in Sources */,

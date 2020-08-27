@@ -93,7 +93,7 @@ struct HomeView: View {
                         Spacer()
                         Text("Tricks")
                         Spacer()
-                        NavigationLink(destination: NewsWebView()) {
+                        NavigationLink(destination: NewsList(news: newsData)) {
                             ZStack {
                                 Image("news_home")
                                     .renderingMode(.original)
