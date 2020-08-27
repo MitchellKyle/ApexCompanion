@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+class News: Decodable {
+    
+    var title: String
+    var link: String
+    var img: String
+    var short_desc: String
+    
+}
