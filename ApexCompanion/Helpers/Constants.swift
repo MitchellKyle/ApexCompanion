@@ -25,7 +25,10 @@ struct Constants {
     }
     
     struct API {
+        
         static var API_KEY = "EiwtCWdhW2ImpnRbImoj"
+        static var NEWS_URL = "https://api.mozambiquehe.re/news?lang=en-us&auth=\(Constants.API.API_KEY)"
+        
     }
     
 }

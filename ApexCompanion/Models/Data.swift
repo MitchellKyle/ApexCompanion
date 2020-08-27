@@ -19,6 +19,8 @@ let regenData: [Regen] = load("regen.json")
 let grenadeData: [Grenades] = load("grenades.json")
 let mapData: [Map] = load("maps.json")
 
+let newsData: [News] = loadURL(Constants.API.NEWS_URL)
+
 //let weaponsOfType: [Weapon]
 
 func load<T: Decodable>(_ filename: String) -> T {
