@@ -43,19 +43,26 @@ func load<T: Decodable>(_ filename: String) -> T {
     }
 }
 
-func getWeaponTypes(weapons: [Weapon], weaponType: String) -> [Weapon] {
+func loadURL<T: Decodable>(_ urlString: String) -> T {
+    let data: Data
     
-    var weaponsOfType = [Weapon]()
-    
-    for weapon in weapons {
-        
-        if weapon.type == weaponType.dropLast() {
-            weaponsOfType.append(weapon)
-        }
+    guard let url = URL(string: urlString)
+        else {
+            fatalError("Couldn't create url from \(urlString).")
     }
     
-    return weaponsOfType
+    do {
+        data = try Data(contentsOf: url)
+    } catch {
+        fatalError("Couldn't load \(url) from request:\n\(error)")
+    }
     
+    do {
+        let decoder = JSONDecoder()
+        return try decoder.decode(T.self, from: data)
+    } catch {
+        fatalError("Couldn't parse \(url) as \(T.self):\n\(error)")
+    }
 }
 
 //final class ImageStore {
