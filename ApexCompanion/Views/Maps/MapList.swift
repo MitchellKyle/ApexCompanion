@@ -18,7 +18,7 @@ struct MapList: View {
 
             VStack {
                 ForEach (self.maps, id: \.name) { map in
-                    NavigationLink(destination: MapDetailView(map: map, mapImage: map.image)) {
+                    NavigationLink(destination: MapDetailView(map: map, mapImage: map.image, mapImageLabels: map.imageLabeled)) {
 
                         MapRow(map: map)
                     }

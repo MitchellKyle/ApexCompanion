@@ -44,6 +44,8 @@
 		843E019224F80A7E006CDA90 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E019124F80A7E006CDA90 /* NewsItem.swift */; };
 		843E019424F80B20006CDA90 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E019324F80B20006CDA90 /* ImageLoader.swift */; };
 		843E019624F80C05006CDA90 /* NewsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E019524F80C05006CDA90 /* NewsList.swift */; };
+		843E019824FAAA5B006CDA90 /* MapInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E019724FAAA5B006CDA90 /* MapInfo.swift */; };
+		843E019D24FB02A4006CDA90 /* InfoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E019C24FB02A4006CDA90 /* InfoItem.swift */; };
 		8444434D24CC82E60090FFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444434C24CC82E60090FFFC /* AppDelegate.swift */; };
 		8444434F24CC82E60090FFFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444434E24CC82E60090FFFC /* SceneDelegate.swift */; };
 		8444435124CC82E60090FFFC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444435024CC82E60090FFFC /* HomeView.swift */; };
@@ -119,6 +121,8 @@
 		843E019124F80A7E006CDA90 /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
 		843E019324F80B20006CDA90 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		843E019524F80C05006CDA90 /* NewsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsList.swift; sourceTree = "<group>"; };
+		843E019724FAAA5B006CDA90 /* MapInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInfo.swift; sourceTree = "<group>"; };
+		843E019C24FB02A4006CDA90 /* InfoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoItem.swift; sourceTree = "<group>"; };
 		8444434924CC82E60090FFFC /* ApexCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApexCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8444434C24CC82E60090FFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8444434E24CC82E60090FFFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 				843E015C24E9F996006CDA90 /* MapItem.swift */,
 				843E013924E6177E006CDA90 /* MapView.swift */,
 				843E016C24EE01FD006CDA90 /* MapDetailView.swift */,
+				843E019724FAAA5B006CDA90 /* MapInfo.swift */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
@@ -227,6 +232,14 @@
 				843E017A24F432FC006CDA90 /* TipsDetail.swift */,
 			);
 			path = Tips;
+			sourceTree = "<group>";
+		};
+		843E019B24FB0271006CDA90 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				843E019C24FB02A4006CDA90 /* InfoItem.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		8444434024CC82E60090FFFC = {
@@ -343,10 +356,11 @@
 				844443E824D212300090FFFC /* NavigationConfigurator.swift */,
 				844443E424D1F7AB0090FFFC /* BackgroundView.swift */,
 				8444440924DB64F00090FFFC /* GifPlayerView.swift */,
+				843E019324F80B20006CDA90 /* ImageLoader.swift */,
 				844443F424D7899B0090FFFC /* Characters */,
 				8444439124CE59E90090FFFC /* Weapons */,
 				843E014C24E82662006CDA90 /* Gear */,
-				843E019324F80B20006CDA90 /* ImageLoader.swift */,
+				843E019B24FB0271006CDA90 /* Map */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -484,6 +498,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843E019824FAAA5B006CDA90 /* MapInfo.swift in Sources */,
 				844443F324D638BB0090FFFC /* CharacterDetail.swift in Sources */,
 				843E014524E77342006CDA90 /* Regen.swift in Sources */,
 				843E017D24F43812006CDA90 /* MapRow.swift in Sources */,
@@ -496,6 +511,7 @@
 				843E00FC24DD919A006CDA90 /* SingleStockView.swift in Sources */,
 				843E00FA24DC8BE8006CDA90 /* DamageView.swift in Sources */,
 				8444437B24CD2E500090FFFC /* WeaponListView.swift in Sources */,
+				843E019D24FB02A4006CDA90 /* InfoItem.swift in Sources */,
 				843E014224E77195006CDA90 /* Gear.swift in Sources */,
 				8444434D24CC82E60090FFFC /* AppDelegate.swift in Sources */,
 				8444436A24CD019A0090FFFC /* Weapon.swift in Sources */,

@@ -3,32 +3,70 @@
 		"id": 1001,
 		"name": "King's Canyon",
 		"image": "kings_canyon",
+        "imageLabeled": "kings_canyon_labels",
 		"balloonLocations": "kings_canyon_balloons",
 		"respawnLocations": "kings_canyon_respawns",
+        "respawnLocationsLabeled": "kings_canyon_respawns_labels",
 		"beaconLocations": "kings_canyon_beacons",
+        "beaconLocationsLabeled": "kings_canyon_beacons_labels",
 		"lootTier": "kings_canyon_loot_tier",
+        "lootTierLabeled": "kings_canyon_loot_tier_labels",
 		"replicatorLocations": "kings_canyon_replicators",
+        "relicatorLocationsLabeled": "kings_canyon_replicators_labels",
 		"mapSpecificLocations": "kings_canyon_bunkers",
-		"description": "",
+        "mapSpecificLocationsLabeled": "kings_canyon_bunkers_labels",
+        "features": {
+            "hotZone": "At the start of each match, an area of the map will designated as a Hot Zone. This will be indicated on the map by a light blue circle over the Hot Zone area. In hot zone areas, there will be high tier loot as well as an increased chance of finding a gold weapon that has all legendary attachments. Be ready for a fight when dropping in Hot Zone, the chance at high tier loot brings a lot of teams to the area.",
+            "jumpTower": "Jump Towers are big red balloons with vertical ziplines attached to them. They are scattered throughout the map. When the zipline is taken all the way to the top, the balloon will shoot you in the direction you are facing will begin to glide. Use Ziplines to quickly outrun the approaching wall or quickly reposition on a team. If you jump off the zipline before reacing the top, this will allow you to fall instead of glide. This can be used to get high above your current area to scout it out for enemies. Be cautious when using Jump Towers, it takes 10 seconds to reach the top. As with all zip lines, noise is made while zipping and you are easily visible. When gliding, characters leave a streamline behind them and players can hear you land if they are in the landing area.",
+            "respawnBeacons": "Respawn Beacons can be used to revive fallen teammates (after their banners have been picked up) and are scattered all across the map. Once a teammates banner has been picked up, they can ping the nearest Respawn Beacon. A single Respawn Beacon can only be used once per game. Meaning once any team has used that beacon, it cannont be used again. Using Respawn Beacons can be risky, but are well worth it if it can be pulled off to revive a teammate or teammates. It takes about 8 seconds to use a beacon. Once used, the revived teammates fly in on a ship and are dropped from above the beacon. Teammates that are repawned are vulnerable as the no longer have any gear and the respawn proccess itself will bring attention to the area.",
+            "surveyBeacons": "Each map has 12 Survey Beacons. Survey Beacons can be used by any Recon Legend. Using a beacon will scout out the next the next ring and will update the maps of the players on the team. It can be useful whenn trying to get the best positioning in a ring."
+        },
+        "mapFeatures": {
+            "featureOne": "At the start of the game, a Supply Ship will fly in and dock at a random position on the map. The Supply Ship has high and mid tier loot. Halfway through the game, a second Supply Ship will fly in and dock at a second random position.",
+            "featureTwo": "Loot Ticks are small pyramid shaped crates that contain high tier and sometimes legendary tier loot. The ticks are randomized each match are usually hid away in buildings. The loot ticks have a distinct electric chirp/whirl sound that helps to locate them. They can be broken open by punching or shooting them, spilling their contents in the area.",
+            "featureThree": "Flyers are giant pterodactyl like birds that fly around the map carrying death boxes. The Flyers can be shot, allowing the death box to fall. The death box contains usually mid tier loot. There are also Flyers in cages in areas of the map. They do not provide any assistance to the player, but will screech when near to them, possibly giving away your location. They can be shot and eliminated from the map.",
+            "featureFour": "Charge Towers are giant circlular pillars located on the map. Players are able to interact with charge towers, allowing all player inside the radius of the tower to instantly charge their ultimate abilites. This can obviously be very useful especially at the beginning of the game. Be cautious when using charge towers, they are visible from far ranges and light up and make noise when they are being used.",
+        },
 		"eventLocations": {
 			"areaName": "Map Room",
-			"eventDescription": ""
+			"eventDescription": "",
+            "image": "kings_canyon_map_room",
+            "imageLabeled": "kings_canyon_map_room_labels"
 		}
 	},
 	{
 		"id": 1002,
 		"name": "World's Edge",
 		"image": "worlds_edge",
+        "imageLabeled": "worlds_edge_labels",
 		"balloonLocations": "worlds_edge_balloons",
 		"respawnLocations": "worlds_edge_respawns",
+        "respawnLocationsLabeled": "worlds_edge_respawns_labels",
 		"beaconLocations": "worlds_edge_beacons",
+        "beaconLocationsLabeled": "worlds_edge_beacons_labels",
 		"lootTier": "worlds_edge_loot_tier",
+        "lootTierLabeled": "worlds_edge_loot_tier_labels",
 		"replicatorLocations": "worlds_edge_replicators",
+        "relicatorLocationsLabeled": "worlds_edge_replicators_labels",
 		"mapSpecificLocations": "worlds_edge_vaults",
-		"description": "",
+        "mapSpecificLocationsLabeled": "worlds_edge_vaults_labels",
+        "features": {
+            "hotZone": "At the start of each match, an area of the map will designated as a Hot Zone. This will be indicated on the map by a light blue circle over the Hot Zone area. In hot zone areas, there will be high tier loot as well as an increased chance of finding a gold weapon that has all legendary attachments. Be ready for a fight when dropping in Hot Zone, the chance at high tier loot brings a lot of teams to the area.",
+            "jumpTower": "Jump Towers are big red balloons with vertical ziplines attached to them. They are scattered throughout the map. When the zipline is taken all the way to the top, the balloon will shoot you in the direction you are facing will begin to glide. Use Ziplines to quickly outrun the approaching wall or quickly reposition on a team. If you jump off the zipline before reacing the top, this will allow you to fall instead of glide. This can be used to get high above your current area to scout it out for enemies. Be cautious when using Jump Towers, it takes 10 seconds to reach the top. As with all zip lines, noise is made while zipping and you are easily visible. When gliding, characters leave a streamline behind them and players can hear you land if they are in the landing area.",
+            "respawnBeacons": "Respawn Beacons can be used to revive fallen teammates (after their banners have been picked up) and are scattered all across the map. Once a teammates banner has been picked up, they can ping the nearest Respawn Beacon. A single Respawn Beacon can only be used once per game. Meaning once any team has used that beacon, it cannont be used again. Using Respawn Beacons can be risky, but are well worth it if it can be pulled off to revive a teammate or teammates. It takes about 8 seconds to use a beacon. Once used, the revived teammates fly in on a ship and are dropped from above the beacon. Teammates that are repawned are vulnerable as the no longer have any gear and the respawn proccess itself will bring attention to the area.",
+            "surveyBeacons": "Each map has 12 Survey Beacons. Survey Beacons can be used by any Recon Legend. Using a beacon will scout out the next the next ring and will update the maps of the players on the team. It can be useful whenn trying to get the best positioning in a ring."
+        },
+        "mapFeatures": {
+            "featureOne": "The train that used to travel the map as of season 6 has been removed. Instead there are crashed train cars scattered along the rails on the map. They still contain mid to high tier loot, but as their are only two to three train cars per crash location, it is no longer a viable way to get gear for the team. They do make nice in between looting areas.",
+            "featureTwo": "Geysers are located in a couple of place on the map. They have actions very similar to jump towers with a few exceptions. One there is no zip time to travel to the top, since there is not zip line, making it a faster way to get to a glide. Also a geyser cannot be exited early like ziplines.",
+            "featureThree": "Cargo bots fly around the map carrying orbs that contain loot. These can be shot out of the sky and opened. The gear inside depends on what color the bot is flashing when it is shot down. Some Cargo Bots contain vault keys that are used to open vaults.",
+            "featureFour": "Vaults are room located in three positions on the map. They are behind locked doors and can only be unlocked with a vault key. The vaults contain a high amount of epic and legendary gear. The keys can only be found in cargo bots and the doors of the vault takes three seconds to unlock.",
+        },
 		"eventLocations": {
 			"areaName": "Trials",
-			"eventDescription": ""
+			"eventDescription": "",
+            "image": "worlds_edge_trials",
+            "imageLabeled": "worlds_edge_trials_labels"
 		}
 	}
 ]
