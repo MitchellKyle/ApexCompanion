@@ -27,7 +27,6 @@ struct WeaponListView: View {
             .padding(.top, 1)
             .navigationBarHidden(false)
             .navigationBarTitle("Weapon Types", displayMode: .inline)
-            
     }
 }
 

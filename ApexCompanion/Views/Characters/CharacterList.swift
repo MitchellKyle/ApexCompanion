@@ -23,7 +23,7 @@ struct CharacterList: View {
             CharacterRow(characterType: "\(key)", characters: self.characterCategories[key]!).edgesIgnoringSafeArea(.horizontal)
             }
             .edgesIgnoringSafeArea(.horizontal)
-            .navigationBarTitle("Characters", displayMode: .inline)
+            .navigationBarTitle("Legends", displayMode: .inline)
             
     }
 }

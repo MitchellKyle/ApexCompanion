@@ -15,6 +15,8 @@
         "relicatorLocationsLabeled": "kings_canyon_replicators_labels",
 		"mapSpecificLocations": "kings_canyon_bunkers",
         "mapSpecificLocationsLabeled": "kings_canyon_bunkers_labels",
+        "chargeTowers": "kings_canyon_charge_towers",
+        "chargeTowersLabeled": "kings_canyon_carge_towers_labels",
         "features": {
             "hotZone": "At the start of each match, an area of the map will designated as a Hot Zone. This will be indicated on the map by a light blue circle over the Hot Zone area. In hot zone areas, there will be high tier loot as well as an increased chance of finding a gold weapon that has all legendary attachments. Be ready for a fight when dropping in Hot Zone, the chance at high tier loot brings a lot of teams to the area.",
             "jumpTower": "Jump Towers are big red balloons with vertical ziplines attached to them. They are scattered throughout the map. When the zipline is taken all the way to the top, the balloon will shoot you in the direction you are facing will begin to glide. Use Ziplines to quickly outrun the approaching wall or quickly reposition on a team. If you jump off the zipline before reacing the top, this will allow you to fall instead of glide. This can be used to get high above your current area to scout it out for enemies. Be cautious when using Jump Towers, it takes 10 seconds to reach the top. As with all zip lines, noise is made while zipping and you are easily visible. When gliding, characters leave a streamline behind them and players can hear you land if they are in the landing area.",

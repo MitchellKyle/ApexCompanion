@@ -18,7 +18,7 @@ struct WeaponItem: View {
                 Image("season_6_bg").renderingMode(.original)
             }
             .frame(width: 350, height: 250)
-                .rotationEffect(.degrees(90))
+            .rotationEffect(.degrees(90))
             .cornerRadius(20)
             ZStack {
                 Image(weapon.imageIcon)

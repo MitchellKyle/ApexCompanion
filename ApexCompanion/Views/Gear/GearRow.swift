@@ -24,6 +24,7 @@ struct GearRow: View {
                         .padding(.leading, 5)
                     Spacer()
                 }
+                .padding(.bottom, -25)
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                         
@@ -43,6 +44,7 @@ struct GearRow: View {
                         .padding(.leading, 5)
                     Spacer()
                 }
+                .padding(.bottom, -25)
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                         
@@ -62,6 +64,7 @@ struct GearRow: View {
                         .padding(.leading, 5)
                     Spacer()
                 }
+                .padding(.bottom, -25)
 
                 ScrollView(.horizontal, showsIndicators: false) {
 
@@ -76,6 +79,7 @@ struct GearRow: View {
                 }
             }
             .padding(.horizontal)
+            .padding(.top, 50)
             .navigationBarHidden(false)
             .navigationBarTitle("Weapon Types", displayMode: .inline)
         }

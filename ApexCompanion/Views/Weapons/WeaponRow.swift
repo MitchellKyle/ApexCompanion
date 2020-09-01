@@ -24,6 +24,7 @@ struct WeaponRow: View {
                     .padding(.leading, 5)
                 Spacer()
             }
+            .padding(.bottom, -35)
             
             ScrollView(.horizontal, showsIndicators: false) {
                     
@@ -37,6 +38,7 @@ struct WeaponRow: View {
                 }
             }
         }
+        .padding(.top)
     }
 }
 

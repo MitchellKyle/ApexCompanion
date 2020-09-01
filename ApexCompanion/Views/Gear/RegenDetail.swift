@@ -24,7 +24,8 @@ struct RegenDetail: View {
                     HStack {
                         Text(regen.name)
                         .font(.custom("Teko-Bold", size: 35))
-                            .foregroundColor(.black)
+                            .foregroundColor(.white)
+                            .shadow(color: .black, radius: 2, x: 2, y: 2)
                         Spacer()
                     }
                     .frame(height: 40)
@@ -88,6 +89,7 @@ struct RegenDetail: View {
                 .background(Color.white.opacity(0.9))
                 .cornerRadius(20)
             }
+            .padding(.bottom, 5)
         }
     }
 }

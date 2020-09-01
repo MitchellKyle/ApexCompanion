@@ -28,12 +28,8 @@ struct CharacterDetail: View {
                 // Header
                 VStack(spacing: 0) {
                     // Character Name
-                    HStack {
-                        Text(character.name)
-                        .font(.custom("Teko-Bold", size: 45))
-                            .foregroundColor(.black)
-                        Spacer()
-                    }.frame(height: 40).padding(.leading).padding(.bottom)
+                    HeaderView(title: character.name)
+                    
                     ZStack {
                         // Character Image
                         HStack {
@@ -171,9 +167,10 @@ struct CharacterDetail: View {
                             abilityTips: "")
                     }
                     
-                }.padding(.top)
-            }.padding(.top, 25)
-                .padding(.bottom)
+                }
+                .padding(.top)
+            }
+            .padding(.bottom,5)
         }
     }
 }

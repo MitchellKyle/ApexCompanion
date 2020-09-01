@@ -25,6 +25,7 @@ struct CharacterRow: View {
                     .padding(.leading, 5)
                 Spacer()
             }
+            .padding(.bottom, -35)
             
             ScrollView(.horizontal, showsIndicators: false) {
                     
@@ -39,6 +40,7 @@ struct CharacterRow: View {
                 }
             }
         }
+        .padding(.top)
     }
 }
 

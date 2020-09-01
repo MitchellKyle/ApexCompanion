@@ -13,6 +13,7 @@ struct TipsDetail: View {
         ScrollView {
             VStack {
                 HeaderView(title: "Tips / Tricks")
+                    .padding(.top, 50)
                 
                 VStack {
                     SubHeaderView(text: "Game Play")
@@ -168,6 +169,7 @@ struct TipsDetail: View {
                     }
                 }
             }
+            .navigationBarTitle("Tips", displayMode: .inline)
         }
         .background(Image("season_6_bg").resizable())
         .edgesIgnoringSafeArea(.all)

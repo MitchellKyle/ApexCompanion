@@ -24,14 +24,7 @@ struct WeaponDetail: View {
                 
                 VStack(spacing: 0) {
                     // Weapon Name
-                    HStack {
-                        Text(weapon.name)
-                        .font(.custom("Teko-Bold", size: 45))
-                            .foregroundColor(.black)
-                        Spacer()
-                    }
-                    .frame(height: 40)
-                    .padding(.all)
+                    HeaderView(title: weapon.name)
                     
                     HStack {
                         Spacer()

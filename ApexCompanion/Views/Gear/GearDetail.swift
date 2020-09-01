@@ -23,7 +23,7 @@ struct GearDetail: View {
                 
                 HelmetView(gear: gear)
                 
-            }.padding(.bottom, 10)
+            }.padding(.bottom, 5)
         }
     }
 }

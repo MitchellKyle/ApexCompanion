@@ -21,14 +21,7 @@ struct GrenadeDetail: View {
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
             ScrollView {
-                    HStack {
-                        Text(grenade.name)
-                        .font(.custom("Teko-Bold", size: 35))
-                            .foregroundColor(.black)
-                        Spacer()
-                    }
-                    .frame(height: 40)
-                    .padding(.all)
+                HeaderView(title: grenade.name)
                 VStack {
                     Text(grenade.description)
                         .font(.custom("Teko-SemiBold", size: 25))
@@ -88,6 +81,7 @@ struct GrenadeDetail: View {
                 .background(Color.white.opacity(0.9))
                 .cornerRadius(20)
             }
+            .padding(.bottom, 5)
         }
     }
 }
