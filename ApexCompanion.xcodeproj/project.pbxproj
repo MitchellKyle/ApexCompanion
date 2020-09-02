@@ -81,6 +81,8 @@
 		8444440624DB538E0090FFFC /* FireModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444440524DB538E0090FFFC /* FireModeView.swift */; };
 		8444440A24DB64F00090FFFC /* GifPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444440924DB64F00090FFFC /* GifPlayerView.swift */; };
 		8444440C24DC47410090FFFC /* WeaponDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444440B24DC47410090FFFC /* WeaponDescription.swift */; };
+		8480780A24FF0416005F51C6 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480780924FF0416005F51C6 /* HomeItem.swift */; };
+		8480780C24FF1FED005F51C6 /* TipItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480780B24FF1FED005F51C6 /* TipItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,6 +162,8 @@
 		8444440524DB538E0090FFFC /* FireModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireModeView.swift; sourceTree = "<group>"; };
 		8444440924DB64F00090FFFC /* GifPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifPlayerView.swift; sourceTree = "<group>"; };
 		8444440B24DC47410090FFFC /* WeaponDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDescription.swift; sourceTree = "<group>"; };
+		8480780924FF0416005F51C6 /* HomeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
+		8480780B24FF1FED005F51C6 /* TipItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				843E017A24F432FC006CDA90 /* TipsDetail.swift */,
+				8480780B24FF1FED005F51C6 /* TipItem.swift */,
 			);
 			path = Tips;
 			sourceTree = "<group>";
@@ -351,6 +356,7 @@
 		8444439024CE1CCF0090FFFC /* Supporting Views */ = {
 			isa = PBXGroup;
 			children = (
+				8480780924FF0416005F51C6 /* HomeItem.swift */,
 				843E014A24E77652006CDA90 /* HeaderView.swift */,
 				843E00FD24DDC395006CDA90 /* SubHeaderView.swift */,
 				844443E824D212300090FFFC /* NavigationConfigurator.swift */,
@@ -499,6 +505,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				843E019824FAAA5B006CDA90 /* MapInfo.swift in Sources */,
+				8480780A24FF0416005F51C6 /* HomeItem.swift in Sources */,
 				844443F324D638BB0090FFFC /* CharacterDetail.swift in Sources */,
 				843E014524E77342006CDA90 /* Regen.swift in Sources */,
 				843E017D24F43812006CDA90 /* MapRow.swift in Sources */,
@@ -542,6 +549,7 @@
 				843E015624E8444A006CDA90 /* RegenDetail.swift in Sources */,
 				844443F824D7B36E0090FFFC /* CharacterItem.swift in Sources */,
 				843E016324ED8453006CDA90 /* Grenades.swift in Sources */,
+				8480780C24FF1FED005F51C6 /* TipItem.swift in Sources */,
 				843E015D24E9F996006CDA90 /* MapItem.swift in Sources */,
 				843E010824DF1559006CDA90 /* HopView.swift in Sources */,
 				843E015424E842C3006CDA90 /* GearRow.swift in Sources */,

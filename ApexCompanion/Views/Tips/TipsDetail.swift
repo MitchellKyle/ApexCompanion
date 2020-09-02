@@ -17,47 +17,9 @@ struct TipsDetail: View {
                 
                 VStack {
                     SubHeaderView(text: "Game Play")
-                    VStack {
-                        HStack {
-                            Text("Finishers")
-                                .font(.custom("Teko-Regular", size: 25))
-                                .foregroundColor(.black)
-                            Spacer()
-                        }
-                        .padding(.leading)
-                        
-                        Text("Finishers can be performed on enemies that have been knocked down and not yet out of the game. Finishers can be risky as they take about 6 seconds to perform and it is highly likely their teammate will show up to help out a downed legend. Finishers can be beneficial however, completeing a finisher will completely restore shields. Pick when to use a finisher wisely, it can very beneficial or devastating.")
-                            .font(.custom("Teko-Regular", size: 22))
-                            .foregroundColor(.black)
-                            .padding(.horizontal, 25)
-                            .padding(.bottom, 5)
-                            .fixedSize(horizontal: false, vertical: true)
-                    }
-                    .padding(.vertical)
-                    .background(Color.white.opacity(0.9))
-                    .cornerRadius(20)
-                    .padding(.bottom)
+                    TipItem(title: "Finishers", description: "Finishers can be performed on enemies that have been knocked down and not yet out of the game. Finishers can be risky as they take about 6 seconds to perform and it is highly likely their teammate will show up to help out a downed legend. Finishers can be beneficial however, completeing a finisher will completely restore shields. Pick when to use a finisher wisely, it can very beneficial or devastating.")
                     
-                    VStack {
-                        HStack {
-                            Text("Launching")
-                                .font(.custom("Teko-Regular", size: 25))
-                                .foregroundColor(.black)
-                            Spacer()
-                        }
-                        .padding(.leading)
-                        
-                        Text("When launching into a map, the jump master is in control of when the launch takes place. The team glides together under the jump master's control. Breaking away from the team will allow you to glide faster and potential get the jump on enemy teams. Just be aware as this can also put you further from where your team landed and can leave you in an outnumbered fight.")
-                            .font(.custom("Teko-Regular", size: 22))
-                            .foregroundColor(.black)
-                            .padding(.horizontal, 25)
-                            .padding(.bottom, 5)
-                            .fixedSize(horizontal: false, vertical: true)
-                    }
-                    .padding(.vertical)
-                    .background(Color.white.opacity(0.9))
-                    .cornerRadius(20)
-                    .padding(.bottom)
+                    TipItem(title: "Launching", description: "When launching into a map, the jump master is in control of when the launch takes place. The team glides together under the jump master's control. Breaking away from the team will allow you to glide faster and potential get the jump on enemy teams. Just be aware as this can also put you further from where your team landed and can leave you in an outnumbered fight.")
                 }
                 
                 VStack {

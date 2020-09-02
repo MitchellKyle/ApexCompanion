@@ -20,93 +20,43 @@ struct HomeView: View {
                     .foregroundColor(.white)
                     .shadow(color: .black, radius: 2, x: 2, y: 2)
                     Spacer()
+                    
                     HStack {
                         Spacer()
                         NavigationLink(destination: WeaponListView()) {
-                            ZStack {
-                                Image("weapons_home")
-                                    .renderingMode(.original)
-                                    .resizable()
-                                    .cornerRadius(20)
-                                    .frame(width: 170, height: 220)
-                                Text("Weapons")
-                                    .font(.custom("Teko-SemiBold", size: 30))
-                                    .foregroundColor(.white)
-                                    .shadow(color: .black, radius: 2, x: 2, y: 2)
-                                    .offset(y: 65)
-                            }
+                            HomeItem(backgroundImage: "weapons_home", title: "Weapons")
                         }
                         
                         Spacer()
                         NavigationLink(destination: CharacterList()) {
-                            ZStack {
-                                Image("legends_home")
-                                    .renderingMode(.original)
-                                    .resizable()
-                                    .cornerRadius(20)
-                                    .frame(width: 170, height: 220)
-                                Text("Legends")
-                                    .font(.custom("Teko-SemiBold", size: 30))
-                                    .foregroundColor(.white)
-                                    .shadow(color: .black, radius: 2, x: 2, y: 2)
-                                    .offset(y: 65)
-                            }
+                            HomeItem(backgroundImage: "legends_home", title: "Legends")
                         }
                         Spacer()
                     }
                     .padding(.top)
+                    
                     Spacer()
+                    
                     HStack {
                         Spacer()
                         NavigationLink (destination: GearRow()) {
-                            ZStack {
-                                Image("gear_home")
-                                    .renderingMode(.original)
-                                    .resizable()
-                                    .cornerRadius(20)
-                                    .frame(width: 170, height: 220)
-                                Text("Gear")
-                                    .font(.custom("Teko-SemiBold", size: 30))
-                                    .foregroundColor(.white)
-                                    .shadow(color: .black, radius: 2, x: 2, y: 2)
-                                    .offset(y: 65)
-                            }
+                            HomeItem(backgroundImage: "gear_home", title: "Gear")
                         }
                         Spacer()
                         NavigationLink(destination: MapList()) {
-                            ZStack {
-                                Image("maps_home")
-                                    .renderingMode(.original)
-                                    .resizable()
-                                    .cornerRadius(20)
-                                    .frame(width: 170, height: 220)
-                                Text("Maps")
-                                    .font(.custom("Teko-SemiBold", size: 30))
-                                    .foregroundColor(.white)
-                                    .shadow(color: .black, radius: 2, x: 2, y: 2)
-                                    .offset(y: 65)
-                            }
+                            HomeItem(backgroundImage: "maps_home", title: "Maps")
                         }
                         
                         Spacer()
                     }
                     .padding(.top)
+                    
                     Spacer()
+                    
                     HStack {
                         Spacer()
                         NavigationLink(destination: TipsDetail()) {
-                            ZStack {
-                                Image("tips_home")
-                                    .renderingMode(.original)
-                                    .resizable()
-                                    .cornerRadius(20)
-                                    .frame(width: 170, height: 220)
-                                Text("Tips")
-                                    .font(.custom("Teko-SemiBold", size: 30))
-                                    .foregroundColor(.white)
-                                    .shadow(color: .black, radius: 2, x: 2, y: 2)
-                                    .offset(y: 65)
-                            }
+                            HomeItem(backgroundImage: "tips_home", title: "Tips")
                         }
                         
                         Spacer()
@@ -129,10 +79,14 @@ struct HomeView: View {
                                 }
                             }
                         }
+                        
                         Spacer()
+                        
                     }
                     .padding(.top)
+                    
                     Spacer()
+                    
                 }
                 .padding(.top, 50)
                 .padding(.bottom)
